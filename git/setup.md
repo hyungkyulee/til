@@ -1,8 +1,4 @@
-# Git
-Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
-
-# Git Dev Environment
+# Dev Environment
 When you set up SSH, you create a key pair that contains a private key (saved to your local computer) and a public key (uploaded to Bitbucket). Bitbucket uses the key pair to authenticate anything the associated account can access. This two-way mechanism prevents man-in-the-middle attacks.
 
 This first key pair is your default SSH identity. If you need more than a default identity, you can set up additional keys.

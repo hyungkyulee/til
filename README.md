@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_3 TILs and counting..._
+_4 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Git commands](git/commands.md) - Sun May 16 18:12:19 2021 +0100
 - [Git](git/setup.md) - Sun May 16 18:02:19 2021 +0100
-- [Azure Fundamentals](cloud-azure/cert-fundamentals.md) - Sun May 16 17:58:29 2021 +0100
 
 ### Categories
 
@@ -29,6 +29,7 @@ _3 TILs and counting..._
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
 
 ### [git](#git)
+- [Git commands](git/commands.md)
 - [Git](git/setup.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

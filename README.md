@@ -31,7 +31,7 @@ _5 TILs and counting..._
 ### [git](#git)
 - [Git commands](git/commands.md)
 - [Git : Common error and Solution](git/issues.md)
-- [Git](git/setup.md)
+- [Dev Environment](git/setup.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

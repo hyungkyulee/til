@@ -1,0 +1,18 @@
+# IDE Tool Customising
+
+## Rider Dark Theme applied onto Visual Studio
+
+### Theme Setup
+- download and install 'Rider Dark Theme' via the link : https://marketplace.visualstudio.com/items?itemName=TwinTechResearch.Rider-Dark-Theme-For-Visual-Studio&ssr=false#overview
+- Set 'Rider Dark' theme on Visual Studio : Tools > Options > Environment > General > Color Theme
+
+### Font Setup
+- download 'Rider font' via the link : https://www.jetbrains.com/lp/mono/ 
+- install the font : right button of JetBrainsMono-Regular.ttf and install
+- Set 'JetBrains Mono' font on Visual Studio : Tools > Options > Environment > Fonts and Colors > Font
+- Set size 11px on Font
+
+### ReSharper Tune
+- Disable 'color identifiers' option on ReSharper plugin : Tools > Options > ReSharper > Options > Code Inspection > Settings > Highlighting > Color identifiers
+
+All done. Enjoy the Rider-like theme.. really happy to see this color combination. :-)

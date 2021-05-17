@@ -7,7 +7,7 @@ This first key pair is your default SSH identity. If you need more than a defaul
 
 ***
 
-## Setup on Windows
+## Setup on Mac / Windows(bash)
 ### 1. Set up your default identity
 
 Generate the key pair and Enter to accept the default key
@@ -46,3 +46,15 @@ $ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /c/Users/hyungkyu.lee/.ssh/id_rsa:
 Identity added: /c/Users/hyungkyu.lee/.ssh/id_rsa (hyungkyu@deepeyes.co.uk)
 ```
+
+## Add SSH Key to Services
+Copy the SSH public key to your clipboard
+```bash
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
+
+### Github
+Paste the key to Avatar > Settings > SSH and GPG Keys > New SSH Key
+
+### Bitbucket
+Paste the key to personal settings > SSH Keys > Add Key

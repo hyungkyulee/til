@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_7 TILs and counting..._
+_8 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Keybining on window like mac](ide-tooling/win-mac-keymap.md) - Tue May 18 11:58:44 2021 +0100
 - [Rider and Visual Studio](ide-tooling/rider-vs.md) - Mon May 17 13:54:41 2021 +0100
-- [Overview](git/overview.md) - Sun May 16 18:28:50 2021 +0100
 
 ### Categories
 
@@ -37,6 +37,7 @@ _7 TILs and counting..._
 
 ### [ide-tooling](#ide-tooling)
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
+- [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

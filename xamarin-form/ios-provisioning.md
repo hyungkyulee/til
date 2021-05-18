@@ -26,6 +26,7 @@ your Apple ID will be added the xcode account
 Project folder > right button > properties > Bundle Signing
 > the registered certificate can be linked with downloaded dev profiles. 
 > For the distribution, distribution certificate and profiels can be registered in the system in pair
+
 ![image](https://user-images.githubusercontent.com/59367560/118696495-42810b80-b806-11eb-8945-d09b97b36ec2.png)
 
 

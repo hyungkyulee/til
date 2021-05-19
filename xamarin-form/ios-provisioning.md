@@ -32,6 +32,8 @@ Project folder > right button > properties > Bundle Signing
 
 ## Pysical Devices
 
+### Manual provisioning with a device on visual studio
+https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-provisioning/manual-provisioning?tabs=macos
 
 ### Trouble-shooting
 - have an entitlement not supported by your current provisioing profile

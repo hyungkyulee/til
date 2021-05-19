@@ -1,6 +1,33 @@
 # Azure Fundamentals
 ## Core Azure services
+
+### Active Directory
+Account management 
+- users : human
+- service : app registration (principle)
+
+### Subscription
+project based group
+combining the AD resources (e.g. users, app registrations, etc)
+
+### Group and IAM Role
+#### Group creation
+https://docs.microsoft.com/en-us/azure/active-directory/roles/groups-create-eligible
+Groups > All groups > New group
+Turn on Azure AD roles - 'assigned'
+Add members and owner
+
+#### Assign a Role to subscription with Group
+Subscription > select one of your subscription > IAM > Add > Add a role assignment > Assign the group as a contributor
+> Add a role assignment is only available by admin(owner)
+
 ### Storage Services
+Storage Account : storage for a project
+Containers : kind of partition
+> If containers are created by terraform, it should be deleted by terrafom.
+Folders : root folders cannot be removed by Azure portal
+
+
 #### Files Fundamental
 - fully managed file shares via industry **standards server message block** and **NFS**(Network File System)
 - file shares mounted **concurrently** on Cloud, Windows, Linux, and MacOS.

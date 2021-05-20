@@ -3,28 +3,52 @@
 ![image](https://user-images.githubusercontent.com/59367560/118698402-41e97480-b808-11eb-9dec-4702dcb6cf92.png)
 
 ## Dev Environment
+### Visual Studio
 - visual studio for mac installation
-- 
+- sign-in onto the enterprise membership (if applied)
 
-## Simulator
+### Developer Profile
+- = developer certificate (your identity) + device (associated key) + profile for development (provisioning profile)
+> apple will check the certificate to control 'access/deploy to device' from you
 
-### Enroll
-- Join to a Developer portal in Apple : https://developer.apple.com/
-> Create an AppleID or login with your AppleID
+#### Development Certificate
+- manage certificates, identifiers, and profiles : https://developer.apple.com/
+> add your appleId as a member of organisation (if it's under the enrolling a enterprise programme)
 
-- Enroll in the Apple Developer Program
+- create certificate via visual studio : 
+  - Visual Studio > Preferences > Apple Developer Account
+  - Add Account > login to organisation
+  > you can see your linked appleId and member status
 
-- Review and download Certificates and Profiles
-> account > certificates, identifieres, and profiles 
+  - View Detail > Create Certificate > select 'Apple Development or iOS Development'
+  > two versions of developer profile will be located : 1) Apple Developer Portal (public key), 2) local machine (private key)
 
-### Develop
-- Generate Development Certificate
-> Xcode > preference > accounts > + > AppleID > Login
-your Apple ID will be added the xcode account
+> another option will be via xcode, but don't mix up the process
 
-- Manage Certificates and Profiles
-> Manage Certificates > + > save it to keychain (Login) (the certificates will be registered in the Developer Portal > Account > Certificates
-> Download Manual Profiles ( can be registered in Dev Portal, and it's installed in the system)
+#### Add a Device
+- connect iphone(ipad) via USB cable
+- Xcode > Window > Devices and Simulators > copy UDID (identifier string)
+- Apple dev portal > Certificates, identifieres & profiles > Devices > + > Register a Device
+
+#### Provisioning Profile
+- Apple dev portal > Certificates, identifieres & profiles > Register an App ID(application ID to deploy)
+> An App ID is a reverse-DNS style string that uniquely identifies an application : e.g. com.[DomainName].*
+
+- portal > C, I & P > + > Development > iOS App Development > Select App ID to use > Select Certificates to include > Profile Name > Generate
+> (Optional) Download it into Local Machine
+
+- Visual Studio > Prefereneces > Apple Developer Account > view Details > Download All Profiles
+> The new provisioning profile will now be available in Visual Studio and ready to use.
+
+## Deploy to a device
+- Visual Studio > IOS project > Info.plist 
+> check if 'Bundle Identifier' has the same App ID
+
+- Manual downloading/installation of provisioning profile
+- Visual Studio > IOS Bundle Signing > Signing Identity = Developer (Automatic)
+> you can see the list of a set of available Provisioning Profiles
+
+### Simulator
 
 ### Setup on project
 Project folder > right button > properties > Bundle Signing
@@ -34,7 +58,7 @@ Project folder > right button > properties > Bundle Signing
 ![image](https://user-images.githubusercontent.com/59367560/118696495-42810b80-b806-11eb-8945-d09b97b36ec2.png)
 
 
-## Pysical Devices
+### Pysical Devices
 
 ### Manual provisioning with a device on visual studio
 https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-provisioning/manual-provisioning?tabs=macos

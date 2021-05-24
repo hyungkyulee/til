@@ -102,7 +102,7 @@ public App()
 {
     InitializeComponent();
 
-    MainPage = new MasterDetailPageView();
+    MainPage = new NavigationPageView();
 }
 ```
 
@@ -214,41 +214,35 @@ public App()
 {
     InitializeComponent();
 
-    // MainPage = new MainPage();
-    // MainPage = new NavigationPage(new NavigationPageView());
-    // MainPage = new TabbedPageView();
-    MainPage = new MasterDetailPageView();
+    MainPage = new NavigationPageView();
 }
 ```
 
 [NavigationPageView.xaml]
 ```xaml
-<ContentPage ... >
-  <StackLayout>
-    <Button
-      Text="aaa"
-      x:Name="aaa"
-      Clicked="aaaHandler"
-    <Button
-      Text="bbb"
-      x:Name="bbb"
-      Clicked="bbbHandler"
-  </StackLayout>
-</ContentPage>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:screens="clr-namespace:[proj name].Screens"
+             x:Class="[proj name].CarouselPageView">
+  <ContentPage>
+    <Label FontSize="Large"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="CenterAndExpand">
+      Welcome to Carousel Testing
+    </Label>
+  </ContentPage>
+  <screens:aaaPageView></screens:aaaPageView>
+  <screens:bbbPageView></screens:bbbPageView>
+</CarouselPage>
 ```
 
 [NavigationPageView.xaml.cs]
 ```c#
-public partial class NavigationPageView : ContentPage
+public partial class NavigationPageView : CarouselPage
 {
     public NavigationPageView()
     {
         InitializeComponent();
-    }
-
-    private async void aaaHandler(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new Screens.aaaPageView());
     }
 
 :

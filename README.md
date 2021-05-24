@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_9 TILs and counting..._
+_10 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md) - Mon May 24 13:02:47 2021 +0100
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md) - Tue May 18 18:37:37 2021 +0100
-- [Keybining on window like mac](ide-tooling/win-mac-keymap.md) - Tue May 18 11:58:44 2021 +0100
 
 ### Categories
 
@@ -41,6 +41,7 @@ _9 TILs and counting..._
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 
 ### [xamarin-form](#xamarin-form)
+- [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

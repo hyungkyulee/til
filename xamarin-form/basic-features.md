@@ -251,3 +251,68 @@ public partial class NavigationPageView : CarouselPage
 
 > ContentPages X.Forms template need to be created at [Screens > aaaPageView.xaml / .xaml.cs]
 
+### Modal Navigation
+Overlay the Modal View
+[App.xaml.cs]
+```c#
+public App()
+{
+    InitializeComponent();
+
+    MainPage = new NavigationPageView();
+}
+```
+
+[NavigationPageView.xaml]
+```xaml
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="[proj name].ModalPageView">
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="Hello, world!"
+             VerticalOptions="CenterAndExpand"
+             HorizontalOptions="CenterAndExpand" />
+      <Button Text="View Larger Font"
+              Clicked="ModalPageButtonHandler"></Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
+```
+
+[NavigationPageView.xaml.cs]
+```c#
+public partial class ModalPageView : ContentPage
+{
+    public ModalPageView()
+    {
+        InitializeComponent();
+    }
+
+    private async void ModalPageButtonHandler(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new LargeTitlePageView());
+    }
+:
+:
+```
+
+> ContentPages X.Forms template need to be created at [Screens > LargeTitlePageView.xaml / .xaml.cs]
+
+## Layout
+- Type of Layout 
+  - with Single Child : ContentView, ScrollView, Frame, TemplatedView
+    - ScrollView : it shows a smooth scrolling, combining with FlexLayout
+      usage : <ScrollView><FlexLayout x:Name="flexLayout" Wrap="Wrap" JustifyContent="SpaceAround" >
+  - Multiple Children : e.g. <StackLayout Orientation="Vertical" Spacing="5">
+    1) StackLayout
+       - spacing : space between items
+       - Orientation : 'Vertifical' is default (e.g. Orientation="Horizontal")
+    2) Grid : e.g. <>
+       - Rows and columns : <RowDefinitions>, <ColumnDefinitions> (each definition's index starts from '0')
+         usage : <BoxView Color="Red" Grid.Row="1" Grid.Column="0" />
+         * nested Grid is available
+       - Flexible sizing system : Absolute, Auto(child item's max size), Star(ratio) (the size filling order is Absolute -> Auto -> Star)
+    3) RelativeLayout : a complicated layout type, but responsive
+    4) AbsoluteLayout : not flexible, not commonly used.
+    5) FlexLayout : X.Forms of version 3 add this option, based on CSS flex, more flexible than StackLayout

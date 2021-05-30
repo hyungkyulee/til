@@ -13,7 +13,7 @@ _11 TILs and counting..._
 
 ### 2 most recent TILs
 
-- [](ide-tooling/iterm2.md) - Sun May 30 14:33:47 2021 +0100
+- [iterm2 setup](ide-tooling/iterm2.md) - Sun May 30 14:33:47 2021 +0100
 - [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md) - Mon May 24 13:02:47 2021 +0100
 
 ### Categories
@@ -37,7 +37,7 @@ _11 TILs and counting..._
 - [Dev Environment](git/setup.md)
 
 ### [ide-tooling](#ide-tooling)
-- [](ide-tooling/iterm2.md)
+- [iterm2 setup](ide-tooling/iterm2.md)
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 

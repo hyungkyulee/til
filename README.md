@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_11 TILs and counting..._
+_12 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [zsh customisation](ide-tooling/zsh.md) - Sun May 30 15:40:11 2021 +0100
 - [iterm2 setup](ide-tooling/iterm2.md) - Sun May 30 14:33:47 2021 +0100
-- [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md) - Mon May 24 13:02:47 2021 +0100
 
 ### Categories
 
@@ -40,6 +40,7 @@ _11 TILs and counting..._
 - [iterm2 setup](ide-tooling/iterm2.md)
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
+- [zsh customisation](ide-tooling/zsh.md)
 
 ### [xamarin-form](#xamarin-form)
 - [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md)

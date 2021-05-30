@@ -21,4 +21,5 @@ git clone https://github.com/dracula/iterm.git
 3) Open the Color Presets... drop-down in the bottom right corner
 4) Select Import the the Dracula.itermcolors file from the downloaded git folder
 5) Select the Dracula from Color Presets...
+6) other actions > set a default
 ![image](https://user-images.githubusercontent.com/59367560/120106933-df24a100-c156-11eb-9c55-6fa7a0b51ad7.png)

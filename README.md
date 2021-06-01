@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_12 TILs and counting..._
+_13 TILs and counting..._
 
 ---
 
@@ -43,6 +43,7 @@ _12 TILs and counting..._
 - [zsh customisation](ide-tooling/zsh.md)
 
 ### [xamarin-form](#xamarin-form)
+- [Signing Key Configuration](xamarin-form/android-keystore.md)
 - [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 

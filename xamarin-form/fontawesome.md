@@ -6,7 +6,7 @@
 ```
 
 ## Environment
-### Download the package
+### Setup the fonts and projects
 - Download for the desktop : https://fontawesome.com/v5.15/how-to-use/on-the-desktop
 - add the three otf files into project resource folder
   > FileName should be matching with configuration so make it without space.
@@ -61,7 +61,7 @@
           Value="/Assets/FontAwesome5Regular.otf#Font Awesome 5 Free" /> 
     </OnPlatform>
   </ResourceDictionary>
-</Application.Resources>
+  </Application.Resources>
   ```
 
 - find an icon and copy the unicode : https://fontawesome.com/icons?d=gallery&m=free

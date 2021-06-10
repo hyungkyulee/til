@@ -13,8 +13,8 @@ _14 TILs and counting..._
 
 ### 2 most recent TILs
 
+- [Navigation](xamarin-form/navigation.md) - Thu Jun 10 21:23:04 2021 +0100
 - [FontAwesome](xamarin-form/fontawesome.md) - Thu Jun 10 21:22:39 2021 +0100
-- [zsh customisation](ide-tooling/zsh.md) - Sun May 30 15:40:11 2021 +0100
 
 ### Categories
 
@@ -44,9 +44,9 @@ _14 TILs and counting..._
 
 ### [xamarin-form](#xamarin-form)
 - [Signing Key Configuration](xamarin-form/android-keystore.md)
-- [Navigation](xamarin-form/basic-features.md)
 - [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
+- [Navigation](xamarin-form/navigation.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

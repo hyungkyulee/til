@@ -1,12 +1,11 @@
-# Basic Feature in Xamarin.Forms
+# Navigation
 
 ```xaml
 ```
 ```c#
 ```
 
-## Navigation
-### Stack Navigation
+## Stack Navigation
 move a subpage and back to the Main
 
 [App.xaml.cs]
@@ -55,7 +54,7 @@ public partial class NavigationPageView : ContentPage
 
 > ContentPages X.Forms template need to be created at [Screens > aaaPageView.xaml / .xaml.cs]
 
-### Tabbed Navigation
+## Tabbed Navigation
 place a set of Tab button and update the page
 [App.xaml.cs]
 ```c#
@@ -94,7 +93,7 @@ public partial class NavigationPageView : TabbedPage
 > Handler is not required of tab link.
 > But, ContentPages X.Forms template need to be created at [Screens > aaaPageView.xaml / .xaml.cs]
 
-### Drawer(Master/Detail) Navigation
+## Drawer(Master/Detail) Navigation
 Hamburger Icon and show master menu list and change Detail page
 [App.xaml.cs]
 ```c#
@@ -251,7 +250,7 @@ public partial class NavigationPageView : CarouselPage
 
 > ContentPages X.Forms template need to be created at [Screens > aaaPageView.xaml / .xaml.cs]
 
-### Modal Navigation
+## Modal Navigation
 Overlay the Modal View
 [App.xaml.cs]
 ```c#

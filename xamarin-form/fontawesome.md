@@ -11,8 +11,10 @@
 - add the three otf files into project resource folder
   > FileName should be matching with configuration so make it without space.
   > VS for mac is hassle free to add imediatly the files to project, and check the 'build action' type.
-  > files need to be located at Android : ``` proj.Android > Assets ``` and IOS : ``` proj.ios > Resources ```
+  > files need to be located at Android : ``` proj.Android > Assets (AndroidAsset) ``` and IOS : ``` proj.ios > Resources (Bundle Resource) ```
   > ![image](https://user-images.githubusercontent.com/59367560/121589161-aaee9180-ca2e-11eb-86fc-6ae6ad595b60.png)
+  > ![image](https://user-images.githubusercontent.com/59367560/121592098-2dc51b80-ca32-11eb-866a-fa8ac4c2d591.png)
+
 
 - [ios only] add the below code into 'info.plist' right below <Dict> tag
   ```xml

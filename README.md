@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_13 TILs and counting..._
+_14 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [FontAwesome](xamarin-form/fontawesome.md) - Thu Jun 10 21:22:39 2021 +0100
 - [zsh customisation](ide-tooling/zsh.md) - Sun May 30 15:40:11 2021 +0100
-- [iterm2 setup](ide-tooling/iterm2.md) - Sun May 30 14:33:47 2021 +0100
 
 ### Categories
 
@@ -45,6 +45,7 @@ _13 TILs and counting..._
 ### [xamarin-form](#xamarin-form)
 - [Signing Key Configuration](xamarin-form/android-keystore.md)
 - [Navigation](xamarin-form/basic-features.md)
+- [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

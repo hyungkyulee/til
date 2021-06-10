@@ -44,7 +44,7 @@ _13 TILs and counting..._
 
 ### [xamarin-form](#xamarin-form)
 - [Signing Key Configuration](xamarin-form/android-keystore.md)
-- [Basic Feature in Xamarin.Forms](xamarin-form/basic-features.md)
+- [Navigation](xamarin-form/basic-features.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

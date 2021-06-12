@@ -135,6 +135,31 @@ module.exports = {
   }
 }
 
+#### Error case : Support for the experimental syntax 'jsx' isn't currently enabled
+install Bable packages and packge json updated
+- npm i @babel/preset-react @babel/preset-env
+- npm i @babel/plugin-transform-react-jsx
+
+[package.json]
+```zsh
+...,
+  "devDependencies": {
+  :
+  :
+},
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
+    ]
+  }
+  :
+  :
+```
+
 ### Run Test
 ```zsh
 npm test -- --watch

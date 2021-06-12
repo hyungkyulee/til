@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_14 TILs and counting..._
+_15 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [React Testing on React Testing Library and Jest](tdd/react-testing.md) - Sat Jun 12 13:12:05 2021 +0100
 - [Navigation](xamarin-form/navigation.md) - Thu Jun 10 21:23:04 2021 +0100
-- [FontAwesome](xamarin-form/fontawesome.md) - Thu Jun 10 21:22:39 2021 +0100
 
 ### Categories
 
@@ -22,6 +22,7 @@ _14 TILs and counting..._
 - [cloud-azure](#cloud-azure)
 - [git](#git)
 - [ide-tooling](#ide-tooling)
+- [tdd](#tdd)
 - [xamarin-form](#xamarin-form)
 
 ### [api-design](#api-design)
@@ -41,6 +42,9 @@ _14 TILs and counting..._
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 - [zsh customisation](ide-tooling/zsh.md)
+
+### [tdd](#tdd)
+- [React Testing on React Testing Library and Jest](tdd/react-testing.md)
 
 ### [xamarin-form](#xamarin-form)
 - [Signing Key Configuration](xamarin-form/android-keystore.md)

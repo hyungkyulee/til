@@ -129,8 +129,7 @@ module.exports = {
 ```json
 {
   "scripts": {
-    :
-    :
+    "xxx": "xxx",
     "test": "jest"
   }
 }

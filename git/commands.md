@@ -95,8 +95,15 @@ $ git reset --soft HEAD~1
 
 #### Hard reset
 ```
+git reset --mixed "커밋 id"
+```
+
+#### Hard reset
+```
 git reset --hard "커밋 id"
 ```
+
+> comparison of soft/mixed/hard reset : https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard
 
 #### remove .git related files
 ```

@@ -70,6 +70,8 @@ git pull (at master)
 git checkout [branches]
 git merge master
 ```
+> 'git pull master' won't work. git pull = git fetch + git merge, but only work in the same branch.
+
 
 #### Delete Branch
 ```
@@ -87,22 +89,30 @@ git push
 ### Reset
 (* source: https://devconnected.com/how-to-remove-files-from-git-commit/)
 
-#### check the history log and try to 1-step back from the commit history
+#### Soft reset check the history log and try to 1-step back from the commit history
+Move to the previous commit, but index remains on history (staged + local file remains)
 ```bash
 $ git log
 $ git reset --soft HEAD~1
 ```
 
-#### Hard reset
+Move to the previous commit, and index deleted (unstaged + local file remains)
+#### Mixed reset
 ```
 git reset --mixed "커밋 id"
 ```
 
+Move to the previous commit, and local changed deleted
 #### Hard reset
 ```
 git reset --hard "커밋 id"
-```
 
+or
+
+git reset --mixed HEAD~1
+git checkout .
+```
+> hard reset = mixed reset + git checkout .
 > comparison of soft/mixed/hard reset : https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard
 
 #### remove .git related files

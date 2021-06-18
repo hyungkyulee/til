@@ -18,6 +18,9 @@ The five files that make up the default files in the Resources folder:
 ### Reset the Resources
 in some cases such as an conflict of Resource.designer.cs file, the file can be deleted and auto-generated on compiling.
 > After auto-generated in the filesystem, the project cannot understand the file so it should be added to project file manually.
+> Resource.designer.cs file location : 
+  - [proj.Android] > obj > Debug > designtime
+  - [proj.Resources] > Strings > StringsDesigner.cs
 
 [project.Android > Edit]
 ```xml

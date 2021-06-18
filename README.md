@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_16 TILs and counting..._
+_17 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Handling Resources in Xamarin Forms](xamarin-form/resources.md) - Sat Jun 19 00:08:23 2021 +0100
 - [React Native Testing](tdd/reactnative-testing.md) - Thu Jun 17 23:10:49 2021 +0100
-- [React Testing on React Testing Library and Jest](tdd/react-testing.md) - Sat Jun 12 13:12:05 2021 +0100
 
 ### Categories
 
@@ -52,6 +52,7 @@ _16 TILs and counting..._
 - [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 - [Navigation](xamarin-form/navigation.md)
+- [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

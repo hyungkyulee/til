@@ -2,6 +2,9 @@
 
 ## oh-my-zsh installtion
 https://ohmyz.sh/
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## p10k theme installation
 1) install the font : https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k

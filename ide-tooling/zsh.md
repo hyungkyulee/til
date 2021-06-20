@@ -4,6 +4,8 @@
 https://ohmyz.sh/
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo $SHELL
 ```
 
 ## p10k theme installation

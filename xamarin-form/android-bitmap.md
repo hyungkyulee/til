@@ -95,6 +95,7 @@ protected Bitmap getBitmapFromReusableSet(BitmapFactory.Options options) {
   }
   ```
 - option 2) use ```internal inmemory cache```
+  code snippet
   ```
   private static IDictionary<int, Bitmap> _cachedBitmap = new Dictionary<int, Bitmap>();
   private static Bitmap MemoryCache(int resId, int samplingWidth, int samplingHeight, int scale)

@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_17 TILs and counting..._
+_18 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-form/android-bitmap.md) - Tue Jun 22 15:02:18 2021 +0100
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md) - Sat Jun 19 00:08:23 2021 +0100
-- [React Native Testing](tdd/reactnative-testing.md) - Thu Jun 17 23:10:49 2021 +0100
 
 ### Categories
 
@@ -48,6 +48,7 @@ _17 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [xamarin-form](#xamarin-form)
+- [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-form/android-bitmap.md)
 - [Signing Key Configuration](xamarin-form/android-keystore.md)
 - [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)

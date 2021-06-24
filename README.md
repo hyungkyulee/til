@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_18 TILs and counting..._
+_19 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Project Setting for Development](xamarin-form/project-setting.md) - Thu Jun 24 13:05:56 2021 +0100
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-form/android-bitmap.md) - Tue Jun 22 15:02:18 2021 +0100
-- [Handling Resources in Xamarin Forms](xamarin-form/resources.md) - Sat Jun 19 00:08:23 2021 +0100
 
 ### Categories
 
@@ -53,6 +53,7 @@ _18 TILs and counting..._
 - [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 - [Navigation](xamarin-form/navigation.md)
+- [Project Setting for Development](xamarin-form/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

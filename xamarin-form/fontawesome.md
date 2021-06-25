@@ -204,5 +204,4 @@ It mightbe ios seems not to dealing with the font resource as a embedded resourc
   </ResourceDictionary>
   ```
   
-![image](https://user-images.githubusercontent.com/59367560/123411214-1b0d2380-d5a8-11eb-802c-f1182687a5ff.png)
-
+![image](https://user-images.githubusercontent.com/59367560/123412555-9cb18100-d5a9-11eb-8109-bfa7d65ba61d.png)

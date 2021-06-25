@@ -166,3 +166,38 @@ namespace Domain.Proj.Components
 :
 :
 ```
+  
+### [Appendix] Setup the fonts and projects
+The above environment setup of a font resouce on IOS was an issue on deployment build.
+(It's working fine on my local build)
+  
+#### A change was as follows :
+- change the build action on ios from 'BundleResource' to 'EmbeddedResource'
+- remove the below info.plist AppFonts section (it's no need anymore)
+  ```xml
+  <key>UIAppFonts</key>
+  <array>
+    <string>FontAwesome5BrandsRegular.otf</string>
+    <string>FontAwesome5Regular.otf</string>
+    <string>FontAwesome5Solid.otf</string>
+  </array>
+  ```
+- add the below assembly annotation in AssemblyInfo.cs
+  ```c#
+  [assembly: ExportFont("FontAwesome6ProLight.otf", Alias = "FontAwesomeLight")]
+  ```
+- use this Alias on App.xaml updating the platform branch code
+  ```c#
+  <ResourceDictionary> 
+    <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeLight">
+      <On Platform="Android" 
+          Value="FontAwesome6ProLight.otf#Light" />
+      <On Platform="iOS" 
+          Value="FontAwesomeLight" />
+    </OnPlatform>
+  </ResourceDictionary>
+  ```
+  
+![image](https://user-images.githubusercontent.com/59367560/123411214-1b0d2380-d5a8-11eb-802c-f1182687a5ff.png)
+

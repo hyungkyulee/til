@@ -7,6 +7,8 @@
 
 ## Environment
 ### Setup the fonts and projects
+> if ios has an issue to draw fontimage on deployment build, please see the below appendix. 
+
 - Download for the desktop : https://fontawesome.com/v5.15/how-to-use/on-the-desktop
 - add the three otf files into project resource folder
   > FileName should be matching with configuration so make it without space.
@@ -167,11 +169,12 @@ namespace Domain.Proj.Components
 :
 ```
   
-### [Appendix] Setup the fonts and projects
-The above environment setup of a font resouce on IOS was an issue on deployment build.
-(It's working fine on my local build)
+### [Appendix] IOS fontimage issue on deployment build
+The above environment setup of a font resouce on IOS was an issue on deployment build even though it's working fine on my local build.
+It mightbe ios seems not to dealing with the font resource as a embedded resource, and not properly linking with the resource on deployment build compile time.
   
-#### A change was as follows :
+#### A trial and change was as follows :
+  
 - change the build action on ios from 'BundleResource' to 'EmbeddedResource'
 - remove the below info.plist AppFonts section (it's no need anymore)
   ```xml

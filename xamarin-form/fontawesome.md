@@ -7,7 +7,7 @@
 
 ## Environment
 ### Setup the fonts and projects
-> if ios has an issue to draw fontimage on deployment build, please see the below appendix. 
+> ```diff !if ios has an issue to draw fontimage on deployment build, please see the appendix at this end of article. ```
 
 - Download for the desktop : https://fontawesome.com/v5.15/how-to-use/on-the-desktop
 - add the three otf files into project resource folder

@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_19 TILs and counting..._
+_20 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md) - Tue Jun 29 23:00:29 2021 +0100
 - [Project Setting for Development](xamarin-form/project-setting.md) - Thu Jun 24 13:05:56 2021 +0100
-- [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-form/android-bitmap.md) - Tue Jun 22 15:02:18 2021 +0100
 
 ### Categories
 
@@ -52,6 +52,7 @@ _19 TILs and counting..._
 - [Signing Key Configuration](xamarin-form/android-keystore.md)
 - [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
+- [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md)
 - [Navigation](xamarin-form/navigation.md)
 - [Project Setting for Development](xamarin-form/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md)

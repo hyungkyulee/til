@@ -2,7 +2,10 @@
 
 ## Keyboard Custom Renderer (Usecase : Margin customisation according to Keyboard Show/Hide Event)
 This example will see how the keyboard event can be handled on ios and android via Custom Renderer in Xamarin Forms.
-> ref: https://www.flokri.com/development/xamarin-development/howto-xamarin-forms-automatically-move-controls-when-keyboard-is-shown/
+> ref: 
+> https://riptutorial.com/xamarin-forms/example/10022/custom-renderer-for-listview
+> https://forums.xamarin.com/discussion/67333/set-selected-list-view-background-color 
+> https://stackoverflow.com/questions/2833057/background-listview-becomes-black-when-scrolling
 
 ### Common Part
 Main View.xaml
@@ -42,13 +45,12 @@ namespace [Proj name].[folder]
 
 ```xaml
 ...
-using Quartix.Mobile.iOS.Renderers;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(ExtendedKeyboard), typeof(ExtendedKeyboardRenderer))]
-namespace Quartix.Mobile.iOS.Renderers
+namespace [proj name].iOS.Renderers
 {
     public class ExtendedKeyboardRenderer : ViewRenderer
     {

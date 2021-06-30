@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_20 TILs and counting..._
+_21 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md) - Wed Jun 30 14:20:03 2021 +0100
 - [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md) - Tue Jun 29 23:00:29 2021 +0100
-- [Project Setting for Development](xamarin-form/project-setting.md) - Thu Jun 24 13:05:56 2021 +0100
 
 ### Categories
 
@@ -56,6 +56,7 @@ _20 TILs and counting..._
 - [Navigation](xamarin-form/navigation.md)
 - [Project Setting for Development](xamarin-form/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
+- [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

@@ -35,7 +35,6 @@ namespace [Proj name].Extensions
     }
 }
 ```
-> put all the elements in a container view (e.g. Grid) and only change the margin of this view
 
 ### IOS Extended Renderer
 
@@ -91,4 +90,3 @@ namespace [proj name].Droid.Renderers
     }
 }
 ```
-> if project is not mvx, you can place the App.current... line into the below of App().

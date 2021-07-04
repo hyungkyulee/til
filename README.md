@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_22 TILs and counting..._
+_23 TILs and counting..._
 
 ---
 
@@ -33,6 +33,7 @@ _22 TILs and counting..._
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
 
 ### [dotnet](#dotnet)
+- [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
 
 ### [git](#git)

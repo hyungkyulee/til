@@ -5,10 +5,10 @@ a multi-paradigm, statically-typed programming language with object-oriented, de
 C# also has features, amongst others, to make programming with multiple threads/processors, parallelisation, asynchrony, unmanaged code in a managed environment and language interoperability easier. It is developed and maintained by Microsoft, who provides the official documentation.
 
 ### C#'s characteristics
-**Statically-typed **
+** Statically-typed **
 identifiers have a type set at compile time--like those in Java, C++ or Haskell--instead of holding data of any type like those in Python, Ruby or JavaScript.
 
-**Object-oriented ** 
+** Object-oriented ** 
 C# provides imperative class-based objects with features such as single inheritance, interfaces and encapsulation.
 
 **Declarative ** 

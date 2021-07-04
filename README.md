@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_24 TILs and counting..._
+_25 TILs and counting..._
 
 ---
 
@@ -24,6 +24,7 @@ _24 TILs and counting..._
 - [dotnet](#dotnet)
 - [git](#git)
 - [ide-tooling](#ide-tooling)
+- [serverless](#serverless)
 - [tdd](#tdd)
 - [xamarin-form](#xamarin-form)
 
@@ -51,6 +52,9 @@ _24 TILs and counting..._
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 - [zsh customisation](ide-tooling/zsh.md)
+
+### [serverless](#serverless)
+- [Common Issues with serverless practices](serverless/issues.md)
 
 ### [tdd](#tdd)
 - [React Testing on React Testing Library and Jest](tdd/react-testing.md)

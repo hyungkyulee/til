@@ -14,7 +14,7 @@ _26 TILs and counting..._
 ### 2 most recent TILs
 
 - [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md) - Wed Jun 30 14:20:03 2021 +0100
-- [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md) - Tue Jun 29 23:00:29 2021 +0100
+- [Project Setting for Development](xamarin-form/project-setting.md) - Thu Jun 24 13:05:56 2021 +0100
 
 ### Categories
 
@@ -62,7 +62,6 @@ _26 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [xamarin-form](#xamarin-form)
-- [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md)
 - [Navigation](xamarin-form/navigation.md)
 - [Project Setting for Development](xamarin-form/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
@@ -73,6 +72,7 @@ _26 TILs and counting..._
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
+- [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

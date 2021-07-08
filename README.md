@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_26 TILs and counting..._
+_27 TILs and counting..._
 
 ---
 
@@ -33,6 +33,7 @@ _26 TILs and counting..._
 
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
+- [A First Azure Function API in Rider](cloud-azure/functions.md)
 
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)

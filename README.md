@@ -62,7 +62,6 @@ _26 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [xamarin-form](#xamarin-form)
-- [Navigation](xamarin-form/navigation.md)
 - [Project Setting for Development](xamarin-form/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
 - [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md)
@@ -74,6 +73,7 @@ _26 TILs and counting..._
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)
+- [Navigation](xamarin-forms/navigation.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

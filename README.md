@@ -14,7 +14,7 @@ _26 TILs and counting..._
 ### 2 most recent TILs
 
 - [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md) - Wed Jun 30 14:20:03 2021 +0100
-- [Project Setting for Development](xamarin-form/project-setting.md) - Thu Jun 24 13:05:56 2021 +0100
+- [React Native Testing](tdd/reactnative-testing.md) - Thu Jun 17 23:10:49 2021 +0100
 
 ### Categories
 
@@ -62,8 +62,6 @@ _26 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [xamarin-form](#xamarin-form)
-- [Project Setting for Development](xamarin-form/project-setting.md)
-- [Handling Resources in Xamarin Forms](xamarin-form/resources.md)
 - [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md)
 
 ### [xamarin-forms](#xamarin-forms)
@@ -74,6 +72,8 @@ _26 TILs and counting..._
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)
 - [Navigation](xamarin-forms/navigation.md)
+- [Project Setting for Development](xamarin-forms/project-setting.md)
+- [Handling Resources in Xamarin Forms](xamarin-forms/resources.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

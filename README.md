@@ -13,8 +13,8 @@ _26 TILs and counting..._
 
 ### 2 most recent TILs
 
-- [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md) - Wed Jun 30 14:20:03 2021 +0100
 - [React Native Testing](tdd/reactnative-testing.md) - Thu Jun 17 23:10:49 2021 +0100
+- [React Testing on React Testing Library and Jest](tdd/react-testing.md) - Sat Jun 12 13:12:05 2021 +0100
 
 ### Categories
 
@@ -26,7 +26,6 @@ _26 TILs and counting..._
 - [ide-tooling](#ide-tooling)
 - [serverless](#serverless)
 - [tdd](#tdd)
-- [xamarin-form](#xamarin-form)
 - [xamarin-forms](#xamarin-forms)
 
 ### [api-design](#api-design)
@@ -61,9 +60,6 @@ _26 TILs and counting..._
 - [React Testing on React Testing Library and Jest](tdd/react-testing.md)
 - [React Native Testing](tdd/reactnative-testing.md)
 
-### [xamarin-form](#xamarin-form)
-- [SearchBar handling on Xamarin Forms](xamarin-form/searchbar.md)
-
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
@@ -74,6 +70,7 @@ _26 TILs and counting..._
 - [Navigation](xamarin-forms/navigation.md)
 - [Project Setting for Development](xamarin-forms/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-forms/resources.md)
+- [SearchBar handling on Xamarin Forms](xamarin-forms/searchbar.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
 [2]: https://github.com/jbranchaud/til

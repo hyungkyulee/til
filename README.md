@@ -62,8 +62,6 @@ _26 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [xamarin-form](#xamarin-form)
-- [Signing Key Configuration](xamarin-form/android-keystore.md)
-- [FontAwesome](xamarin-form/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-form/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-form/keyboard.md)
 - [Navigation](xamarin-form/navigation.md)
@@ -73,6 +71,8 @@ _26 TILs and counting..._
 
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
+- [Signing Key Configuration](xamarin-forms/android-keystore.md)
+- [FontAwesome](xamarin-forms/fontawesome.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

@@ -67,3 +67,12 @@ tstate >
   > Roles and administrators 
 
 - terraform-principle > certificates & secrets > new client secret
+
+- add the created principal of terraform
+  > Subscriptions > Development > IAM
+
+- add container 
+  > resource > containers > add container
+
+> Azure hiearchy
+account > multiple subscriptions > resource group > resource accounts > 

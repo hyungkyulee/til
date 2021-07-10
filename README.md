@@ -7,18 +7,19 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_27 TILs and counting..._
+_28 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Github Action for terrafom deployment](ci-cd/github-action.md) - Sun Jul 11 00:03:23 2021 +0100
 - [React Native Testing](tdd/reactnative-testing.md) - Thu Jun 17 23:10:49 2021 +0100
-- [React Testing on React Testing Library and Jest](tdd/react-testing.md) - Sat Jun 12 13:12:05 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
+- [ci-cd](#ci-cd)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
 - [dotnet](#dotnet)
@@ -30,6 +31,9 @@ _27 TILs and counting..._
 
 ### [api-design](#api-design)
 - [RESTful API Design](api-design/RESTful.md)
+
+### [ci-cd](#ci-cd)
+- [Github Action for terrafom deployment](ci-cd/github-action.md)
 
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)

@@ -11,6 +11,11 @@ This first key pair is your default SSH identity. If you need more than a defaul
 ### 1. Set up your default identity
 
 Generate the key pair and Enter to accept the default key
+```$ ssh-keygen -t ed25519 -C "your_email@example.com"```
+> Enter and re-enter to set a passphrase (password). This will ask you to check your credential whenever you do git-related activities
+> check the key files in the .ssh folder ```$ ~/.ssh/id_ed25519.pub```
+
+[legacy system not supporting ed25519]
 ```
 $ ssh-keygen
 Generating public/private rsa key pair.
@@ -22,9 +27,7 @@ Your identification has been saved in /c/Users/emmap1/.ssh/id_rsa.
 Your public key has been saved in /c/Users/emmap1/.ssh/id_rsa.pub.
 The key fingerprint is: e7:94:d1:a3:02:ee:38:6e:a4:5e:26:a3:a9:f4:95:d4 emmap1@EMMA-PC
 ```
-> Enter and re-enter to set a passphrase (password). This will ask you to check your credential whenever you do git-related activities
 
-check the key files in the .ssh folder
 ```
 $ dir .ssh
 id_rsa id_rsa.pub
@@ -36,12 +39,15 @@ Not asking passcode again in the git commends (pull/push)
 
 Run the agent
 ```
-$ eval $(ssh-agent)
-Agent pid 9700
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
 ```
 
 Enter ssh-add command to add the key to the agent
 ```
+$ ssh-add ~/.ssh/id_ed25519
+
+[legacy system]
 $ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /c/Users/hyungkyu.lee/.ssh/id_rsa:
 Identity added: /c/Users/hyungkyu.lee/.ssh/id_rsa (hyungkyu@deepeyes.co.uk)
@@ -49,7 +55,7 @@ Identity added: /c/Users/hyungkyu.lee/.ssh/id_rsa (hyungkyu@deepeyes.co.uk)
 
 ## Add SSH Key to Services
 Copy the SSH public key to your clipboard
-```bash
+```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 

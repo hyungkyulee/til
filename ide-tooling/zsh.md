@@ -19,7 +19,7 @@ echo $SHELL
   > set the font on the item text
   > ![image](https://user-images.githubusercontent.com/59367560/120310606-795b2500-c2ce-11eb-9630-976e9082c707.png)
 
-3) p10k theme configuration
+2) p10k theme configuration
 ```zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc

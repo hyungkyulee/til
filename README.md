@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_32 TILs and counting..._
+_31 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
 - [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md) - Mon Jul 12 17:15:52 2021 +0100
-- [Device Settings for Mobild Developement](mobile-dev/device-settings.md) - Mon Jul 12 16:01:50 2021 +0100
+- [Rider Tips on projects](ide-tooling/rider-tips.md) - Mon Jul 12 12:48:17 2021 +0100
 
 ### Categories
 
@@ -26,7 +26,6 @@ _32 TILs and counting..._
 - [git](#git)
 - [ide-tooling](#ide-tooling)
 - [macos](#macos)
-- [mobile-dev](#mobile-dev)
 - [serverless](#serverless)
 - [tdd](#tdd)
 - [xamarin-forms](#xamarin-forms)
@@ -63,9 +62,6 @@ _32 TILs and counting..._
 
 ### [macos](#macos)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
-
-### [mobile-dev](#mobile-dev)
-- [Device Settings for Mobild Developement](mobile-dev/device-settings.md)
 
 ### [serverless](#serverless)
 - [Common Issues with serverless practices](serverless/issues.md)

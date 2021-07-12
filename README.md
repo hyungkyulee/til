@@ -13,13 +13,12 @@ _32 TILs and counting..._
 
 ### 2 most recent TILs
 
+- [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md) - Mon Jul 12 23:29:01 2021 +0100
 - [Device Settings for Mobild Developement](xamarin-forms/device-settings.md) - Mon Jul 12 17:24:00 2021 +0100
-- [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md) - Mon Jul 12 17:15:52 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
-- [ci-cd](#ci-cd)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
 - [dotnet](#dotnet)
@@ -28,13 +27,11 @@ _32 TILs and counting..._
 - [macos](#macos)
 - [serverless](#serverless)
 - [tdd](#tdd)
+- [terraform](#terraform)
 - [xamarin-forms](#xamarin-forms)
 
 ### [api-design](#api-design)
 - [RESTful API Design](api-design/RESTful.md)
-
-### [ci-cd](#ci-cd)
-- [Github Action for terrafom deployment](ci-cd/github-action.md)
 
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
@@ -69,6 +66,9 @@ _32 TILs and counting..._
 ### [tdd](#tdd)
 - [React Testing on React Testing Library and Jest](tdd/react-testing.md)
 - [React Native Testing](tdd/reactnative-testing.md)
+
+### [terraform](#terraform)
+- [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
 
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)

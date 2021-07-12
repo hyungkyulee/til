@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_29 TILs and counting..._
+_30 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Rider Tips on projects](ide-tooling/rider-tips.md) - Mon Jul 12 12:48:17 2021 +0100
 - [MacOS Reset and Dev Settings](macos/reset-settings.md) - Sun Jul 11 17:24:32 2021 +0100
-- [Github Action for terrafom deployment](ci-cd/github-action.md) - Sun Jul 11 00:03:23 2021 +0100
 
 ### Categories
 
@@ -55,6 +55,7 @@ _29 TILs and counting..._
 
 ### [ide-tooling](#ide-tooling)
 - [iterm2 setup](ide-tooling/iterm2.md)
+- [Rider Tips on projects](ide-tooling/rider-tips.md)
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 - [zsh customisation](ide-tooling/zsh.md)

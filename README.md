@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_31 TILs and counting..._
+_32 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Device Settings for Mobild Developement](xamarin-forms/device-settings.md) - Mon Jul 12 17:24:00 2021 +0100
 - [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md) - Mon Jul 12 17:15:52 2021 +0100
-- [Rider Tips on projects](ide-tooling/rider-tips.md) - Mon Jul 12 12:48:17 2021 +0100
 
 ### Categories
 
@@ -73,6 +73,7 @@ _31 TILs and counting..._
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
+- [Device Settings for Mobild Developement](xamarin-forms/device-settings.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)

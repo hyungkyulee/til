@@ -65,7 +65,7 @@ https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-pro
 
 ### Trouble-shooting
 - have an entitlement not supported by your current provisioing profile
-![image](https://user-images.githubusercontent.com/59367560/118716883-41a7a400-b81d-11eb-9607-74b342fe4b5c.png)
+![image](https://user-images.githubusercontent.com/59367560/125322280-82abc880-e335-11eb-94c2-5158b63eebbb.png)
 
   > as entitlement has no permission, remove the custom entitlements field: Project options > Build > IOS Bundle Signing > Custom Entitlements > make it blank.
   ![image](https://user-images.githubusercontent.com/59367560/118717229-b4188400-b81d-11eb-9a3e-091286a8d2a5.png)

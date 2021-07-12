@@ -63,7 +63,13 @@ Project folder > right button > properties > Bundle Signing
 ### Manual provisioning with a device on visual studio
 https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-provisioning/manual-provisioning?tabs=macos
 
-### Trouble-shooting
+### Device Configuration on Project settings of Rider
+> Rider > Hightlight IOS Project on Explorer > F4 (or mouse right-click) > Properties or Edit(Manual setting)
+e.g.) 
+![image](https://user-images.githubusercontent.com/59367560/125324107-77f23300-e337-11eb-8a0f-57e7fe84307f.png)
+
+
+## Trouble-shooting
 - have an entitlement not supported by your current provisioing profile
 ![image](https://user-images.githubusercontent.com/59367560/125322280-82abc880-e335-11eb-94c2-5158b63eebbb.png)
 

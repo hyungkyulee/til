@@ -76,4 +76,8 @@ e.g.)
   > as entitlement has no permission, remove the custom entitlements field: Project options > Build > IOS Bundle Signing > Custom Entitlements > make it blank.
   ![image](https://user-images.githubusercontent.com/59367560/118717229-b4188400-b81d-11eb-9a3e-091286a8d2a5.png)
 
+- non-listed device error
+![image](https://user-images.githubusercontent.com/59367560/125324631-ffd83d00-e337-11eb-89c3-ac4b7c0276f1.png)
 
+  > device is not listed on the provisioning group for the project.
+ 

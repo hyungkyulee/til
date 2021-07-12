@@ -24,4 +24,5 @@
 ### List your device on signing/provisioing profiles
 - UDID : can be checked on your connected device on Mac
   > connect a device > finder > select the device > click the device description on the top tab > toggle to show the details
-   
+
+* Please see the details of IOS Provisioning at : https://github.com/hyungkyulee/til/blob/main/xamarin-forms/ios-provisioning.md

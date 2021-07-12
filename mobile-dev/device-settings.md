@@ -22,6 +22,8 @@
 - allow the Trust of device on PC and Mobile
 
 ### List your device on signing/provisioing profiles
-
+- UDID : can be checked on your connected device on Mac
+  > connect a device > finder > select the device > click the device description on the top tab > toggle to show the details
+   
 - Common Error
 > error MT1006: Could not install the application on the device: Your code signing/provisioning profiles are not correctly configured. Probably you have an entitlement not supported by your current provisioning profile, or your device is not part of the current provisioning profile.2

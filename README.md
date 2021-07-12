@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_31 TILs and counting..._
+_32 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md) - Mon Jul 12 17:15:52 2021 +0100
 - [Device Settings for Mobild Developement](mobile-dev/device-settings.md) - Mon Jul 12 16:01:50 2021 +0100
-- [Rider Tips on projects](ide-tooling/rider-tips.md) - Mon Jul 12 12:48:17 2021 +0100
 
 ### Categories
 
@@ -82,6 +82,7 @@ _31 TILs and counting..._
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)
 - [Navigation](xamarin-forms/navigation.md)
+- [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md)
 - [Project Setting for Development](xamarin-forms/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-forms/resources.md)
 - [SearchBar handling on Xamarin Forms](xamarin-forms/searchbar.md)

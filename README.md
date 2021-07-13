@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_33 TILs and counting..._
+_34 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Orientation Handling on Rotation](xamarin-forms/device-orientation.md) - Tue Jul 13 17:56:56 2021 +0100
 - [Data Binding with some options](xamarin-forms/data-binding.md) - Tue Jul 13 13:06:55 2021 +0100
-- [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md) - Mon Jul 12 23:29:01 2021 +0100
 
 ### Categories
 
@@ -74,6 +74,7 @@ _33 TILs and counting..._
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
 - [Data Binding with some options](xamarin-forms/data-binding.md)
+- [Orientation Handling on Rotation](xamarin-forms/device-orientation.md)
 - [Device Settings for Mobild Developement](xamarin-forms/device-settings.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)

@@ -204,3 +204,22 @@ jobs:
         dotnet build --configuration Release --output ./output
         popd
 ```
+
+## Publish (Deploy Azure Functions)
+> ref: build and deploy using github actions
+Github > Secrets > Copy the secrets from Azure portal
+```
+build:
+  
+  ...
+  
+  - name: 'Deploy Azure Functions'
+    uses: Azure/functions-action@v1.3.2
+    id: fa
+    with:
+      app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+      package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
+      publish-profile: 4{{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+```
+> uses: Azure/functions-action@v1 (latest version has an issue at 13 July 2021)
+

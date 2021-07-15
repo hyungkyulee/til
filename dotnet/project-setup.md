@@ -3,12 +3,23 @@
 ## Web API project in Rider 2021.1.3
 The initial project template will pre-set with a hostbuilder(web server), program main, and launchsettings in properties.
 
+- make the restructure of solution and projects
+  - [proj name].sln
+  - src
+    |- [proj name].Apis
+       |- [proj name].Apis.csproj
+       |- [serverless installation]
+       ...
+  - go.sh
+  
 To make it just an independent API project on serverless platform, 
-- remove program.cs
 - project setting > change sdk type
   > ``` <Project Sdk="Microsoft.NET.Sdk.Web"> ```
   > ``` <Project Sdk="Microsoft.NET.Sdk"> ```
-- remove Microsoft.AspNetcore packages
+- remove program.cs
+- startup.cs 
+  OR
+- remove Microsoft.AspNetcore packages in Startup.cs
   ```
   using Microsoft.AspNetCore.Builder;
   using Microsoft.AspNetCore.Hosting;

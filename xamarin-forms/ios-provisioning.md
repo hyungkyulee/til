@@ -11,11 +11,17 @@
 - = developer certificate (your identity) + device (associated key) + profile for development (provisioning profile)
 > apple will check the certificate to control 'access/deploy to device' from you
 
+#### Provisioning Profile
+- Apple dev portal > Certificates, identifieres & profiles > Register an App ID(application ID to deploy)
+> An App ID is a reverse-DNS style string that uniquely identifies an application : e.g. com.[DomainName].*
+
 #### Development Certificate
 - manage certificates, identifiers, and profiles : https://developer.apple.com/
 > add your appleId as a member of organisation (if it's under the enrolling a enterprise programme)
 
+
 - create certificate via visual studio : 
+  [Certificate on VS]
   - Visual Studio > Preferences > Apple Developer Account
   - Add Account > login to organisation
   > you can see your linked appleId and member status
@@ -23,22 +29,21 @@
   - View Detail > Create Certificate > select 'Apple Development or iOS Development'
   > two versions of developer profile will be located : 1) Apple Developer Portal (public key), 2) local machine (private key)
 
-> another option will be via xcode, but don't mix up the process
+  [on Apple Dev Poral]
+  - portal > C, I & P > + > Development > iOS App Development > Select App ID to use > Select Certificates to include > Profile Name > Generate
+  > (Optional) Download it into Local Machine
+
+  [xcode]
+  > another option will be via xcode, but don't mix up the process
+
+- Visual Studio > Prefereneces > Apple Developer Account > view Details > Download All Profiles
+> The new provisioning profile will now be available in Visual Studio and ready to use.
 
 #### Add a Device
 - connect iphone(ipad) via USB cable
 - Xcode > Window > Devices and Simulators > copy UDID (identifier string)
 - Apple dev portal(https://developer.apple.com/) > Certificates, identifieres & profiles > Devices > + > Register a Device
 
-#### Provisioning Profile
-- Apple dev portal > Certificates, identifieres & profiles > Register an App ID(application ID to deploy)
-> An App ID is a reverse-DNS style string that uniquely identifies an application : e.g. com.[DomainName].*
-
-- portal > C, I & P > + > Development > iOS App Development > Select App ID to use > Select Certificates to include > Profile Name > Generate
-> (Optional) Download it into Local Machine
-
-- Visual Studio > Prefereneces > Apple Developer Account > view Details > Download All Profiles
-> The new provisioning profile will now be available in Visual Studio and ready to use.
 
 ## Deploy to a device
 - Visual Studio > IOS project > Info.plist 

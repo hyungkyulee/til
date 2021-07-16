@@ -28,7 +28,7 @@
 #### Add a Device
 - connect iphone(ipad) via USB cable
 - Xcode > Window > Devices and Simulators > copy UDID (identifier string)
-- Apple dev portal > Certificates, identifieres & profiles > Devices > + > Register a Device
+- Apple dev portal(https://developer.apple.com/) > Certificates, identifieres & profiles > Devices > + > Register a Device
 
 #### Provisioning Profile
 - Apple dev portal > Certificates, identifieres & profiles > Register an App ID(application ID to deploy)

@@ -14,7 +14,7 @@ _35 TILs and counting..._
 ### 2 most recent TILs
 
 - [](xamarin-forms/rotation.md) - Sat Jul 17 11:34:39 2021 +0100
-- [Orientation Handling on Rotation](xamarin-forms/device-orientation.md) - Tue Jul 13 17:56:56 2021 +0100
+- [Orientation on Rotation](xamarin-forms/device-orientation.md) - Tue Jul 13 17:56:56 2021 +0100
 
 ### Categories
 
@@ -74,7 +74,7 @@ _35 TILs and counting..._
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
 - [Data Binding with some options](xamarin-forms/data-binding.md)
-- [Orientation Handling on Rotation](xamarin-forms/device-orientation.md)
+- [Orientation on Rotation](xamarin-forms/device-orientation.md)
 - [Device Settings for Mobild Developement](xamarin-forms/device-settings.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)

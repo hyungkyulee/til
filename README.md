@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_34 TILs and counting..._
+_35 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Rotation to handle in IOS and Android](xamarin-forms/rotation.md) - Sat Jul 17 11:34:39 2021 +0100
 - [Orientation Handling on Rotation](xamarin-forms/device-orientation.md) - Tue Jul 13 17:56:56 2021 +0100
-- [Data Binding with some options](xamarin-forms/data-binding.md) - Tue Jul 13 13:06:55 2021 +0100
 
 ### Categories
 
@@ -84,6 +84,7 @@ _34 TILs and counting..._
 - [Nuget Paclage settings in Xamarin Project](xamarin-forms/nuget-settings.md)
 - [Project Setting for Development](xamarin-forms/project-setting.md)
 - [Handling Resources in Xamarin Forms](xamarin-forms/resources.md)
+- [Rotation to handle in IOS and Android](xamarin-forms/rotation.md)
 - [SearchBar handling on Xamarin Forms](xamarin-forms/searchbar.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

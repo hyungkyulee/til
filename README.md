@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_35 TILs and counting..._
+_36 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md) - Sun Jul 18 21:41:31 2021 +0100
 - [](xamarin-forms/rotation.md) - Sat Jul 17 11:34:39 2021 +0100
-- [Orientation on Rotation](xamarin-forms/device-orientation.md) - Tue Jul 13 17:56:56 2021 +0100
 
 ### Categories
 
@@ -43,6 +43,7 @@ _35 TILs and counting..._
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
+- [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md)
 
 ### [git](#git)
 - [Git commands](git/commands.md)

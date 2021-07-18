@@ -52,16 +52,7 @@ Serverless: NOTE: Please update the "service" property in serverless.yml with yo
 ```./go.sh``` at root directory
 > if you can see the error
   ```MSBUILD : error MSB1011: Specify which project or solution file to use because this folder contains more than one project or solution file.```
-  please put the property detail on the main project
-  ```  
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <AssemblyName>[proj name].Apis</AssemblyName>
-    <PackageId>[proj name].Apis</PackageId>
-    <RootNamespace>[proj name].Apis</RootNamespace>
-  </PropertyGroup>  
-  ```
+  remove the template csproj file: e.g. aws-csharp.csproj
   
 ## Nuget packages to install
 

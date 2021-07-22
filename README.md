@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_36 TILs and counting..._
+_37 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Diagnostics Tools for development](xamarin-forms/diagnostics.md) - Thu Jul 22 17:11:13 2021 +0100
 - [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md) - Sun Jul 18 21:41:31 2021 +0100
-- [](xamarin-forms/rotation.md) - Sat Jul 17 11:34:39 2021 +0100
 
 ### Categories
 
@@ -77,6 +77,7 @@ _36 TILs and counting..._
 - [Data Binding with some options](xamarin-forms/data-binding.md)
 - [Orientation on Rotation](xamarin-forms/device-orientation.md)
 - [Device Settings for Mobild Developement](xamarin-forms/device-settings.md)
+- [Diagnostics Tools for development](xamarin-forms/diagnostics.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)

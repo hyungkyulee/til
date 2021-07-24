@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_37 TILs and counting..._
+_38 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Android App Development](react-native/android-dev.md) - Sat Jul 24 19:02:40 2021 +0100
 - [Diagnostics Tools for development](xamarin-forms/diagnostics.md) - Thu Jul 22 17:11:13 2021 +0100
-- [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md) - Sun Jul 18 21:41:31 2021 +0100
 
 ### Categories
 
@@ -25,6 +25,7 @@ _37 TILs and counting..._
 - [git](#git)
 - [ide-tooling](#ide-tooling)
 - [macos](#macos)
+- [react-native](#react-native)
 - [serverless](#serverless)
 - [tdd](#tdd)
 - [terraform](#terraform)
@@ -60,6 +61,9 @@ _37 TILs and counting..._
 
 ### [macos](#macos)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
+
+### [react-native](#react-native)
+- [Android App Development](react-native/android-dev.md)
 
 ### [serverless](#serverless)
 - [Common Issues with serverless practices](serverless/issues.md)

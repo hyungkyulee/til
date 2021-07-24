@@ -102,5 +102,11 @@ adb devices
 ```
 git clone [proj]
 npm i
+
+[ios]
+react-native run-ios
+...
+
+[android]
 react-native run-android
 ```

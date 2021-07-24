@@ -1,6 +1,50 @@
-# Android App Development
+# Mobile App Development on RN
 
-## Dev Environment Preparation
+## React-Native Development Environment
+### Basic setup
+- Install homebrew
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+...
+brew update
+brew doctor
+```
+
+- Install Node
+```
+brew install node
+node -v
+brew install watchman
+```
+
+- Install Java JRE and JDK (ver. 1.8)
+```
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk8
+
+...
+java -version                      ✔  1m 36s  20:34:05
+openjdk version "1.8.0_292"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
+```
+> Optional if the default java version is not set to 1.8 : ``` echo 'export PATH="/usr/local/opt/openjdk@8/bin:$PATH"' >> ~/.zshrc ```
+
+- install react-native-cli
+```
+npm install -g react-native-cli
+```
+
+### IOS Build/Dev environment
+- setup XCODE
+  - Xcode > Preferences > Locations tab
+  - Selecting the most recent version from the Command Line Tools dropdown
+   
+- install cocoapods to MAC OS
+  > CocoaPods manages library dependencies for your Xcode projects
+```
+sudo gem install cocoapods
+```
 
 ### Android Studio Installation
 
@@ -45,57 +89,14 @@
    sh ~/.android-sdk-macosx/tools/android
    ```
 
-### Android Emulator setup
+#### Android Emulator setup
 - Android Studio > Configure > AVD Manager > Add or Edit emulator
 - emulator device status
 ```
 adb devices
 ```
 
-
-## Project Dev and Build
-### React-Native Project Initialisation
-### npm package build environment
-- Install homebrew
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-...
-brew update
-brew doctor
-```
-
-- Install Node
-```
-brew install node
-node -v
-brew install watchman
-```
-
-- Install Java JRE and JDK (ver. 1.8)
-```
-brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk8
-
-...
-java -version                      ✔  1m 36s  20:34:05
-openjdk version "1.8.0_292"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
-```
-> Optional if the default java version is not set to 1.8 : ``` echo 'export PATH="/usr/local/opt/openjdk@8/bin:$PATH"' >> ~/.zshrc ```
-
-- install react-native-cli
-```
-npm install -g react-native-cli
-```
-
-- setup XCODE
-  - Xcode > Preferences > Locations tab
-  - Selecting the most recent version from the Command Line Tools dropdown
-   
-- install cocoapods to MAC OS
-```
-```
+## React-Native Project Dev and Build
 
 - project cloning and build/run
 ```

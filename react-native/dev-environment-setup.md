@@ -110,3 +110,39 @@ react-native run-ios
 [android]
 react-native run-android
 ```
+
+[output]
+- metro local server
+![image](https://user-images.githubusercontent.com/59367560/126879977-78c2b046-8da8-40d5-a6ce-713ac897e959.png)
+
+- emulator to run
+
+
+## Native App Build/Dev
+### Android
+#### open android project by Android Studio
+Android Studio > Open 'exist project' > select 'android' folder in a React-Native project > open
+
+#### Clean / Rebuild Android project by manually
+
+- clean native build folders (as seen above)
+```
+[android]
+$ ./android/gradlew clean -p ./android/
+
+[ios]
+$ rm -rf ios/build
+```
+   
+
+## Common Errors or Issues
+### JDK error
+```
+Value '/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home' given for org.gradle.java.home Gradle property is invalid (Java home supplied is invalid)
+```
+> android project > open the file : 'gradle.properties'
+  delete the line saying of any mis-matching java version : e.g. org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
+
+### Gradle Sync Fail
+> fix any related issue and try again to do a gradle sync
+

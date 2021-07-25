@@ -144,5 +144,17 @@ Value '/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home' given f
   delete the line saying of any mis-matching java version : e.g. org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
 
 ### Gradle Sync Fail
-> fix any related issue and try again to do a gradle sync
+```
+Error running android: Gradle project sync failed.
+```
+Case 1) Check internet connection
 
+Case 2) Check if you're installed the relevant Android SDK for your project.
+> Settings > Appearance & Behavior > System Settings > Android SDK > add the proper API Level for your project
+
+Case 3) Reset Gradle
+> File > Invalidate caches / Restart > Shutdown Android Studio > Rename/remove .gradle folder in the user home directory
+> Restart Android Studio (It will download gradle metadata and data)
+
+Case 4) Change the Gradle Path to your project local
+> Preference > Build, Execution, Deployment > Build Tools > Gradle > Gradle user home > change the default path to your project '.gradle'

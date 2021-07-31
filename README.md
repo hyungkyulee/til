@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_38 TILs and counting..._
+_39 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Webapp with serverless platform on AWS](serverless/aws-webapp.md) - Sat Jul 31 16:27:51 2021 +0100
 - [Mobile App Development on RN](react-native/dev-environment-setup.md) - Sat Jul 24 20:56:06 2021 +0100
-- [Diagnostics Tools for development](xamarin-forms/diagnostics.md) - Thu Jul 22 17:11:13 2021 +0100
 
 ### Categories
 
@@ -66,6 +66,7 @@ _38 TILs and counting..._
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [serverless](#serverless)
+- [Webapp with serverless platform on AWS](serverless/aws-webapp.md)
 - [Common Issues with serverless practices](serverless/issues.md)
 
 ### [tdd](#tdd)

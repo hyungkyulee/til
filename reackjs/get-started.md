@@ -146,17 +146,23 @@ $theme-colors: (
 
 #### Basic packages (Router)
 ```bash
-npm install react-router-dom
+npm install react-router-dom --save
+
+basic example of App.js
 ```
 [app.js]
 ```js
+import './App.scss';
+import React from "react"
 import {
   BrowserRouter as Router,
   Route,
   Switch,
 } from "react-router-dom"
+import {
+  Container
+} from 'react-bootstrap'
 
-:
 function App() {
   return (
     <Router>
@@ -164,5 +170,7 @@ function App() {
     </Router>
   );
 }
+
+export default App;
 :
 ```

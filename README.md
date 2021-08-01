@@ -13,8 +13,8 @@ _40 TILs and counting..._
 
 ### 2 most recent TILs
 
-- [Frontend Web Dev with ReactJS](reackjs/get-started.md) - Sat Jul 31 17:40:04 2021 +0100
 - [Webapp with serverless platform on AWS](serverless/aws-webapp.md) - Sat Jul 31 16:27:51 2021 +0100
+- [Mobile App Development on RN](react-native/dev-environment-setup.md) - Sat Jul 24 20:56:06 2021 +0100
 
 ### Categories
 
@@ -25,8 +25,8 @@ _40 TILs and counting..._
 - [git](#git)
 - [ide-tooling](#ide-tooling)
 - [macos](#macos)
-- [reackjs](#reackjs)
 - [react-native](#react-native)
+- [reactjs](#reactjs)
 - [serverless](#serverless)
 - [tdd](#tdd)
 - [terraform](#terraform)
@@ -63,11 +63,11 @@ _40 TILs and counting..._
 ### [macos](#macos)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
 
-### [reackjs](#reackjs)
-- [Frontend Web Dev with ReactJS](reackjs/get-started.md)
-
 ### [react-native](#react-native)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
+
+### [reactjs](#reactjs)
+- [Frontend Web Dev with ReactJS](reactjs/get-started.md)
 
 ### [serverless](#serverless)
 - [Webapp with serverless platform on AWS](serverless/aws-webapp.md)

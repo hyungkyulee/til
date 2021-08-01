@@ -66,7 +66,7 @@ npm install --save @fortawesome/free-regular-svg-icons
 
 ### React Toast
 ```
-npm i react-toast-notification --save
+npm i react-toast-notifications --save
 ```
 
 provider setup on App.js

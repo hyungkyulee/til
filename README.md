@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_40 TILs and counting..._
+_41 TILs and counting..._
 
 ---
 
@@ -68,6 +68,7 @@ _40 TILs and counting..._
 
 ### [reactjs](#reactjs)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
+- [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
 
 ### [serverless](#serverless)
 - [Webapp with serverless platform on AWS](serverless/aws-webapp.md)

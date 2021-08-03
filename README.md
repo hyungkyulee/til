@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_41 TILs and counting..._
+_42 TILs and counting..._
 
 ---
 
@@ -64,6 +64,7 @@ _41 TILs and counting..._
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
 
 ### [react-native](#react-native)
+- [Build and Sign android app with Github Actions](react-native/android-signing.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [reactjs](#reactjs)

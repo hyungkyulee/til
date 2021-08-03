@@ -1,4 +1,7 @@
 # Build and Sign android app with Github Actions
+> https://developer.android.com/studio/publish/app-signing#sign_release
+> https://proandroiddev.com/how-to-securely-build-and-sign-your-android-app-with-github-actions-ad5323452ce
+
 
 ## Overall steps
 1. Generate an upload key and keystore

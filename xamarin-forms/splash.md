@@ -6,7 +6,8 @@ MainActivity needs to be called from SplashActivity by intent filter.
 
 ## How to set a style of the splash loading screen
 
-### MainActivity
+### Android
+#### MainActivity
 
 Define Activity for Main with App Label, Icon, and Theme
 > Theme should be 'MainTheme' because app needs to be working under the main theme returning back from the customised splash theme.
@@ -39,31 +40,61 @@ namespace TestApp.Droid
 }
 ```
 
-### SplashActivity
+#### SplashActivity
 
 ```
 namespace TestApp.Droid
 {
-  [Activity(
-    MainLauncher = true,
-    Icon = "@mipmap/quartix_icon",
-    RoundIcon = "@mipmap/quartix_icon_round",
-    Theme = "@style/Theme.Splash",
-    NoHistory = true
-    )]
+    [Activity(
+        MainLauncher = true,
+        Icon = "@mipmap/testapp_icon",
+        RoundIcon = "@mipmap/testapp_icon_round",
+        Theme = "@style/Theme.Splash",
+        NoHistory = true
+        )]
     public class SplashScreen : MvxSplashScreenActivity
     {
+        private Intent _intent;
+        
         public override Task InitializationComplete()
         {
-            var intent = new Intent(this, typeof(MainActivity));
-            intent.SetData(Intent?.Data);
-            StartActivity(intent);
+            _intent = new Intent(this, typeof(MainActivity));
+            _intent.SetData(Intent?.Data);
+            
             return base.InitializationComplete();
         }
-```
 
-### Resource in Android
-add a custom style of splash theme at style.xml
+        protected override void OnCreate(Bundle bundle)
+        {
+            SetTheme(Resource.Style.Theme_Splash);
+            base.OnCreate(bundle);
+        }
+
+        protected override Task RunAppStartAsync(Bundle bundle)
+        {
+            if (Mvx.IoCProvider.TryResolve(out IMvxAppStart startup))
+            {
+                StartActivity(_intent);
+            }
+            return Task.CompletedTask;
+        }
+
+        protected override void OnStop()
+        {
+            // Save on Heap usage
+            Window?.SetBackgroundDrawable(null);
+            base.OnStop();
+        }
+    ...       
+```
+> OnResume can be overrided
+> if you want to create your own splash screen style layout, it can be inherited from ctor
+  ```public SplashScreen() : base(Resource.Layout.SplashScreen) { }```
+  
+#### Resource in Android
+add a custom style of splash theme at style.xml 
+> project > android > resorces > values > styles.xml
+
 ```
 ...
 <style name="Theme.Splash"
@@ -72,26 +103,32 @@ add a custom style of splash theme at style.xml
     <item name="colorPrimary">#ffff00</item>
     <item name="android:windowBackground">@drawable/splash_screen</item>
     <item name="android:windowAnimationStyle">@null</item>
+</style>
+...
 ```
+> if name has '.', you can refer this name from resource.style with '_' (e.g. Resource.Style.Theme_Splash)
+> this style will call the xml design file as a resource 
 
-### Splash Screen Design as a resource
+#### Splash Screen Design as a resource
 create splash_screen.xml file on android project > resources > drawable folder
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-            android:opacity="opaque">
-  <item android:drawable="@color/loading_bg" />
-
-  <item>
-    <bitmap android:src="@drawable/test_logo"
-            android:tileMode="disabled"
-            android:gravity="center" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" 
+            android:opacity="opaque" >
+  <item android:drawable="@color/launcher_background" />
+  <item
+    android:width="430dp"
+    android:gravity="center">
+    <bitmap
+      android:gravity="fill_horizontal|fill_vertical"
+      android:src="@mipmap/testapp_logo"
+      android:mipMap="true"/>
   </item>
 </layer-list>
 ```
 > The android:opacity=”opaque” this is critical in preventing a flash of black in theme transitions.
 
-### Reference Color Style
+#### Reference Color Style
 any reference style can be defined at android project > resources > values > color.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,4 +139,38 @@ any reference style can be defined at android project > resources > values > col
 </resources>
 ```
 
-###
+### IOS
+> ref: https://docs.microsoft.com/en-us/xamarin/ios/app-fundamentals/images-icons/launch-screens?tabs=macos
+> ref: 
+
+#### Assets and storyboard
+- If the original project has not been including Asset Catalog and Launch Screen Storyboard, 
+Add this on project of solution.
+VS for mac > Project(IOS) > Right Button > Add > Asset Catalog, and Add > Launch Screen
+> Name the file LaunchScreen or another name of your choosing.
+
+- Add images on Assets.xcassets
+Add > Image set > copy images to universal 
+
+![image](https://user-images.githubusercontent.com/59367560/128366023-4cb1ca48-f5ef-4667-ad2f-2c1ff6e0bc85.png)
+
+#### Storyboard configuration
+Configure the Project to use the appropriate Storyboard for its Launch Screen
+info.plist > Application tab (bottom of tab) > Launch Images > set source and launch screen
+> source will diplay the image set name of the assets, and Lunch Screen is listing storyboard name
+> 
+![image](https://user-images.githubusercontent.com/59367560/128366113-a6130d3e-ecb1-4f63-beba-c830c4d43536.png)
+
+#### Storyboard Editing
+double-click will lead you to xcode ios designer tool so that you can design the splash(launch) screen.
+
+- Select the storyboard on the left pane
+- Eidt the screen: Vew controller Scene > Vew controller > Vew
+![image](https://user-images.githubusercontent.com/59367560/128367052-5be3d432-8637-4c87-9fe5-a78d601171c0.png)
+
+- select one of the reference device for you on the bottom selector
+- edit the screen with bg color and image and text, etc
+- add constraint to set the design to be applied to the other size devices as well
+  > Add new constraints > Add on constraints widget > Save on xcode
+  
+![image](https://user-images.githubusercontent.com/59367560/128367141-23f49d4d-6a37-4857-8c4e-6728e2f850ba.png)

@@ -85,3 +85,4 @@ For detailed output, run func with --verbose flag.
 [2021-07-08T22:02:45.104Z] Host lock lease acquired by instance ID '000000000000000000000000E85C0300'.
 
 ```
+> if there is an error : 'No function found' on func start, run the commendline on /bin/Debug/netcoreapp3.1.

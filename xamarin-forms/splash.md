@@ -139,6 +139,39 @@ any reference style can be defined at android project > resources > values > col
 </resources>
 ```
 
+[e.g. background image example]
+> without 
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item>
+  <color android:color="@color/launcher_background" />
+</item>
+<item
+  android:drawable="@drawable/splash_bg_v6"
+  android:gravity="center"/>
+</layer-list>
+```
+
+```
+...
+<style name="Theme.Splash"
+     parent="Theme.AppCompat.NoActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">#13AB5B</item>
+    <item name="android:windowBackground">@drawable/splash_bg_v6</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowDisablePreview">false</item>
+    <item name="android:windowAnimationStyle">@null</item>
+    <item name="android:adjustViewBounds">true</item>
+    <item name="android:scaleType">centerCrop</item>
+</style>
+<style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">#13AB5B</item>
+</style>
+...
+```
+
 ### IOS
 > ref: https://docs.microsoft.com/en-us/xamarin/ios/app-fundamentals/images-icons/launch-screens?tabs=macos
 > ref: 
@@ -174,3 +207,24 @@ double-click will lead you to xcode ios designer tool so that you can design the
   > Add new constraints > Add on constraints widget > Save on xcode
   
 ![image](https://user-images.githubusercontent.com/59367560/128367141-23f49d4d-6a37-4857-8c4e-6728e2f850ba.png)
+
+
+## Disable rotation on splash screen
+### android
+
+### ios
+- set portrait only on info.plist
+```
+...
+<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+...
+```
+
+- then mask again a rotation rule for app on appDelegate.cs
+
+[other way]
+https://heartbeat.fritz.ai/force-an-orientation-on-a-single-page-in-xamarin-forms-b9c0c5295367

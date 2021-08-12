@@ -211,7 +211,26 @@ double-click will lead you to xcode ios designer tool so that you can design the
 
 ## Disable rotation on splash screen
 ### android
-
+- set portrait only on the layer-list of the splash screen xml design file
+```
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  <item>
+    <color android:color="@color/launcher_background" />
+  </item>
+  <item>
+    <bitmap
+      android:gravity="fill"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/splash_location_logo_bg"
+      android:mipMap="true"/>
+  </item>
+</layer-list>
+```
 ### ios
 - set portrait only on info.plist
 ```

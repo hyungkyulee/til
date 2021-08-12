@@ -168,6 +168,13 @@ namespace Domain.Proj.Components
 :
 ```
   
+### [Apendix] example of Login page
+```
+<subViews:LoginInputView x:Name="EntryUsername" Icon="{x:Static local:FontImageIconType.Username}" Placeholder="Username" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+<subViews:LoginInputView x:Name="EntryPassword" Icon="{x:Static local:FontImageIconType.Password}" IsPassword="True" Placeholder="Password" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+<components:CustomButton x:Name="ButtonSignIn" Margin="10, 10" Text="Sign In" ButtonType="Floating" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+```
+
 ### [Appendix] IOS fontimage issue on deployment build
 The above environment setup of a font resouce on IOS was an issue on deployment build even though it's working fine on my local build.
 It mightbe ios seems not to dealing with the font resource as a embedded resource, and not properly linking with the resource on deployment build compile time.

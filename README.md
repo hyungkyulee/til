@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_45 TILs and counting..._
+_46 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Dropdown List View](xamarin-forms/dropdown-view.md) - Mon Aug 16 16:28:16 2021 +0100
 - [Webapp with serverless platform on AWS](serverless/aws-webapp.md) - Sat Jul 31 16:27:51 2021 +0100
-- [Mobile App Development on RN](react-native/dev-environment-setup.md) - Sat Jul 24 20:56:06 2021 +0100
 
 ### Categories
 
@@ -91,6 +91,7 @@ _45 TILs and counting..._
 - [Orientation on Rotation](xamarin-forms/device-orientation.md)
 - [Device Settings for Mobild Developement](xamarin-forms/device-settings.md)
 - [Diagnostics Tools for development](xamarin-forms/diagnostics.md)
+- [Dropdown List View](xamarin-forms/dropdown-view.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)

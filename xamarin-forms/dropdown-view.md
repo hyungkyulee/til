@@ -1,6 +1,7 @@
-# Dropdown List View 
+# Dropdown List
 
 ## by Xamarin Forms Picker
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/populating-itemssource
 https://www.hiimray.co.uk/2019/10/14/xamarin-forms-quick-and-easy-custom-picker-with-a-more-traditional-look/297
 https://stackoverflow.com/questions/46469253/xamarin-forms-picker-selecteditem-not-firing
 

@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_46 TILs and counting..._
+_47 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Shapes](xamarin-forms/shape.md) - Tue Aug 17 11:19:17 2021 +0100
 - [Dropdown List](xamarin-forms/dropdown-view.md) - Mon Aug 16 16:28:16 2021 +0100
-- [Webapp with serverless platform on AWS](serverless/aws-webapp.md) - Sat Jul 31 16:27:51 2021 +0100
 
 ### Categories
 
@@ -102,6 +102,7 @@ _46 TILs and counting..._
 - [Handling Resources in Xamarin Forms](xamarin-forms/resources.md)
 - [](xamarin-forms/rotation.md)
 - [SearchBar handling on Xamarin Forms](xamarin-forms/searchbar.md)
+- [Shapes](xamarin-forms/shape.md)
 - [Splash Screen in MvvmCross App](xamarin-forms/splash.md)
 
 [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/

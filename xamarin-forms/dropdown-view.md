@@ -61,6 +61,7 @@ namespace [project].Components
 ```
 
 ### View on Xamarin Forms
+#### Xamarin
 ```
 ...
 <Frame Margin="10, 5" Padding="5,0" 
@@ -74,6 +75,124 @@ namespace [project].Components
     VerticalOptions="Center" HorizontalOptions="FillAndExpand"
     />
 ...
+```
+
+#### Function
+```
+...
+
+// *** Test code for a string list set
+// public bool IsItem1 { get; set; } = true;
+// public List<string> Items2 { get; set; }
+// public List<string> Items1 { get; set; }
+        
+public [constructor]()
+{
+    InitializeComponent();
+    
+    // *** Test code for a string list set
+    // Items1 = new List<string>();
+    // Items2 = new List<string>();
+    //
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     Items1.Add(i.ToString());
+    // }
+    //
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     Items2.Add(i.ToString());
+    // }
+    // _locationViewModel = Mvx.IoCProvider.Resolve<LocationViewModel>();
+
+    // DropdownRegions.ItemsSource = Items1;
+}
+
+protected override void OnAppearing()
+{
+    ViewModel.PropertyChanged += ViewModelChanged;
+
+    base.OnAppearing();
+    
+    DropdownRegions.SelectedIndex = 0;
+    DropdownRegions.ItemSelected += OnDropdownSelected;
+    ...
+}
+
+private void OnDropdownSelected(object sender, ItemSelectedEventArgs e)
+{
+    // ** Test code with sample strings
+    // LabelRegion.Text = IsItem1 ? Items1[e.SelectedIndex] : Items2[e.SelectedIndex];
+    // LabelRegion.Text = DropdownRegions.ItemsSource[e.SelectedIndex];
+
+    // ** Linking with viewModel data
+    ViewModel.SelectLoginLocation(ViewModel.LoginLocations.FirstOrDefault(l => l.Name.Equals(DropdownRegions.ItemsSource[e.SelectedIndex])));
+}
+
+private void ViewModelChanged(object sender, PropertyChangedEventArgs args)
+{
+    if (args.PropertyName == nameof(ViewModel.SelectedLoginLocation))
+    {
+        Device.BeginInvokeOnMainThread(() => {
+            var locations = ViewModel.LoginLocations;
+            foreach (var loc in locations)
+            {
+                if(loc.Name == ViewModel.SelectedLoginLocation.Name)
+                {
+                    loc.IsSelected = true;
+                }
+                else
+                {
+                    loc.IsSelected = false;
+                }
+            }
+            Update(locations);
+        });
+    }
+}
+
+private void Update(IEnumerable<EndpointViewModel> endpoints)
+{
+    // ** Test code with sample strings
+    // var items = new List<CustomListItem>();
+    // foreach (var item in endpoints)
+    // {
+    //     items.Add(new CustomListItem { Text = item.Name, IsSelected = item.IsSelected, Payload = item });
+    // }
+    //
+    // DropdownRegions.ItemsSource = items;
+    
+    var listLocations = new List<string>();
+    foreach (var location in endpoints)
+    {
+        listLocations.Add(location.Name);
+    }
+
+    DropdownRegions.ItemsSource = listLocations;
+    if (DropdownRegions.ItemsSource.Count > 0 && DropdownRegions.SelectedIndex == -1)
+    {
+        DropdownRegions.SelectedIndex = 0;
+    }
+}
+
+// ******* eventhandler inherited from Xamarin Picker
+private void DropdownRegions_OnSelectedIndexChanged(object sender, EventArgs e)
+{
+    if (DropdownRegions.SelectedIndex == -1)
+    {
+        return;
+    }
+
+    SetSelectedRegion(DropdownRegions.SelectedItem as string);
+}
+
+private void SetSelectedRegion(string region)
+{
+    if (string.IsNullOrEmpty(region) 
+        || !ViewModel.LoginLocations.Any()) return;
+
+    ViewModel.SelectLoginLocation(ViewModel.LoginLocations.FirstOrDefault(l => l.Name.Equals(region)));
+}
 ```
 
 ### Native code for Android

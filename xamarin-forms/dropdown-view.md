@@ -1,12 +1,12 @@
 # Dropdown List
 
-## by Xamarin Forms Picker
+## 1) By Xamarin Forms Picker (Easy solution for a same approach on ios/android)
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/populating-itemssource
 https://www.hiimray.co.uk/2019/10/14/xamarin-forms-quick-and-easy-custom-picker-with-a-more-traditional-look/297
 https://stackoverflow.com/questions/46469253/xamarin-forms-picker-selecteditem-not-firing
 
 
-## Another way to create Dropdown List creation on Android
+## 2) By ViewRenderer with Spinner (Android)
 
 ### Component Model on Xamarin Forms for DropdownList
 ```
@@ -75,3 +75,104 @@ namespace [project].Components
     />
 ...
 ```
+
+### Native code for Android
+```
+using System.ComponentModel;
+using System.Linq;
+using Android.Content;
+using Android.Widget;
+...
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+
+[assembly: ExportRenderer(typeof(DropdownListView), typeof(DropdownListRenderer))]
+namespace [project].Droid.Renderers
+{
+    public class DropdownListRenderer : ViewRenderer<DropdownListView, Spinner>
+    {
+        private Spinner spinner;
+
+        public DropdownListRenderer(Context context) : base(context)
+        {
+        }
+
+        protected override void OnElementChanged(ElementChangedEventArgs<DropdownListView> e)
+        {
+            base.OnElementChanged(e);
+
+            if (Control == null)
+            {
+                spinner = new Spinner(Context);
+                SetNativeControl(spinner);
+            }
+
+            if (e.OldElement != null)
+            {
+                Control.ItemSelected -= OnItemSelected;
+            }
+
+            if (e.NewElement != null)
+            {
+                var view = e.NewElement;
+                if (view.ItemsSource == null) return;
+                
+                var adapter = new ArrayAdapter(Context, 
+                        // Android.Resource.Layout.SimpleListItem1,
+                        Resource.Layout.DropdownSpinner, // you can make your own layout resource for dropdown
+                        view.ItemsSource);
+                Control.Adapter = adapter;
+
+                if (view.SelectedIndex != -1)
+                {
+                    Control.SetSelection(view.SelectedIndex);
+                }
+
+                Control.ItemSelected += OnItemSelected;
+            }
+        }
+
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            var view = Element;
+            if (e.PropertyName == DropdownListView.ItemsSourceProperty.PropertyName)
+            {
+                var adapter = new ArrayAdapter(Context, Android.Resource.Layout.SimpleListItem1, view.ItemsSource);
+                Control.Adapter = adapter;
+            }
+            
+            if (e.PropertyName == DropdownListView.SelectedIndexProperty.PropertyName)
+            {
+                Control.SetSelection(view.SelectedIndex);
+            }
+            
+            base.OnElementPropertyChanged(sender, e);
+        }
+
+        private void OnItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            var view = Element;
+            if (view != null)
+            {
+                view.SelectedIndex = e.Position;
+                view.OnItemSelected(e.Position);
+            }
+        }
+    }
+}
+```
+
+> more customisation of dropdown list view by layout resource
+ [e.g. DropdownSpinner.xml]
+  ```
+    <?xml version="1.0" encoding="utf-8"?>
+    <TextView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:gravity="left"
+      android:textColor="#404040"
+      android:padding="8dip"
+    />
+  ```

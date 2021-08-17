@@ -5,60 +5,257 @@ https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/pop
 https://www.hiimray.co.uk/2019/10/14/xamarin-forms-quick-and-easy-custom-picker-with-a-more-traditional-look/297
 https://stackoverflow.com/questions/46469253/xamarin-forms-picker-selecteditem-not-firing
 
-
-## 2) By ViewRenderer with Spinner (Android)
-
-### Component Model on Xamarin Forms for DropdownList
+### View on Xamarin Forms
+#### View Xaml
 ```
-sing System;
-using System.Collections.Generic;
-using Xamarin.Forms;
+...
+<Frame 
+    Margin="10, 5" Padding="0,0"
+    HeightRequest="50"
+    BorderColor="{StaticResource LightBackground}" CornerRadius="5" HasShadow="False"
+    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+    >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1" />
+            <ColumnDefinition Width="48" />
+            <ColumnDefinition Width="1" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
 
-namespace [project].Components
+        <components:CustomDropdownPicker 
+            Grid.Row="0" Grid.Column="0"
+            x:Name="DropdownRegions"
+            Margin="10, 0, 10, 0"
+            TextColor="{StaticResource xxxBlue}"
+            HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+            SelectedIndexChanged="DropdownRegions_OnSelectedIndexChanged"
+            />
+        <BoxView
+            Grid.Row="0" Grid.Column="1"
+            BackgroundColor="Transparent"
+            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            />
+        <Button 
+            Grid.Row="0" Grid.Column="2" 
+            x:Name="BtnDropdown"
+            Margin="0" WidthRequest="48"
+            BackgroundColor="Transparent" 
+            BorderRadius="0" BorderWidth="0" 
+            VerticalOptions="Center" HorizontalOptions="Center" 
+            >
+            <Button.ImageSource>
+                <FontImageSource 
+                    FontFamily="{StaticResource FontAwesomeLight}" 
+                    Glyph="&#xf0d7;"
+                    Color="#ff0000"
+                    Size="16"
+                    />
+            </Button.ImageSource>
+        </Button>
+    </Grid>
+
+</Frame>
+```
+#### View Function
+```
+...
+protected override void OnAppearing()
 {
-    public class DropdownListView : View
+    ViewModel.PropertyChanged += ViewModelChanged;
+
+    base.OnAppearing(); // timing to call ViewModels' ViewAppeared()
+    ButtonDropdown.Clicked += DropdownRegions_ButtonClicked;
+    ...
+}
+
+protected override void OnDisappearing()
+{
+    ...
+    ButtonDropdown.Clicked -= DropdownRegions_ButtonClicked;
+    ViewModel.PropertyChanged -= this.ViewModelChanged;
+    base.OnDisappearing();
+}
+
+
+private void ViewModelChanged(object sender, PropertyChangedEventArgs args)
+{
+    if (args.PropertyName == nameof(ViewModel.SelectedRegion))
     {
-        public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(
-            propertyName: nameof(ItemsSource),
-            returnType: typeof(List<string>),
-            declaringType: typeof(List<string>),
-            defaultValue: null);
-
-        public static readonly BindableProperty SelectedIndexProperty = BindableProperty.Create(
-            propertyName: nameof(SelectedIndex),
-            returnType: typeof(int),
-            declaringType: typeof(int),
-            defaultValue: -1);
-
-        public List<string> ItemsSource
-        {
-            get => (List<string>)GetValue(ItemsSourceProperty);
-            set => SetValue(ItemsSourceProperty, value);
-        }
-
-        public int SelectedIndex { 
-            get => (int)GetValue(SelectedIndexProperty);
-            set => SetValue(SelectedIndexProperty, value);
-        }
-
-        public event EventHandler<ItemSelectedEventArgs> ItemSelected;
-
-        public void OnItemSelected(int position)
-        {
-            ItemSelected?.Invoke(this, new ItemSelectedEventArgs()
+        Device.BeginInvokeOnMainThread(() => {
+            var regions = ViewModel.Regions;
+            foreach (var region in regions)
             {
-                SelectedIndex = position
-            });
-        }
+                region.IsSelected = region.Name == ViewModel.SelectedRegion.Name;
+            }
+            Update(regions);
+        });
+    }
+}
 
+private void Update(IEnumerable<ServerEndpoint> servers)
+{
+    var listRegions = servers.Select(r => r.Name).ToList();
+
+    DropdownRegions.ItemsSource = listRegions;
+    if (DropdownRegions.ItemsSource.Count > 0 && DropdownRegions.SelectedIndex == -1)
+    {
+        DropdownRegions.SelectedIndex = 0;
+    }
+}
+
+private void DropdownRegions_OnSelectedIndexChanged(object sender, EventArgs e)
+{
+    if (DropdownRegions.SelectedIndex == -1) return;
+
+    var selectedRegion = DropdownRegions.SelectedItem as string;
+    if (string.IsNullOrEmpty(selectedRegion) 
+        || !ViewModel.Regions.Any()) return;
+
+    ViewModel.SelectLoginRegion(ViewModel.Regions.FirstOrDefault(l 
+        => l.Name.Equals(selectedRegion)));
+}
+
+private void DropdownRegions_ButtonClicked(object sender, EventArgs e)
+{
+    DropdownRegions.Focus();
+}
+
+```
+> ViewModel.PropertyChanged needs to call before On.Appearing() to fire the PropertyChange event so that Update can set the initial Load and Index.
+> DropdownRegions_OnSelectedIndexChanged is inherited by Xamarin Picker library and set on cutom renderer on Xaml.
+
+### ViewModel on Xamarin Forms
+```
+public class ServerEndpoint
+{
+    public ServerEndpoint(string name, string serverId)
+    {
+        Name = name;
+        ServerId = serverId;
     }
 
-    public class ItemSelectedEventArgs : EventArgs
+    public string Name { get; }
+    public string ServerId { get; }
+    public bool IsSelected { get; set; }
+
+    public override bool Equals(object obj)
     {
-        public int SelectedIndex { get; set; }
+        return obj is ServerEndpoint &&
+               ((ServerEndpoint)obj).ServerId == ServerId;
+    }
+
+    public override int GetHashCode()
+    {
+        return ServerId != null ? ServerId.GetHashCode() : 0;
+    }
+
+    public override string ToString()
+    {
+        return string.Format("{0}", Name);
+    }
+}
+
+...
+public ObservableCollection<ServerEndpoint> Regions { get; } = new ObservableCollection<ServerEndpoint>();
+public ServerEndpoint SelectedRegion { get; set; }
+
+private IEnumerable<ServerEndpoint> GetServerEndpoints()
+{
+    ...
+    return servers;
+}
+
+private void LoadRegions()
+{
+    Regions.Clear();
+    SelectedRegion = CreateLoginEndpointViewModel(_apiEndpointService.Selected);
+
+    foreach (var location in GetServerEndpoints())
+    {
+        Regions.Add(location);
+    }
+
+    RaisePropertyChanged(() => this.SelectedRegion);
+}
+
+public void SelectRegion(ServerEndpoint serverEndpoint)
+{
+    // set the selected region to a new server config
+}
+```
+
+### Component Model for Native
+```
+...
+public class CustomDropdownPicker : Picker
+{
+    public CustomDropdownPicker() : base()
+    {
     }
 }
 ```
+
+### Native (Android)
+```
+...
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+using PickerRenderer = Xamarin.Forms.Platform.Android.AppCompat.PickerRenderer;
+
+[assembly: ExportRenderer(typeof(CustomDropdownPicker), typeof(CustomDropdownPickerRenderer))]
+namespace [project].Droid.Renderers
+{
+    public class CustomDropdownPickerRenderer : PickerRenderer
+    {
+        public CustomDropdownPickerRenderer(Context context) : base(context)
+        {
+        }
+
+        protected override void OnElementChanged(ElementChangedEventArgs<Picker> e)
+        {
+            base.OnElementChanged(e);
+            if (e.OldElement == null)
+            {
+                Control.Background = null;
+            }
+        }
+    }
+}
+```
+> PickerRenderer is set from Android.AppCompat as a defualt, using should be linked with this for PickerRender so that Control will work properly.
+> Custom Renderer of Picker needs to set with new ctor with Context. (constructor without context has been deprecated)
+
+### Native (iOS)
+...
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
+using Picker = Xamarin.Forms.Picker;
+
+[assembly: ExportRenderer(typeof(CustomDropdownPicker), typeof(CustomDropdownPickerRenderer))]
+namespace [project].iOS.Renderers
+{
+    public class CustomDropdownPickerRenderer : PickerRenderer
+    {
+        protected override void OnElementChanged(ElementChangedEventArgs<Picker> e)
+        {
+            base.OnElementChanged(e);
+
+            if (Control == null)
+                return;
+
+            Control.Layer.BorderWidth = 0f;
+            Control.BorderStyle = UITextBorderStyle.None;
+            
+        }
+    }
+}
+    
+## 2) By ViewRenderer with Spinner (Android)
 
 ### View on Xamarin Forms
 #### Xamarin
@@ -192,6 +389,58 @@ private void SetSelectedRegion(string region)
         || !ViewModel.LoginLocations.Any()) return;
 
     ViewModel.SelectLoginLocation(ViewModel.LoginLocations.FirstOrDefault(l => l.Name.Equals(region)));
+}
+```
+
+### Component Model on Xamarin Forms for DropdownList
+```
+sing System;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace [project].Components
+{
+    public class DropdownListView : View
+    {
+        public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(
+            propertyName: nameof(ItemsSource),
+            returnType: typeof(List<string>),
+            declaringType: typeof(List<string>),
+            defaultValue: null);
+
+        public static readonly BindableProperty SelectedIndexProperty = BindableProperty.Create(
+            propertyName: nameof(SelectedIndex),
+            returnType: typeof(int),
+            declaringType: typeof(int),
+            defaultValue: -1);
+
+        public List<string> ItemsSource
+        {
+            get => (List<string>)GetValue(ItemsSourceProperty);
+            set => SetValue(ItemsSourceProperty, value);
+        }
+
+        public int SelectedIndex { 
+            get => (int)GetValue(SelectedIndexProperty);
+            set => SetValue(SelectedIndexProperty, value);
+        }
+
+        public event EventHandler<ItemSelectedEventArgs> ItemSelected;
+
+        public void OnItemSelected(int position)
+        {
+            ItemSelected?.Invoke(this, new ItemSelectedEventArgs()
+            {
+                SelectedIndex = position
+            });
+        }
+
+    }
+
+    public class ItemSelectedEventArgs : EventArgs
+    {
+        public int SelectedIndex { get; set; }
+    }
 }
 ```
 

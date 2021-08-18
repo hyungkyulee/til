@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_47 TILs and counting..._
+_48 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Auth Flow on ReactJS](reactjs/auth.md) - Wed Aug 18 17:35:01 2021 +0100
 - [Shapes](xamarin-forms/shape.md) - Tue Aug 17 11:19:17 2021 +0100
-- [Dropdown List](xamarin-forms/dropdown-view.md) - Mon Aug 16 16:28:16 2021 +0100
 
 ### Categories
 
@@ -69,6 +69,7 @@ _47 TILs and counting..._
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [reactjs](#reactjs)
+- [Auth Flow on ReactJS](reactjs/auth.md)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
 

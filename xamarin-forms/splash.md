@@ -247,3 +247,25 @@ double-click will lead you to xcode ios designer tool so that you can design the
 
 [other way]
 https://heartbeat.fritz.ai/force-an-orientation-on-a-single-page-in-xamarin-forms-b9c0c5295367
+
+
+## Appendix
+### Launch Images and Launch Screen configuration
+[VS] : iOS project > Info.plist > doulbe click to open
+![image](https://user-images.githubusercontent.com/59367560/130222653-7fe8184b-8897-4506-8201-93e1beebb7b0.png)
+> you can select the LaunchScreen from the LaunchScreen.Storyboard
+> You can select the LaunchScreen Image set from the Image Asset
+
+on Application tab, it should be linked with the above setting
+![image](https://user-images.githubusercontent.com/59367560/130222846-33539cc5-d02a-4dd9-8f16-979f7acfe081.png)
+
+on xxx.xcassests (Launch Image Assets folder), it will be displayed on the above info.plist dropdown list
+![image](https://user-images.githubusercontent.com/59367560/130223166-2212686f-43fc-494b-a762-6956f95abb79.png)
+> you have to arrange the different resolution images on LaunchImages
+
+![image](https://user-images.githubusercontent.com/59367560/130223412-68e7c545-deed-42be-8758-a009368155b1.png)
+
+#### Some issues with a clipping Top/Bottom 
+> This is related with the release binary which is not connecting to the relevant LaunchImages.
+> I've tried it to LaunchScreen, though. It's not successful and I changed the configuration to LaunchImages rather than LaunchScreen.
+> -> Why?

@@ -269,3 +269,4 @@ on xxx.xcassests (Launch Image Assets folder), it will be displayed on the above
 > This is related with the release binary which is not connecting to the relevant LaunchImages.
 > I've tried it to LaunchScreen, though. It's not successful and I changed the configuration to LaunchImages rather than LaunchScreen.
 > -> Why?
+

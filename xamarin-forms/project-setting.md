@@ -61,3 +61,9 @@ The cause is adding the output path with additional folder name (e.g. for me, ne
 > </PropertyGroup>
 > ```
 > https://developercommunity.visualstudio.com/t/cant-remove-netstandard-folder-from-output-path/30940
+
+### Build error on debug or release mode
+build configuration is not set with an build mode.
+> solution > options > build > configurations > configuration Mappings > check if any build option is unchecked
+> ![image](https://user-images.githubusercontent.com/59367560/130784787-aff9bd4d-57c8-4681-af5b-eeccaa930c2c.png)
+> https://stackoverflow.com/questions/1421862/metadata-file-dll-could-not-be-found

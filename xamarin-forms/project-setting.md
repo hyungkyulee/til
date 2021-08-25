@@ -65,5 +65,5 @@ The cause is adding the output path with additional folder name (e.g. for me, ne
 ### Build error on debug or release mode
 build configuration is not set with an build mode.
 > solution > options > build > configurations > configuration Mappings > check if any build option is unchecked
-> ![image](https://user-images.githubusercontent.com/59367560/130784787-aff9bd4d-57c8-4681-af5b-eeccaa930c2c.png)
+> ![image](https://user-images.githubusercontent.com/59367560/130784896-8e99a6bc-072b-4cf3-bd8e-c1c92bf58da8.png)
 > https://stackoverflow.com/questions/1421862/metadata-file-dll-could-not-be-found

@@ -47,3 +47,17 @@
 - Set the apple SDK Path
   > Visual Studio for Mac > Preferences > Projects > SDK Locations > Apple > Apple SDK > select a application of xcode
   > e.g. Location: /Applications/Xcode.app
+
+
+## Trials and Errors
+
+### Metadata file '.dll' could not be found
+It was happening on VS build from the second time build. (Not Rider)
+The cause is adding the output path with additional folder name (e.g. for me, netstandard2.1)
+> it looks help me set the appendoutputpath option with false.
+> ```
+> <PropertyGroup>
+>  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+> </PropertyGroup>
+> ```
+> https://developercommunity.visualstudio.com/t/cant-remove-netstandard-folder-from-output-path/30940

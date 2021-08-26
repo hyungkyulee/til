@@ -26,3 +26,7 @@
 - set a device on top bar and run/debug application
 ![image](https://user-images.githubusercontent.com/59367560/125325807-4712fd80-e339-11eb-9643-9eda88c8f691.png)
 
+## Rider Run from the terminal on Mac
+- create rider script file on ```/usr/local/bin ```
+- edit 'rider' script with ``` open -na "Rider.app" --args "$@" ```
+- run 'rider' cli with solution file e.g. ``` ❯ rider abcProject.sln ```

@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_48 TILs and counting..._
+_49 TILs and counting..._
 
 ---
 
@@ -87,6 +87,7 @@ _48 TILs and counting..._
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)
 - [Signing Key Configuration](xamarin-forms/android-keystore.md)
+- [CollectionView vs ListView](xamarin-forms/collection-view.md)
 - [Application Activity on Xamarin Essential](xamarin-forms/current-activity.md)
 - [Data Binding with some options](xamarin-forms/data-binding.md)
 - [Orientation on Rotation](xamarin-forms/device-orientation.md)

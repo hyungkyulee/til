@@ -6,7 +6,7 @@ React Testing Library is not an alternative to Jest, but an mutual supporter whi
 - Jest's test runner matches all files with a test.js (or spec.js) suffix by default.
 - cli : ``` npm test ```
 
-example
+*** example ***
 [package.json]
 ```
 {
@@ -65,6 +65,71 @@ Watch Usage
 ## React Testing Library (RTL)
 React Testing Library (RTL) by Kent C. Dodds got released as alternative to Airbnb's Enzyme.
 Officieal doc: https://testing-library.com/docs/react-testing-library/intro/
+
+*** example ***
+
+[Hello.js]
+```
+import React from 'react'
+
+const message = 'This is the RTL rendering test'
+
+const Hello = () => {
+    return (
+        <div>{message}</div>
+    )
+}
+
+export default Hello
+```
+
+[Hello.spec.js]
+```
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+
+import Hello from "./Hello.js"
+
+describe("Temp TEST-SUITE", () => {
+  test("renders Hello component", () => {
+    render(<Hello />)
+
+    screen.debug()
+  })
+})
+```
+
+[Test result]
+```
+ PASS  src/componets/Hello.spec.js
+  Temp TEST-SUITE
+    ✓ renders Hello component (74 ms)
+
+  console.log
+    <body>
+      <div>
+        <div>
+          This is the RTL rendering test
+        </div>
+      </div>
+    </body>
+    
+    /Users/kyu/dev/btm/voting-webapp/src/componets/Hello.spec.js:10:12
+       8 |     render(<Hello />)
+       9 |
+    > 10 |     screen.debug()
+         |            ^
+
+      at logDOM (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/pretty-dom.js:80:13)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.101 s
+Ran all test suites related to changed files.
+
+Watch Usage: Press w to show more.
+```
 
 ### Why RTL
 RTL is to resolve the problem which developers have in Enzyme. 

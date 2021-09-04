@@ -1,8 +1,69 @@
 # React Testing on React Testing Library and Jest
-```zsh
+React Testing Library is not an alternative to Jest, but an mutual supporter which needs each other.
+
+## Jest
+- Jest is a test runner
+- Jest's test runner matches all files with a test.js (or spec.js) suffix by default.
+- cli : ``` npm test ```
+
+example
+[package.json]
+```
+{
+  :
+  "dependencies": {
+    :
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    :
+```
+
+[Hello.js]
+```
+const Hello = () => {
+    return (
+        "Hello"
+    )
+}
+
+export default Hello
+```
+
+[Hello.spec.js]
+```
+import Hello from "./Hello.js"
+
+describe("my react component", () => {
+  test("is working as expected", () => {
+    expect(Hello()).toBe("Hello");
+  });
+});
+```
+
+[Test result]
+```
+ PASS  src/componets/Hello.spec.js
+  my react component
+    ✓ is working as expected (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.549 s, estimated 2 s
+Ran all test suites related to changed files.
+
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
 ```
 
 ## React Testing Library (RTL)
+React Testing Library (RTL) by Kent C. Dodds got released as alternative to Airbnb's Enzyme.
 Officieal doc: https://testing-library.com/docs/react-testing-library/intro/
 
 ### Why RTL
@@ -10,6 +71,8 @@ RTL is to resolve the problem which developers have in Enzyme.
 Problem is any component modification can affect to test rewriting and cause to a slow development and productivity.
 
 ### Install dependencies
+> this part is nomally and automatically installed together on projects created with ``` npx create-react-app my-app ```
+
 - Jest framework (env, cli, dom simulator, mock, functions, spying utilities, etc) and transpiler of JS files in tests
 ```zsh
 npm i -D jest babel-jest

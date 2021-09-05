@@ -130,6 +130,8 @@ Ran all test suites related to changed files.
 
 Watch Usage: Press w to show more.
 ```
+> RTL takes any JSX to render it and it can access to the React component on a test. 
+> RTL debug function from 'screen' component can help to check the result
 
 ### Why RTL
 RTL is to resolve the problem which developers have in Enzyme. 

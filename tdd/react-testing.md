@@ -133,6 +133,8 @@ Watch Usage: Press w to show more.
 > RTL takes any JSX to render it and it can access to the React component on a test. 
 > RTL debug function from 'screen' component can help to check the result
 
+> more testing usage : https://www.robinwieruch.de/react-testing-library
+
 ### Why RTL
 RTL is to resolve the problem which developers have in Enzyme. 
 Problem is any component modification can affect to test rewriting and cause to a slow development and productivity.

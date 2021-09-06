@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_49 TILs and counting..._
+_50 TILs and counting..._
 
 ---
 
@@ -78,6 +78,7 @@ _49 TILs and counting..._
 - [Common Issues with serverless practices](serverless/issues.md)
 
 ### [tdd](#tdd)
+- [Priciples of TDD](tdd/priciples.md)
 - [React Testing on React Testing Library and Jest](tdd/react-testing.md)
 - [React Native Testing](tdd/reactnative-testing.md)
 

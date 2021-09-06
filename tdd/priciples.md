@@ -15,3 +15,8 @@
 - Taglines
   - Make it work, Make it right, Make it fast
 
+## Unit Testing Steps
+- Arrange
+- Act
+- Assert
+

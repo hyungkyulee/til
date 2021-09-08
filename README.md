@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_50 TILs and counting..._
+_51 TILs and counting..._
 
 ---
 
@@ -41,6 +41,7 @@ _50 TILs and counting..._
 
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)
+- [Software Design Patters in OOP](coding-topics/design-patterns.md)
 
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)

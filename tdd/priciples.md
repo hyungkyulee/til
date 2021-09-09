@@ -23,8 +23,46 @@
 - Acceptance testing : a requirement from users
 - Regression testing : a modification of the existing service/product
 
-## Unit Testing Steps
+### Unit Testing 
+#### Template
 - Arrange
 - Act
 - Assert
+
+#### Characteristics of good test
+- clean, readable, and maintainable
+- isolated / single responsibility
+- no logic (no conditional statement)
+- not too specific or too general
+
+#### Test or not
+Do
+- Query : each execution part shows right response
+- Command : making a sytem or change a state like messege queue / external dependency
+
+Don't
+- launguage feature
+- 3rd party code
+
+#### Naming convention and structure
+- [Class name] + ['Tests' post-fix]
+  e.g. MyClass -> MyClassTests
+- Number of Tests >= Number of Execution Paths
+  e.g.
+
+- Clearly test business rules
+- Test Methods : [MethodName]_[Scenario]_[ExpectedBehaviour]
+  e.g. CanBeBookedBy() -> CanBeBookedBy_AdminBook_ReturnTrue()
+  e.g. Add() -> Add_WhenCalled_ReturnTheSumOfArgument() (Scenario can be a generic term when no specific scenario is not required.
+
+#### Technicques
+
+#### Reliable Tests
+
+
+
+
+
+
+
 

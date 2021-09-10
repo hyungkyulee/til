@@ -38,5 +38,24 @@ setup signingConfigs on android > app > build.gradle
 }
 ```
 > this will leave the keystore file in the local path and use to build on gradle file
+> add keystore file on .gitignore
 
 ## Encoding of Keystore
+encode the keystore file by Base64 encoding shceme and the outcome .txt file will be stored in Gibhub secret
+
+in the folder which the keystore file is located
+```
+openssl base64 < [appname].keystore.jks | tr -d '\n' | tee [appname].keystore.base64.encoded.txt
+```
+
+## Github Secret configuration
+project git repo > setting > secrets > New repository secret
+
+Name : KEYSTORE
+Value : [copy the content of encoded keystore ]
+> ``` pbcopy < [appname].keystore.base64.encoded.txt ```
+
+Name : SIGNING_STORE_PASSWORD
+Name : SIGNING_KEY_ALIAS
+Name : SIGNING_KEY_PASSWORD
+

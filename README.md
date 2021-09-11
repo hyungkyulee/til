@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_51 TILs and counting..._
+_52 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](react-native/android-signing-deploy.md) - Sat Sep 11 13:04:45 2021 +0100
 - [Build and Sign android app with Github Actions](react-native/android-deployment-github-action.md) - Sat Sep 11 13:02:01 2021 +0100
-- [Auth Flow on ReactJS](reactjs/auth.md) - Wed Aug 18 17:35:01 2021 +0100
 
 ### Categories
 
@@ -67,6 +67,7 @@ _51 TILs and counting..._
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deployment-github-action.md)
+- [](react-native/android-signing-deploy.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [reactjs](#reactjs)

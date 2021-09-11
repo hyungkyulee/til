@@ -118,3 +118,98 @@ Create New App with the Title in https://play.google.com/apps/publish
 > It must be different from any previous keys. Alternatively, you can use the following command line to generate a new key:
 > ``` keytool -genkeypair -alias [newalias] -keyalg RSA -keysize 2048 -validity 9125 -keystore [nameofkeystore].jks ```
 
+
+### Create a new Keystore (CLI)
+> to create a key under the industry-standard, you should use cli
+
+```
+keytool -genkeypair -alias prod -keyalg RSA -keysize 2048 -validity 9125 -keystore [appname].v2.keystore.jks
+```
+
+[e.g]
+```
+> keytool -genkeypair -alias prod -keyalg RSA -keysize 2048 -validity 9125 -keystore [appname].v2.keystore.jks
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  Hyungkyu Lee
+What is the name of your organizational unit?
+  [Unknown]:  Software Development
+What is the name of your organization?
+  [Unknown]:  Deepeyes
+What is the name of your City or Locality?
+  [Unknown]:  London
+What is the name of your State or Province?
+  [Unknown]:  London
+What is the two-letter country code for this unit?
+  [Unknown]:  GB
+Is CN=Hyungkyu Lee, OU=Software Development, O=Deepeyes, L=London, ST=London, C=GB correct?
+  [no]:  yes
+
+Enter key password for <prod>
+	(RETURN if same as keystore password):
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore navienapp.v2.keystore.jks -destkeystore navienapp.v2.keystore.jks -deststoretype pkcs12".
+
+> keytool -importkeystore -srckeystore [appname].v2.keystore.jks -destkeystore [appname].v2.keystore.jks -deststoretype pkcs12
+Enter source keystore password:
+Entry for alias prod successfully imported.
+Import command completed:  1 entries successfully imported, 0 entries failed or cancelled
+
+Warning:
+Migrated "[appname].v2.keystore.jks" to Non JKS/JCEKS. The JKS keystore is backed up as "[appname].v2.keystore.jks.old".
+
+>  ls -al                                   ✔  10s  20:40:16
+total 16
+drwxr-xr-x   4 kyu  staff   128 11 Sep 20:40 .
+drwxr-xr-x  14 kyu  staff   448 11 Sep 20:35 ..
+-rw-r--r--   1 kyu  staff  2603 11 Sep 20:40 [appname].v2.keystore.jks
+-rw-r--r--   1 kyu  staff  2265 11 Sep 20:40 [appname].v2.keystore.jks.old
+```
+
+### Export certificate (PEM) of the new keystore
+> certificate will be a public key, paired with keystore (private key = upload key)
+> this PEM certificate file will be shared to reset your key on google playstore
+
+```
+keytool -export -rfc -alias prod -file upload_certificate.pem -keystore keystore.jks
+```
+
+[e.g]
+```
+> keytool -export -rfc -alias prod -file [appname].v2.certificate.pem -keystore [appname].v2.keystore.jks
+Enter keystore password:
+Certificate stored in file <[appname].v2.certificate.pem>
+
+> ls -al                                    ✔  6s  20:48:40
+total 24
+drwxr-xr-x   5 kyu  staff   160 11 Sep 20:48 .
+drwxr-xr-x  14 kyu  staff   448 11 Sep 20:35 ..
+-rw-r--r--   1 kyu  staff  1313 11 Sep 20:48 [appname].v2.certificate.pem
+-rw-r--r--   1 kyu  staff  2603 11 Sep 20:40 [appname].v2.keystore.jks
+-rw-r--r--   1 kyu  staff  2265 11 Sep 20:40 [appname].v2.keystore.jks.old
+```
+
+### Test/Build a signed Bundle with the new keystore 
+- Build a signed bundle on Android Studio
+![image](https://user-images.githubusercontent.com/59367560/132960243-b833e695-bfcc-4243-9e03-0fc1606dd1b7.png)
+
+- Build result and .aab outcome
+![image](https://user-images.githubusercontent.com/59367560/132960286-585a76fe-269c-4ecd-ad82-0e0a0e7a9699.png)
+
+- error on google console to release the app (this is because this bundle file is signed with a new keystore)
+![image](https://user-images.githubusercontent.com/59367560/132960366-cfe8d3c5-51c1-4c9c-ae16-3c745f6fae1c.png)
+
+### Claim a request to Google for updating the upload key (keystore)
+https://support.google.com/googleplay/android-developer/contact/key
+
+Fill up the form under the account owner permission.
+Selection with 
+ - 'I have a key or keystore related issue’
+ - ‘I have an upload key-related issue’
+ - ‘I lost my upload key’ 
+
+Leave comments and upload the certificate.pem file which newly created above.
+
+Submit

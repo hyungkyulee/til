@@ -14,7 +14,7 @@ _52 TILs and counting..._
 ### 2 most recent TILs
 
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md) - Sat Sep 11 13:05:27 2021 +0100
-- [](react-native/android-signing-deploy.md) - Sat Sep 11 13:04:45 2021 +0100
+- [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md) - Sat Sep 11 13:04:45 2021 +0100
 
 ### Categories
 
@@ -67,7 +67,7 @@ _52 TILs and counting..._
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)
-- [](react-native/android-signing-deploy.md)
+- [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [reactjs](#reactjs)

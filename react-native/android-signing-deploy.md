@@ -191,6 +191,40 @@ drwxr-xr-x  14 kyu  staff   448 11 Sep 20:35 ..
 -rw-r--r--   1 kyu  staff  2265 11 Sep 20:40 [appname].v2.keystore.jks.old
 ```
 
+### Verify your Key Identifier
+this is just for your reference
+
+[e.g]
+```
+> keytool -list -v -alias prod -keystore [appname].v2.keystore.jks
+Enter keystore password:
+Alias name: prod
+Creation date: 11-Sep-2021
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Hyungkyu Lee, OU=Software Development, O=Deepeyes, L=London, ST=London, C=GB
+Issuer: CN=Hyungkyu Lee, OU=Software Development, O=Deepeyes, L=London, ST=London, C=GB
+Serial number: 1f1ed258
+Valid from: Sat Sep 11 20:37:46 BST 2021 until: Wed Sep 05 20:37:46 BST 2046
+Certificate fingerprints:
+	 SHA1: 48:BC:ED:xx:xx:xx:xx:xx ...
+	 SHA256: A2:0F:14:xx:xx:xx:xx:xx ...
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions:
+
+#1: ObjectId: ... Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: ...
+0010: ...
+]
+]
+```
+
 ### Test/Build a signed Bundle with the new keystore 
 - Build a signed bundle on Android Studio
 ![image](https://user-images.githubusercontent.com/59367560/132960243-b833e695-bfcc-4243-9e03-0fc1606dd1b7.png)

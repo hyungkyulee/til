@@ -106,3 +106,15 @@ Create New App with the Title in https://play.google.com/apps/publish
 6) Select 'App' -> Go to 'App Release' menu again -> Review -> Roll out
 7) Select the tester registered, and add more testers if necessarily.
 
+
+## Lost Keystore
+### Create a new Keystore
+- android studio > Build > Generate Signed Bundle/APK
+- Generate Signed Bundle or APK dialog > select Android App Bundle or APK > click Next.
+- Key store path, click Create new.
+- New Key Store window > provide the following information for your keystore and key, as shown :
+![image](https://user-images.githubusercontent.com/59367560/132947586-8c0b4489-9af2-4505-b418-70a50892244d.png)
+
+> It must be different from any previous keys. Alternatively, you can use the following command line to generate a new key:
+> ``` keytool -genkeypair -alias [newalias] -keyalg RSA -keysize 2048 -validity 9125 -keystore [nameofkeystore].jks ```
+

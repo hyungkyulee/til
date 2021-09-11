@@ -13,8 +13,8 @@ _51 TILs and counting..._
 
 ### 2 most recent TILs
 
+- [Build and Sign android app with Github Actions](react-native/android-deployment-github-action.md) - Sat Sep 11 13:02:01 2021 +0100
 - [Auth Flow on ReactJS](reactjs/auth.md) - Wed Aug 18 17:35:01 2021 +0100
-- [Shapes](xamarin-forms/shape.md) - Tue Aug 17 11:19:17 2021 +0100
 
 ### Categories
 
@@ -66,7 +66,7 @@ _51 TILs and counting..._
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
 
 ### [react-native](#react-native)
-- [Build and Sign android app with Github Actions](react-native/android-signing.md)
+- [Build and Sign android app with Github Actions](react-native/android-deployment-github-action.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 
 ### [reactjs](#reactjs)

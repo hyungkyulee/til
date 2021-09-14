@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_52 TILs and counting..._
+_53 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Overview of Typescript](typescript/overview.md) - Tue Sep 14 11:21:04 2021 +0100
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md) - Sat Sep 11 13:05:27 2021 +0100
-- [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md) - Sat Sep 11 13:04:45 2021 +0100
 
 ### Categories
 
@@ -30,6 +30,7 @@ _52 TILs and counting..._
 - [serverless](#serverless)
 - [tdd](#tdd)
 - [terraform](#terraform)
+- [typescript](#typescript)
 - [xamarin-forms](#xamarin-forms)
 
 ### [api-design](#api-design)
@@ -86,6 +87,9 @@ _52 TILs and counting..._
 
 ### [terraform](#terraform)
 - [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
+
+### [typescript](#typescript)
+- [Overview of Typescript](typescript/overview.md)
 
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)

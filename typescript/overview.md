@@ -37,3 +37,7 @@ function addNumbers(x: number, y: number) {
 
 console.log(addNumbers("three", 6));
 ```
+
+addNumbers(x: number, y: number)
+addNumberS(s: any, y: any)
+

@@ -7,20 +7,21 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_53 TILs and counting..._
+_54 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [PostgreSQL general](database/postgresql.md) - Thu Sep 16 00:38:55 2021 +0100
 - [Overview of Typescript](typescript/overview.md) - Tue Sep 14 11:21:04 2021 +0100
-- [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md) - Sat Sep 11 13:05:27 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
+- [database](#database)
 - [dotnet](#dotnet)
 - [git](#git)
 - [ide-tooling](#ide-tooling)
@@ -43,6 +44,9 @@ _53 TILs and counting..._
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)
 - [Software Design Patters in OOP](coding-topics/design-patterns.md)
+
+### [database](#database)
+- [PostgreSQL general](database/postgresql.md)
 
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)

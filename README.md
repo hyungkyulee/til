@@ -7,20 +7,21 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_54 TILs and counting..._
+_55 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md) - Sat Sep 18 14:10:51 2021 +0100
 - [PostgreSQL general](database/postgresql.md) - Thu Sep 16 00:38:55 2021 +0100
-- [Overview of Typescript](typescript/overview.md) - Tue Sep 14 11:21:04 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
+- [data-engineering](#data-engineering)
 - [database](#database)
 - [dotnet](#dotnet)
 - [git](#git)
@@ -44,6 +45,9 @@ _54 TILs and counting..._
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)
 - [Software Design Patters in OOP](coding-topics/design-patterns.md)
+
+### [data-engineering](#data-engineering)
+- [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md)
 
 ### [database](#database)
 - [PostgreSQL general](database/postgresql.md)

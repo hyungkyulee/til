@@ -60,15 +60,25 @@
 ### Kinesis
 #### Collect Data Stream
 #### Deliver Data Stream (Firehorse)
-- Create Deliver Stream > select (Source (e.g. Direct PIT) > selec other options :
+- Create Deliver Stream > select options (below) > create
+  - Source : Kinesis Data Stream collected or Direct PUT
   - Transform source records with AWS Lambda : disabled (later will be enabled)
+    > For records that aren't in JSON format, create a Lambda function that converts them to JSON in the Transform source records with AWS Lambda
   - Convert record format : disabled (later will be enabled)
-    > Data in Apache Parquet or Apache ORC format is typically more efficient to query than JSON. Kinesis Data Firehose can convert your JSON-formatted source records using a schema from a table defined in AWS Glue . For records that aren't in JSON format, create a Lambda function that converts them to JSON in the Transform source records with AWS Lambda section above.
-  - 
+    > Data in Apache Parquet or Apache ORC format is typically more efficient to query than JSON. Kinesis Data Firehose can convert your JSON source records using a schema from a table defined in AWS Glue.
+  - Destination : three options (e.g. the above s3 bucket)
+  - s3 bucket prefix : optional (default is date prefix)
+  - buffer hints : higher buffer memory (low cost - high latency) vs lower buffer memory (high cost - low latency)
+  - buffer interval
+    > in test, 128MiB + 60sec is recommended for low cost
+  - compression and encryption : default as it was 
+    > we don't need to set this enabled as data will be already compressed by apache parquet on a nice format
+  - permission : IAM role for kinesis firehose role
+  
 #### Analyse Data Stream (Analytics)
 
 
-
+###
 
 
 

@@ -57,3 +57,20 @@
   > check if inbound rule is properly allowing the anywhere access
 
 
+### Kinesis
+#### Collect Data Stream
+#### Deliver Data Stream (Firehorse)
+- Create Deliver Stream > select (Source (e.g. Direct PIT) > selec other options :
+  - Transform source records with AWS Lambda : disabled (later will be enabled)
+  - Convert record format : disabled (later will be enabled)
+    > Data in Apache Parquet or Apache ORC format is typically more efficient to query than JSON. Kinesis Data Firehose can convert your JSON-formatted source records using a schema from a table defined in AWS Glue . For records that aren't in JSON format, create a Lambda function that converts them to JSON in the Transform source records with AWS Lambda section above.
+  - 
+#### Analyse Data Stream (Analytics)
+
+
+
+
+
+
+
+

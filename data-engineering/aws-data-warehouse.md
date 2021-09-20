@@ -78,9 +78,90 @@
 #### Analyse Data Stream (Analytics)
 
 
-###
+## Connect RDS DB on .NET application
+### Connection Configuration to RDS
+```
+namespace FirehoseSoundLake.Helpers
+{
+    public class RdsConfig
+    {
+        public static string GetRDSConnectionString()
+        {
+            var appConfig = ConfigurationManager.AppSettings;
 
+            string dbname = appConfig["RDS_DB_NAME"];
 
+            if (string.IsNullOrEmpty(dbname)) return null;
 
+            string username = appConfig["RDS_USERNAME"];
+            string password = appConfig["RDS_PASSWORD"];
+            string hostname = appConfig["RDS_HOSTNAME"];
+            string port = appConfig["RDS_PORT"];
 
+            return "Data Source=" + hostname + ";Initial Catalog=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+        }
+    }
+}
+```
 
+```
+using FirehoseSoundLake.Helpers;
+using FirehoseSoundLake.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace FirehoseSoundLake.Repositories
+{
+    public class PlaylistContext : DbContext
+    {
+        // public PlaylistContext() : base(RdsConfig.GetRDSConnectionString())
+        // {
+        // }
+        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder
+                .UseSqlServer(connectionString: @"Data Source=soundlake.***.eu-west-1.rds.amazonaws.com,1433;Initial Catalog=ArtistDatabase;Persist Security Info=True;User ID=hyungkyu;Password=p***;MultipleActiveResultSets=True");
+            // optionsBuilder.UseSqlServer(connectionString: RdsConfig.GetRDSConnectionString());
+
+        }
+        
+        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Album> Albums { get; set; }
+    }
+}
+```
+
+### Dotnet EntityFramework Migration
+This is a guideline of .NET Core Cli 
+> Visual Studio can be referred at https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+
+#### EntityFramework Cli installation on Mac
+```
+> dotnet tool install --global dotnet-ef
+> dotnet ef --help
+```
+
+#### Code First Migration based on the above models
+- Migration Settings on a Project
+```
+> dotnet ef migrations add InitPlaylistMigration
+Build started...
+Build succeeded.
+Done. To undo this action, use 'ef migrations remove'
+```
+
+![image](https://user-images.githubusercontent.com/59367560/134059665-26cb35e3-fafd-4525-adfa-2c01571ac2dd.png)
+> EF Core will create a directory called Migrations in your project, and generate some files.
+
+- Create Tables from Migration Settings to Database
+```
+> dotnet ef database update                   1 х  20:08:59 
+Build started...
+Build succeeded.
+Applying migration '20210920185722_InitPlaylistMigration'.
+Done.
+```
+
+![image](https://user-images.githubusercontent.com/59367560/134060705-d37573c0-5543-4575-aeab-401821c91e75.png)
+> with your refresh on Database client (e.g. Azure Data Studio)

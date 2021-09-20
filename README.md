@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_58 TILs and counting..._
+_59 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Forticlient VPN](vpn/forticlient.md) - Tue Sep 21 00:22:10 2021 +0100
 - [Https Dev Certificate on Mac for .NET project](ssl/localhost-cert.md) - Tue Sep 21 00:20:36 2021 +0100
-- [Geo-Location with Xamarin.Essecials](xamarin-forms/geo-location.md) - Mon Sep 20 12:39:05 2021 +0100
 
 ### Categories
 
@@ -35,6 +35,7 @@ _58 TILs and counting..._
 - [tdd](#tdd)
 - [terraform](#terraform)
 - [typescript](#typescript)
+- [vpn](#vpn)
 - [xamarin-forms](#xamarin-forms)
 
 ### [api-design](#api-design)
@@ -106,6 +107,9 @@ _58 TILs and counting..._
 
 ### [typescript](#typescript)
 - [Overview of Typescript](typescript/overview.md)
+
+### [vpn](#vpn)
+- [Forticlient VPN](vpn/forticlient.md)
 
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)

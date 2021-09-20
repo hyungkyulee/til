@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_56 TILs and counting..._
+_57 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Geo-Location with Xamarin.Essecials](xamarin-forms/geo-location.md) - Mon Sep 20 12:39:05 2021 +0100
 - [Docker in general](docker/overview.md) - Sun Sep 19 12:55:46 2021 +0100
-- [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md) - Sat Sep 18 14:10:51 2021 +0100
 
 ### Categories
 
@@ -114,6 +114,7 @@ _56 TILs and counting..._
 - [Diagnostics Tools for development](xamarin-forms/diagnostics.md)
 - [Dropdown List](xamarin-forms/dropdown-view.md)
 - [FontAwesome](xamarin-forms/fontawesome.md)
+- [Geo-Location with Xamarin.Essecials](xamarin-forms/geo-location.md)
 - [Xamarin Forms : IOS - Provisioning](xamarin-forms/ios-provisioning.md)
 - [Keyboard handling on Xamarin Forms](xamarin-forms/keyboard.md)
 - [MvvmCross Messenger Service on Xamarin Forms](xamarin-forms/messenger.md)

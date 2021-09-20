@@ -163,5 +163,5 @@ Applying migration '20210920185722_InitPlaylistMigration'.
 Done.
 ```
 
-![image](https://user-images.githubusercontent.com/59367560/134060705-d37573c0-5543-4575-aeab-401821c91e75.png)
+![image](https://user-images.githubusercontent.com/59367560/134060908-cbe851fe-af41-4c98-8699-03edd91cb54d.png)
 > with your refresh on Database client (e.g. Azure Data Studio)

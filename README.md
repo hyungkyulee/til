@@ -7,20 +7,21 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_59 TILs and counting..._
+_60 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Algorithms to higlight](cs/algorithms.md) - Wed Sep 22 00:28:28 2021 +0100
 - [Forticlient VPN](vpn/forticlient.md) - Tue Sep 21 00:22:10 2021 +0100
-- [Https Dev Certificate on Mac for .NET project](ssl/localhost-cert.md) - Tue Sep 21 00:20:36 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
+- [cs](#cs)
 - [data-engineering](#data-engineering)
 - [database](#database)
 - [docker](#docker)
@@ -48,6 +49,9 @@ _59 TILs and counting..._
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)
 - [Software Design Patters in OOP](coding-topics/design-patterns.md)
+
+### [cs](#cs)
+- [Algorithms to higlight](cs/algorithms.md)
 
 ### [data-engineering](#data-engineering)
 - [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md)

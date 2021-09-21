@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_60 TILs and counting..._
+_61 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [C# Challenges on a day](cs/challenges-csharp.md) - Wed Sep 22 00:34:15 2021 +0100
 - [Algorithms to higlight](cs/algorithms.md) - Wed Sep 22 00:28:28 2021 +0100
-- [Forticlient VPN](vpn/forticlient.md) - Tue Sep 21 00:22:10 2021 +0100
 
 ### Categories
 
@@ -52,6 +52,7 @@ _60 TILs and counting..._
 
 ### [cs](#cs)
 - [Algorithms to higlight](cs/algorithms.md)
+- [C# Challenges on a day](cs/challenges-csharp.md)
 
 ### [data-engineering](#data-engineering)
 - [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md)

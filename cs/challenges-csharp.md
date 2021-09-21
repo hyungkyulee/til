@@ -49,3 +49,14 @@ public class Kata
   }
 }
 ```
+
+#### Best reference
+```
+public class Kata
+{
+  public static string SpinWords(string sentence)
+  {
+    return String.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
+  }
+}
+```

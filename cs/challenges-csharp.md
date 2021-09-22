@@ -16,7 +16,7 @@ spinWords("This is a test") => "This is a test"
 spinWords("This is another test") => "This is rehtona test"
 ```
 
-#### My solution
+#### A first working trial
 ```
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +57,73 @@ public class Kata
   public static string SpinWords(string sentence)
   {
     return String.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
+  }
+}
+```
+
+### Find Square number (perfect square)
+#### Instruction
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+#### A first working trial
+```
+public static bool IsSquare(int n)
+  {
+    var nominator = 0;
+    return n switch 
+    {
+        0 => true,
+        var x when x<0 => false,
+        _=> call(() => {
+          while (n > nominator++)
+          {
+            if (n / nominator == nominator
+               && n%nominator == 0)
+            {
+              return true;
+            }
+          }
+          return false;
+        })
+    }
+  }
+```
+OR
+```
+using System;
+
+public class Kata
+{
+  public static bool IsSquare(int n)
+  {
+    var nominator = 0;   
+    if (n==0) return true;
+    if (n<0) return false;
+    
+    while (n > nominator++)
+    {
+      if (n / nominator == nominator
+         && n%nominator == 0)
+      {
+        return true;
+      }
+    }
+    return false;
+  }
+}
+```
+#### Improvement
+> by Math function
+```
+using System;
+
+public class Kata
+{
+  public static bool IsSquare(int n)
+  {
+    return Math.Sqrt(n) % 1 == 0;
   }
 }
 ```

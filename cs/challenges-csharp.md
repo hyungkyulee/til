@@ -50,7 +50,7 @@ public class Kata
 }
 ```
 
-#### Best reference
+#### Best improvement
 ```
 public class Kata
 {

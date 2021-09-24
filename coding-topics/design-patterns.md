@@ -110,12 +110,12 @@ Robert C. Martin
 >   }
 > }
 > Class AnimalRepository {
-    IDbClient _dbclient;
-    ctor(IDbClient dbClient) {
-      _dbClient = dbClient;
-    }
-    doAction() {
-      var animalList = _dbclient.GetAll();
+>   IDbClient _dbclient;
+>   ctor(IDbClient dbClient) {
+>     _dbClient = dbClient;
+>   }
+>   doAction() {
+>     var animalList = _dbclient.GetAll();
 > }
 > ```
 

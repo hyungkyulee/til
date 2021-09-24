@@ -1,4 +1,4 @@
-# Software Design Patters in OOP
+# Software Design Patterns in OOP
 
 ## SOLID Principle
 ### Single Responsibility
@@ -6,11 +6,13 @@
 - E. Cobham Brewer, "None but Buddha himself must take the responsibility of giving out occult secrets."
 
 > Separate con-joined responsibilities to a single one which has its own intension or purpose with characters and behaves.
+> don't make your toaster do dripping a coffee
 
 ### Open/Close
 "Software entities ... should be open for extension, but closed for modification."
 
 > Abstract common methods as a base class to close modifications, but this will open to add and extend more children classes to have the methods.
+> Don’t modify an interface or class by removing methods or changing method signatures, instead add new methods or overloads of existing methods.
 
 ### Liskof Substitution
 
@@ -49,6 +51,74 @@ Robert C. Martin
 - Abstractions should not depend on details. Details should depend on abstractions.
 
 > Down-Top dependency.
+
+> Dependency Inversion vs Dependency Injection
+> - Dependency Inversion Principle vs Inversion of Control(Technic)
+> - de-coupling a class from its concrete dependencies vs supplying objects to a class by the way of the DIP (passing dependencies via 1) constructor, 2) public property/field, or 3) public setter)
+> (ref: https://stackoverflow.com/questions/46709170/difference-between-dependency-injection-and-dependency-inversion/46745172)
+> example
+> [IoC in use]
+> ```
+> Class AnimalService {
+>   Cow _cow;
+>   Dog _dow;
+>   ctor(Cow cow, Dog dog) {
+>     _cow = cow;
+>     _dog = dog;
+>   }
+> }
+> ```
+> [no IoC with a new instance]
+> ```
+> Class AnimalService {
+>   Cow _cow;
+>   Dog _dow;
+>   ctor() {
+>     _cow = new Cow();
+>     _dog = new Dog();
+>   }
+> }
+> ```
+> 
+> [DIP on dependencies]
+> ```
+> Class AnimalRepository {
+>   MsSql _sqlClient;
+>   ctor(MsSql sqlClient) {
+>     _sqlClient = sqlClient;
+>   }
+>   doAction() {
+>     var animalList = _sqlClient.readAll();
+>     ...
+>   }
+> }
+> ```
+> * this is using IoC, but still has strong dependency with MsSql
+> [DIP]
+> ```
+> Interface IDbClient {
+>   Data[] GetAll();
+>   ...
+> }
+> Class DbCient {
+>   MsSql _sqlClient;
+>   ctor(MsSql sqlClient) {
+>     _sqlClient = sqlClient;
+>   }
+>   Datap[] GetAll() {
+>     return _sqlClient.readAll();
+>   }
+> }
+> Class AnimalRepository {
+    IDbClient _dbclient;
+    ctor(IDbClient dbClient) {
+      _dbClient = dbClient;
+    }
+    doAction() {
+      var animalList = _dbclient.GetAll();
+> }
+> ```
+
 
 ## Other Patterns
 ### Factory Pattern

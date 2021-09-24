@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_61 TILs and counting..._
+_62 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [AWS Glue Overview](data-engineering/aws-glue.md) - Fri Sep 24 15:12:21 2021 +0100
 - [C# Challenges on a day](cs/challenges-csharp.md) - Wed Sep 22 00:34:15 2021 +0100
-- [Algorithms to higlight](cs/algorithms.md) - Wed Sep 22 00:28:28 2021 +0100
 
 ### Categories
 
@@ -56,6 +56,7 @@ _61 TILs and counting..._
 
 ### [data-engineering](#data-engineering)
 - [Data Warehouse on AWS](data-engineering/aws-data-warehouse.md)
+- [AWS Glue Overview](data-engineering/aws-glue.md)
 
 ### [database](#database)
 - [PostgreSQL general](database/postgresql.md)

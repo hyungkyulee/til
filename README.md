@@ -48,7 +48,7 @@ _61 TILs and counting..._
 
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)
-- [Software Design Patters in OOP](coding-topics/design-patterns.md)
+- [Software Design Patterns in OOP](coding-topics/design-patterns.md)
 
 ### [cs](#cs)
 - [Algorithms to higlight](cs/algorithms.md)

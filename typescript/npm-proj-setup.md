@@ -81,3 +81,6 @@ touch src/app.ts
 ...
 npm start
 ```
+
+![image](https://user-images.githubusercontent.com/59367560/135727554-eb72b902-78f5-42a0-be39-2ef75a28d3ba.png)
+

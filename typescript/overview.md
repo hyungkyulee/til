@@ -75,4 +75,7 @@ node sample.js
 ```
 > js output javascript file will be stored at 'outDir' path
 > in order to enable debug mode, set 'sourceMap' true
+> by the F5 button, you can select Node.js to runtime compiler (F9 to toggle breakpoints)
+> ![image](https://user-images.githubusercontent.com/59367560/135723205-ced26e2a-d994-42f7-874a-b7d9bee88f1f.png)
+
 

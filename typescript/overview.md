@@ -41,7 +41,7 @@ addNumbers(x: number, y: number)
 addNumberS(s: any, y: any)
 ```
 
-## typescript sample project
+## How is typescript transpiling and working (by sample project)
 - install typescript compiler
 ```
 npm install -g typescript
@@ -61,7 +61,7 @@ tsc sample.ts
 node sample.js
 ```
 
-- set typscript config file
+- set typscript config file to debug and to do others
 [tsconfig.json]
 ```
 {
@@ -73,9 +73,12 @@ node sample.js
   }
 }
 ```
-> js output javascript file will be stored at 'outDir' path
-> in order to enable debug mode, set 'sourceMap' true
+> module: Specifies the module code generation method. Node uses commonjs.
+> target: Specifies the output language level.
+> moduleResolution: This helps the compiler figure out what an import refers to. The value node mimics the Node module resolution mechanism.
+> outDir: This is the location to output .js files after transpilation. In this tutorial you will save it as dist.
 > by the F5 button, you can select Node.js to runtime compiler (F9 to toggle breakpoints)
+>  * An alternative to create and populate a 'tsconfig.json' file manually by ``` tsc --init ```
 > ![image](https://user-images.githubusercontent.com/59367560/135723205-ced26e2a-d994-42f7-874a-b7d9bee88f1f.png)
 
 

@@ -72,8 +72,12 @@ tsc --init
 }
 ```
 
-## build and run package
+## Run project
+- create a source folder file and an entry file
+- build and run
 ```
+mkdir src
+touch src/app.ts
+...
 npm start
 ```
-

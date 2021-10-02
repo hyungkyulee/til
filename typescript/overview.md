@@ -28,7 +28,6 @@ function addNumbers(x, y) {
 }
 
 console.log(addNumbers("three", 6));
-```
 
 // typed
 function addNumbers(x: number, y: number) {
@@ -36,10 +35,11 @@ function addNumbers(x: number, y: number) {
 }
 
 console.log(addNumbers("three", 6));
-```
+
 
 addNumbers(x: number, y: number)
 addNumberS(s: any, y: any)
+```
 
 ## typescript sample project
 - install typescript compiler
@@ -47,17 +47,20 @@ addNumberS(s: any, y: any)
 npm install -g typescript
 tsc --version
 ```
+
 - create any ts file with typescript code
 [smaple.ts]
 ```
 var message: string = 'This is a sample of typescript'
 console.log(message)
 ```
+
 - build/run it by tsc and node
 ```
 tsc sample.ts
 node sample.js
 ```
+
 - set typscript config file
 [tsconfig.json]
 ```

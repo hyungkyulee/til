@@ -41,3 +41,35 @@ console.log(addNumbers("three", 6));
 addNumbers(x: number, y: number)
 addNumberS(s: any, y: any)
 
+## typescript sample project
+- install typescript compiler
+```
+npm install -g typescript
+tsc --version
+```
+- create any ts file with typescript code
+[smaple.ts]
+```
+var message: string = 'This is a sample of typescript'
+console.log(message)
+```
+- build/run it by tsc and node
+```
+tsc sample.ts
+node sample.js
+```
+- set typscript config file
+[tsconfig.json]
+```
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "out",
+    "sourceMap": true
+  }
+}
+```
+> js output javascript file will be stored at 'outDir' path
+> in order to enable debug mode, set 'sourceMap' true
+

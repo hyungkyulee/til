@@ -63,6 +63,9 @@ yarn-error.log*
 npm install react-bootstrap bootstrap --save
 npm install node-sass --save
 ```
+> error: Node Sass version 6.0.1 is incompatible with ^4.0.0 || ^5.0.0 -> install sass-loader package ``` npm i sass-loader@latest --save ```
+> issue keeps going on : 1) remove package-lock.json and node_modules, 2) yarn (rather than npm i), 3) yarn start. ( * sometimes npm is suffering from the known issue on packages/dependencies)
+
 - name src/App.css to src/App.scss 
 - update src/App.js to import src/App.scss 
   > This file and any other file will be automatically compiled if imported with the extension .scss or .sass.
@@ -106,7 +109,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1440px
+  xl: 1440px,
+  xxl: 2000px
 );
 
 $theme-colors: (

@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_64 TILs and counting..._
+_65 TILs and counting..._
 
 ---
 
@@ -113,6 +113,7 @@ _64 TILs and counting..._
 - [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
 
 ### [typescript](#typescript)
+- [Migrate Typescript template on .NET Core Web API project](typescript/.netcore-webapp.md)
 - [npm Project with Typescript](typescript/npm-proj-setup.md)
 - [Overview of Typescript](typescript/overview.md)
 

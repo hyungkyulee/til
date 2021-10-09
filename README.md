@@ -44,7 +44,7 @@ _65 TILs and counting..._
 
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
-- [A First Azure Function API in Rider](cloud-azure/functions.md)
+- [Azure Function Projects](cloud-azure/functions.md)
 
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)

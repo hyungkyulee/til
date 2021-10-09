@@ -81,4 +81,32 @@ node sample.js
 >  * An alternative to create and populate a 'tsconfig.json' file manually by ``` tsc --init ```
 > ![image](https://user-images.githubusercontent.com/59367560/135723205-ced26e2a-d994-42f7-874a-b7d9bee88f1f.png)
 
+## Basic Grammar
+### Variables
+### Interface
+- naming convension : The TypeScript coding guidelines suggest interfaces should not start with the letter I
+- type of properties(or members)
+  - Required - e.g. firstName: string;
+  - Optional - e.g. firstName?: string;
+  - Read only - e.g. readonly firstName: string;
+- usage interface
+  ```
+  interface Student {
+    name: string;
+    age: number;
+  }
+  ...
+  function checkYearGroup(student: Student) {
+    let yearGroup = 'y1';
+    switch (student.age) {
+      case 5: 'y1'
+    }
+  }
+  
+  let londonStudent: Student = {
+    name: 'Graham',
+    age: 10
+  }
+  console.log(londonStudent.name);
+  ```
 

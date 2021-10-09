@@ -89,17 +89,30 @@ node sample.js
   - Required - e.g. firstName: string;
   - Optional - e.g. firstName?: string;
   - Read only - e.g. readonly firstName: string;
-- usage interface
+- indexable interface vs interface array
+  - interface Student { [index: number]: string; } -> let students: Student; students = ['Tom', 'Ammy', 'Sara']; let name: string = students[1]; concole.log(name);
+  - interface Student { name: string; } -> let students: Student[{'Tom'}, {'Ammy'}, {'Sara'}]; console.log(students[1].name)
+- usage : basic example
   ```
   interface Student {
     name: string;
     age: number;
+    male?: boolean;
   }
   ...
   function checkYearGroup(student: Student) {
-    let yearGroup = 'y1';
+    let yearGroup: string = 'y1';
     switch (student.age) {
-      case 5: 'y1'
+      case 5: 
+        yearGroup = 'y1';
+        break;
+      case 6:
+        yearGroup = 'y2';
+        break;
+        ...
+      default:
+        yearGroup = 'y1';
+        break;
     }
   }
   
@@ -107,6 +120,34 @@ node sample.js
     name: 'Graham',
     age: 10
   }
-  console.log(londonStudent.name);
+  console.log(checkYearGroup(londonStudent));
   ```
 
+- usage: fetch API response DTO
+  ```
+  const fetchURL = 'https://jsonplaceholder.typicode.com/posts'
+  // Interface describing the shape of our json data
+  interface Post {
+     userId: number;
+     id: number;
+     title: string;
+     body: string;
+  }
+  async function fetchPosts(url: string) {
+      let response = await fetch(url);
+      let body = await response.json();
+      return body as Post[];
+  }
+  async function showPost() {
+      let posts = await fetchPosts(fetchURL);
+      // Display the contents of the first item in the response
+      let post = posts[0];
+      console.log('Post #' + post.id)
+      // If the userId is 1, then display a note that it's an administrator
+      console.log('Author: ' + (post.userId === 1 ? "Administrator" : post.userId.toString()))
+      console.log('Title: ' + post.title)
+      console.log('Body: ' + post.body)
+  }
+
+  showPost();
+  ```

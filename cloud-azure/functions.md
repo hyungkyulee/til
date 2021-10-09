@@ -1,19 +1,23 @@
-# A First Azure Function API in Rider
+# Azure Function Projects
 
 ## Setup Infrastructure
-### install azure devkit in rider on market place
-Rider > Preferences > Plugins > Marketplace > Search 'Azure toolkit for Rider'
-![image](https://user-images.githubusercontent.com/59367560/124996978-ca82d500-e041-11eb-8d38-94552706230a.png)
-
 ### install azure function tools (aka. cli)
 > ref: https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash
 
 #### Core tools
+Azure cli for functions developement and test.
+It also provides commands to create functions, connect to Azure, and deploy function projects.
+- connect to live Azure services
+- debug your functions on local using full Functions runtime
+- deploy a function app to your Azure subscription
+
 ```
 brew tap azure/functions
 brew install azure-functions-core-tools@3
 # if upgrading on a machine that has 2.x installed
 brew link --overwrite azure-functions-core-tools@3
+
+func --version
 ```
 
 ### Azurite
@@ -46,6 +50,10 @@ Azurite Table service is starting at http://127.0.0.1:10002
 Azurite Table service is successfully listening at http://127.0.0.1:10002
 ```
 
+## API project with dotnet/c# on Rider
+### install azure devkit in rider on market place
+Rider > Preferences > Plugins > Marketplace > Search 'Azure toolkit for Rider'
+![image](https://user-images.githubusercontent.com/59367560/124996978-ca82d500-e041-11eb-8d38-94552706230a.png)
 ### New Project
 - create project on Azure Functions
 ![image](https://user-images.githubusercontent.com/59367560/124997506-a673c380-e042-11eb-9c54-2256d4ad03a8.png)
@@ -86,3 +94,5 @@ For detailed output, run func with --verbose flag.
 
 ```
 > if there is an error : 'No function found' on func start, run the commendline on /bin/Debug/netcoreapp3.1.
+
+## API project with typescript on VS

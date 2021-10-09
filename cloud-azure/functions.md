@@ -16,8 +16,9 @@ brew tap azure/functions
 brew install azure-functions-core-tools@3
 # if upgrading on a machine that has 2.x installed
 brew link --overwrite azure-functions-core-tools@3
-
-func --version
+...
+ ~  func --version                                            ✔  15s  15:40:07
+3.0.3785
 ```
 
 ### Azurite

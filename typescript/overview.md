@@ -151,3 +151,25 @@ node sample.js
 
   showPost();
   ```
+
+- inheritence by 'extends' keyword
+  ```
+  interface Student {
+    name: string;
+    age: number;
+    address: string;
+  }
+  ...
+  interface LondonStudent extends Student {
+    postcode: string
+  }
+  interface UsStudent extends Student {
+    zipcode: string
+  }
+  ...
+  // implementation
+  function GetLondonStudentFullAddress(student: LondonStudent): string {
+    let address = student.address;
+    return 'Address in London: ' + address + ', ' + student.postcode;
+  }
+  ```

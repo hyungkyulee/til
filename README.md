@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_65 TILs and counting..._
+_66 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Deep diving into closures](javascript/closures.md) - Sun Oct 10 12:55:08 2021 +0100
 - [DBMS Overview](database/dbms.md) - Tue Sep 28 16:25:59 2021 +0100
-- [AWS Glue Overview](data-engineering/aws-glue.md) - Fri Sep 24 15:12:21 2021 +0100
 
 ### Categories
 
@@ -28,6 +28,7 @@ _65 TILs and counting..._
 - [dotnet](#dotnet)
 - [git](#git)
 - [ide-tooling](#ide-tooling)
+- [javascript](#javascript)
 - [macos](#macos)
 - [react-native](#react-native)
 - [reactjs](#reactjs)
@@ -83,6 +84,9 @@ _65 TILs and counting..._
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 - [zsh customisation](ide-tooling/zsh.md)
+
+### [javascript](#javascript)
+- [Deep diving into closures](javascript/closures.md)
 
 ### [macos](#macos)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)

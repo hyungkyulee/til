@@ -22,4 +22,24 @@
 
 - install and load the sample database
   > application: pgAdmin 4
-- 
+
+## Command Line
+### SELECT statement
+- usage
+```
+SELECT <column> 
+  FROM <table>
+ WHERE <condition>
+  LIKE <letters contains>
+```
+- SELECT
+  - Oracle DBMS is allowing a fomula column name
+
+- LIKE
+  - % : any letters
+  - some DMBS is not supporting LIKE 
+
+- WHERE
+  - BETWEEN : including start and end scope
+  - () : good(recommended) for a complicated expression
+  - 

@@ -73,6 +73,16 @@ https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-pro
 e.g.) 
 ![image](https://user-images.githubusercontent.com/59367560/125324107-77f23300-e337-11eb-8a0f-57e7fe84307f.png)
 
+### install the beta test app
+- release beta app via vs app center
+- email will be sent to the registered developers
+- if you can see a non-registered device message, click the 'add device' button 
+![image](https://user-images.githubusercontent.com/59367560/137393740-7923017d-0055-44b8-a811-2e04009a66d5.png)
+
+- profile will be downloaded
+- install the app via settings > downloaded profile (will be located under 'software update') > install
+- will be redirected to vs app center page and you can install the beta version
+
 
 ## Trouble-shooting
 - have an entitlement not supported by your current provisioing profile

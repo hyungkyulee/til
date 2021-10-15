@@ -150,6 +150,12 @@ module.exports = {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* customise inherited tailwind css components */
+@layer components {
+    .btn {
+        @apply px-4 py-2 bg-blue-600 text-white rounded;
+    }
+}
 
 // optimise a build on dev and production via [tailwind.config.js]
  module.exports = {

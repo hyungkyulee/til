@@ -7,18 +7,19 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_68 TILs and counting..._
+_69 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Configure the AWS dev environment](cloud-aws/aws-setup.md) - Sun Oct 17 22:52:57 2021 +0100
 - [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md) - Thu Oct 14 21:31:19 2021 +0100
-- [Database Management Essentials Course Assignment](database/coursera-task-m3.md) - Mon Oct 11 23:12:04 2021 +0100
 
 ### Categories
 
 - [api-design](#api-design)
+- [cloud-aws](#cloud-aws)
 - [cloud-azure](#cloud-azure)
 - [coding-topics](#coding-topics)
 - [cs](#cs)
@@ -42,6 +43,9 @@ _68 TILs and counting..._
 
 ### [api-design](#api-design)
 - [RESTful API Design](api-design/RESTful.md)
+
+### [cloud-aws](#cloud-aws)
+- [Configure the AWS dev environment](cloud-aws/aws-setup.md)
 
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)

@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_69 TILs and counting..._
+_70 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Web Componts](html/web-components.md) - Mon Oct 18 11:05:35 2021 +0100
 - [Configure the AWS dev environment](cloud-aws/aws-setup.md) - Sun Oct 17 22:52:57 2021 +0100
-- [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md) - Thu Oct 14 21:31:19 2021 +0100
 
 ### Categories
 
@@ -28,6 +28,7 @@ _69 TILs and counting..._
 - [docker](#docker)
 - [dotnet](#dotnet)
 - [git](#git)
+- [html](#html)
 - [ide-tooling](#ide-tooling)
 - [javascript](#javascript)
 - [macos](#macos)
@@ -82,6 +83,9 @@ _69 TILs and counting..._
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
 - [Dev Environment](git/setup.md)
+
+### [html](#html)
+- [Web Componts](html/web-components.md)
 
 ### [ide-tooling](#ide-tooling)
 - [iterm2 setup](ide-tooling/iterm2.md)

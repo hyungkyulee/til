@@ -2,13 +2,22 @@
 ## Core Azure services
 
 ### Active Directory
-Account management 
+Account management, main subscription of apps which are registered. It includes :
 - users : human
 - service : app registration (principle)
+> if you can select an app on azure portal > left menu > azure active directory > app registrations > [one of app(principle) you created], you can see the below :
+  - client id : application id
+  - client credentials : secret key/value pair for this application service
+    > If you do not have a client secret, create one.
+      - Under Client secrets, click New client secret.
+      - Enter a name, an expiration date and click Add.
+      - Copy and paste the value of the Client secret into the open file and label the value.
+  - tenant id : directory id (active directory account)
 
 ### Subscription
-project based group
-combining the AD resources (e.g. users, app registrations, etc)
+a project based group which have role-based access control (RBAC) permissions to manage Azure resources
+> combining the AD resources (e.g. users, app registrations, etc)
+> billing access is required
 
 ### Group and IAM Role
 #### Group creation

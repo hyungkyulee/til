@@ -19,6 +19,17 @@ a project based group which have role-based access control (RBAC) permissions to
 > combining the AD resources (e.g. users, app registrations, etc)
 > billing access is required
 
+* Azure Credentials
+a json collection of the above
+```
+{
+  "clientId": "***",
+  "clientSecret": "***",
+  "subscriptionId": "***",
+  "tenantId": "***"
+}
+```
+
 ### Group and IAM Role
 #### Group creation
 https://docs.microsoft.com/en-us/azure/active-directory/roles/groups-create-eligible

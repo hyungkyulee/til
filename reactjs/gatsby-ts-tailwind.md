@@ -5,7 +5,11 @@
 ### Gatsby Cli
 ```
 npm i -g gatsby-cli
+gatsby --version
 ```
+> if gatsby and gatsby-cli major version are different (e.g. v3 and v4), update gatsby with a latest version
+  ``` npm install gatsby@latest ```
+> Please note: If you use npm 7 you’ll want to use the --legacy-peer-deps option when following the instructions in this guide. For example, the above command would be: ```npm install gatsby@latest --legacy-peer-deps```
 
 ### templated project
 Gatsby + Typescript + Tailwind CSS + Jest
@@ -67,10 +71,10 @@ rm gatsby-ssr.js
 > some of the dependencies might be pre-installed on starter project of gatsby
 ```
 npm i typescript gatsby-plugin-typescript
-npx install-peerdeps --dev eslint-config-airbnb
-// if necessary, please install more eslint dependencies for eslint-config-airbnb
 npm install --save-dev @types/react @types/react-dom @types/node eslint eslint-config-prettier eslint-plugin-prettier
 ```
+> if necessary (optional), please install more eslint dependencies for eslint-config-airbnb
+  ```npx install-peerdeps --dev eslint-config-airbnb```
 
 - update gatsby-config to enable typescript plugin
 ```
@@ -87,7 +91,7 @@ plugins: [
   ],
 ```
 
-- update package.json
+- update package.json (optional)
 ```
 ...
 "scripts": {

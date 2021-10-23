@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_70 TILs and counting..._
+_71 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Github cli to use credential](git/github-cli.md) - Sat Oct 23 10:55:58 2021 +0100
 - [Web Componts](html/web-components.md) - Mon Oct 18 11:05:35 2021 +0100
-- [Configure the AWS dev environment](cloud-aws/aws-setup.md) - Sun Oct 17 22:52:57 2021 +0100
 
 ### Categories
 
@@ -80,6 +80,7 @@ _70 TILs and counting..._
 
 ### [git](#git)
 - [Git commands](git/commands.md)
+- [Github cli to use credential](git/github-cli.md)
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
 - [Dev Environment](git/setup.md)

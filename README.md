@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_71 TILs and counting..._
+_72 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Coursera DBMS - Module4](database/coursera-task-m4.md) - Sat Oct 23 17:40:26 2021 +0100
 - [Github cli to use credential](git/github-cli.md) - Sat Oct 23 10:55:58 2021 +0100
-- [Web Componts](html/web-components.md) - Mon Oct 18 11:05:35 2021 +0100
 
 ### Categories
 
@@ -66,6 +66,7 @@ _71 TILs and counting..._
 
 ### [database](#database)
 - [Database Management Essentials Course Assignment](database/coursera-task-m3.md)
+- [Coursera DBMS - Module4](database/coursera-task-m4.md)
 - [DBMS Overview](database/dbms.md)
 - [PostgreSQL general](database/postgresql.md)
 

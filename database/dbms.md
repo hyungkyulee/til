@@ -8,3 +8,14 @@
 - Persistent : stability, reliablility
 
 
+Query clause Evaluation order
+- Rows -> Groups -> Result
+> - Rows : Rows operations before group operation
+    - From
+    - Where
+  - Groups (column) : only happen one time, and calculate summary data for decision making
+    - Group by
+    - Having
+  - Result
+    - Order by
+    - Select

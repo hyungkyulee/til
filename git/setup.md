@@ -64,3 +64,20 @@ Paste the key to Avatar > Settings > SSH and GPG Keys > New SSH Key
 
 ### Bitbucket
 Paste the key to personal settings > SSH Keys > Add Key
+
+
+## git Alias
+Edit ~/.gitconfigure
+```
+[alias]
+  # Show verbose output about tags, branches or remotes
+  ci = commit
+  st = status
+  co = checkout
+  br = branch
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  # Pretty log output
+  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+```

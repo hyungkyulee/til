@@ -190,3 +190,55 @@ module.exports = {
 
 - CSS in JS setup
 - SCSS setup
+
+- custom colors
+> Purged CSS doesn't know to keep classes like "bg-test-xxx-xxx" because that string doesn't appear in the code, only "bg-" appears. it's needed to make sure any classes to Purge CSS to keep appear as complete strings in the css, they cannot be dynamically concatenated.
+```
+module.exports = {
+  purge: {
+    content: [
+      './src/**/*.html',
+      './src/**/*.js'
+    ],
+    options: {
+      safelist: {
+        standard: [
+          /test-skyblue-light$/, /test-skyblue$/, /test-skyblue-dark$/,
+          /test-blue-light$/, /test-blue$/, /test-blue-dark$/,
+          /test-gray-light$/, /test-gray$/, /test-gray-dark$/
+        ]
+      },
+    },
+  },
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend:{},
+    colors: {
+      test: {
+        skyblue: {
+          light: '#7FCEF536',
+          DEFAULT: '#7CCDF5',
+          dark: '#54ACE1',
+        },
+        blue: {
+          light: '#3094D4',
+          DEFAULT: '#0070BF',
+          dark: '#005A93',
+        },
+        gray: {
+          light: '#00000026',
+          DEFAULT: '#757474',
+          dark: '#383838'
+        }
+      }
+    },
+    fill: theme => theme('colors')
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
+```

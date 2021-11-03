@@ -13,6 +13,9 @@ npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefi
 
 // install CRACO to be able to configure Tailwind
 npm install @craco/craco
+
+// I always install the tailwind forms packages because most applications will at some point require forms.
+npm install @tailwindcss/forms
 ```
 > Create React App doesn’t support PostCSS 8 yet so you need to install the Tailwind CSS v2.0 PostCSS 7 compatibility build for now as we’ve shown above.
 
@@ -70,7 +73,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 ```
 
@@ -96,4 +101,15 @@ code {
 }
 ```
 
-### 
+### Add TypeScript to the Project
+#### install dependencies
+```
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+#### typescript config by cli
+```
+npx tsc --init
+```
+
+#### change the extension to .tsx/ts

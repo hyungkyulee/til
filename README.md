@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_72 TILs and counting..._
+_73 TILs and counting..._
 
 ---
 
@@ -112,6 +112,7 @@ _72 TILs and counting..._
 - [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
+- [Tailwind project on ReactJS webapp](reactjs/tailwind-react.md)
 
 ### [serverless](#serverless)
 - [Webapp with serverless platform on AWS](serverless/aws-webapp.md)

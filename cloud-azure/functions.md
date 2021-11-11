@@ -1,6 +1,11 @@
 # Azure Function Projects
 
 ## Setup Infrastructure
+### Azure Cli
+```
+brew update && brew install azure-cli
+```
+
 ### install azure function tools (aka. cli)
 > ref: https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash
 

@@ -228,6 +228,8 @@ KeyIdentifier [
 ### Test/Build a signed Bundle with the new keystore 
 - Build a signed bundle on Android Studio
 ![image](https://user-images.githubusercontent.com/59367560/132960243-b833e695-bfcc-4243-9e03-0fc1606dd1b7.png)
+> when you use the new keystore or import the existing keystore, you can check 'export encrypted key for enrolling published apps' option and set the location to the same folder as the .jks file.
+> it will created a private_key.pepk file on the location
 
 - Build result and .aab outcome
 ![image](https://user-images.githubusercontent.com/59367560/132960286-585a76fe-269c-4ecd-ad82-0e0a0e7a9699.png)

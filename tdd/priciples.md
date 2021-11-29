@@ -1,4 +1,14 @@
 # Priciples of TDD
+## Why testing
+- check if it's wokring as expected
+- Safeguard against unwanted behaviour on changes
+- Automated and maintainable on a long-term
+
+## Golden rule of testing
+- high value features
+- edge cases
+- things that are easy to break
+- Basic React components (UI, Conditional rendering, Utis/Hooks)
 
 ## The cycle of TDD
 ### The Three Laws of TDD

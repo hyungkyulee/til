@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_73 TILs and counting..._
+_74 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md) - Tue Dec 28 16:40:47 2021 +0000
 - [Coursera DBMS - Module4](database/coursera-task-m4.md) - Sat Oct 23 17:40:26 2021 +0100
-- [Github cli to use credential](git/github-cli.md) - Sat Oct 23 10:55:58 2021 +0100
 
 ### Categories
 
@@ -106,6 +106,7 @@ _73 TILs and counting..._
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)
 - [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
+- [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md)
 
 ### [reactjs](#reactjs)
 - [Auth Flow on ReactJS](reactjs/auth.md)

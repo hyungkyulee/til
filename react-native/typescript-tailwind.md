@@ -40,3 +40,5 @@ npx react-native init AwesomeTSProject --template react-native-template-typescri
 > npm uninstall -g react-native-cli
 > yarn global add @react-native-community/cli
 > ```
+
+![image](https://user-images.githubusercontent.com/59367560/147661449-d900b3f0-44d0-495c-8119-98f681ca7180.png)

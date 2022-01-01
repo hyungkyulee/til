@@ -173,3 +173,32 @@ node sample.js
     return 'Address in London: ' + address + ', ' + student.postcode;
   }
   ```
+  
+### Destructuring in Parameter
+Destructuring in Function Parameter was introduced at ECMAScript2015, thought. Typescript cannot transfile the destrucrued paramter.
+This is because a type annonation is not a type, but a name of variable under the specification of a superset of javascript. 
+so, the below will not work
+```
+function Called(param: any, {name: string}): number {
+  return 100
+}
+```
+
+Solutions are ...
+```
+// typing destructured parameter
+function Called(param: any, {name}: {name: string}): number {
+...
+
+// (optional) for a default value
+function Called(param: any, {name = ''}: {name?: string}): number {
+...
+
+// by interface
+interface NameProp {
+  name?: string;
+}
+
+function Called(param: any, {name = ''}: NameProp = {}): number {
+...
+```

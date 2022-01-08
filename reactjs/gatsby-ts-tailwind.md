@@ -101,6 +101,29 @@ module.exports = {
   ],
 };
 
+// add 'tsconfig.json'
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2017"],
+    "types": ["cypress"],
+    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "typeRoots": ["node_modules/@types", "src/types"]
+  },
+  "include": ["./src/**/*"]
+}
+
 // change 'index.js' to 'index.tsx'
 ```
 
@@ -144,7 +167,9 @@ module.exports = {
   purge: {
     content: [
       './src/**/*.html',
-      './src/**/*.js'
+      './src/**/*.js',
+      './src/**/*.ts',
+      './src/**/*.tsx'
     ],
     options: {
       safelist: {

@@ -4,7 +4,12 @@
 
 ### Gatsby Cli
 ```
+// yarn
+yarn add gatsby-cli
+
+// npm
 npm i -g gatsby-cli
+
 gatsby --version
 ```
 > if gatsby and gatsby-cli major version are different (e.g. v3 and v4), update gatsby with a latest version
@@ -22,8 +27,187 @@ gatsby develop
 ```
 > open the website on localhost:8080 as a default
 
-### manually build up typescript and other packages
-#### Gastby init project (javascript)
+### manually build up from the scratch
+#### Gatsby Init
+```
+mkdir [project name]
+cd [project name]
+yarn init gatsby
+...
+
+yarn
+```
+
+#### Install essential dependencies
+```
+yarn add gatsby react react-dom
+...
+```
+
+#### edit script, a first build, and launch app
+```
+// package.json
+...
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.14.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+
+...
+
+// build static web output
+yarn build
+
+// index.js at src/pages/index.js
+import React from 'react'
+
+const Init = () => {
+  return (
+    <div>
+      Index Page
+    </div>
+  )
+}
+
+export default Init
+
+
+// launch dev app
+yarn develop
+```
+
+#### other dependencies
+```
+// typescript
+yarn add typescript gatsby-plugin-typescript
+yarn add @types/react @types/react-dom @types/node eslint eslint-config-prettier eslint-plugin-prettier
+
+// add 'gatsby-config.js'
+module.exports = {
+  siteMetadata: {
+    siteUrl: "https://www.simplix.app",
+    title: "Simply Website Template",
+  },
+  plugins: [
+    `gatsby-plugin-typescript`,
+  ],
+};
+
+// change 'index.js' to 'index.tsx'
+```
+
+```
+// tailwindcss
+yarn add tailwindcss autoprefixer 
+yarn add @types/tailwindcss 
+yarn add @tailwindcss/forms @tailwindcss/aspect-ratio
+
+// add 'tailwind.config.js'
+module.exports = {
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}
+
+// post CSS
+yarn add postcss gatsby-plugin-postcss
+
+// update 'gatsby-config.js'
+...
+plugins: [
+  ...
+  `gatsby-plugin-postcss`
+],
+
+// add 'postcss.config.js' and link plugin
+module.exports = {
+  plugins: [
+    require('tailwindcss')('./tailwind.config.js'),
+    require('autoprefixer'),
+  ]
+}
+
+// update 'tailwind.config.js' importing plugins and color set
+module.exports = {
+  purge: {
+    content: [
+      './src/**/*.html',
+      './src/**/*.js'
+    ],
+    options: {
+      safelist: {
+        standard: [
+          /[company name]-[color1 name]-light$/, 
+          /[company name]-[color2 name]$/, 
+          /[company name]-[color3 name]-dark$/, 
+        ]
+      },
+    },
+  },
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend:{},
+    colors: {
+      [company name or site name]: {
+        [color1 name]: {
+          light: '#D9F0FC',
+          DEFAULT: '#7CCDF5',
+          dark: '#54ACE1',
+        },
+        [color2 name]: {
+          light: '#3BA3D4',
+          DEFAULT: '#0070BF',
+          dark: '#005A93',
+        },
+        [color3 name]: {
+          light: '#00000026',
+          DEFAULT: '#757474',
+          dark: '#383838'
+        }
+      }
+    },
+    fill: theme => theme('colors')
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}
+
+// import classes in the most prior entry point: e.g. index.tsx
+import * as React from 'react'
+import "tailwindcss/dist/base.min.css"
+import "tailwindcss/dist/components.min.css"
+import "tailwindcss/dist/utilities.min.css"
+import "tailwindcss/tailwind.css"
+```
+> on an error of yarn build with 'not found of tailwindcss/dist/xxx.min.css', link them with path of node_modules libraries
+> e.g. 
+> ```
+> import "tailwindcss/base.css"
+> import "tailwindcss/components.css"
+> import "tailwindcss/utilities.css"
+> import "tailwindcss/tailwind.css"
+> ```
+
+
+### manually build up from plugin
+#### Gastby init project(js) with 'gatsby-plugin-typescript'
 ```
 // -- package.json
 ...

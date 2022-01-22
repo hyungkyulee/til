@@ -1,5 +1,9 @@
 # Software Design Patterns in OOP
 
+https://medium.com/educative/the-7-most-important-software-design-patterns-d60e546afb0e
+https://techbeacon.com/app-dev-testing/top-5-software-architecture-patterns-how-make-right-choice
+https://quanticdev.com/articles/software-design-patterns/
+
 ## SOLID Principle
 ### Single Responsibility
 - Tom DeMarco, "There should never be more than one reason for a class to change."

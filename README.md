@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_74 TILs and counting..._
+_75 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Fluent Migrator](dotnet/fluent-migrator.md) - Tue Jan 25 01:32:17 2022 +0000
 - [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md) - Tue Dec 28 16:40:47 2021 +0000
-- [Coursera DBMS - Module4](database/coursera-task-m4.md) - Sat Oct 23 17:40:26 2021 +0100
 
 ### Categories
 
@@ -75,6 +75,7 @@ _74 TILs and counting..._
 
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
+- [Fluent Migrator](dotnet/fluent-migrator.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
 - [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md)
 - [SQL Database on ASP.NET project](dotnet/sqldb-asp.net.md)

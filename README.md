@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_75 TILs and counting..._
+_76 TILs and counting..._
 
 ---
 
@@ -129,6 +129,7 @@ _75 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [terraform](#terraform)
+- [Terraform](terraform/get-started.md)
 - [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
 
 ### [typescript](#typescript)

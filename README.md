@@ -85,7 +85,7 @@ _76 TILs and counting..._
 - [Github cli to use credential](git/github-cli.md)
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
-- [Dev Environment](git/setup.md)
+- [SSH Configuration](git/setup.md)
 
 ### [html](#html)
 - [Web Componts](html/web-components.md)

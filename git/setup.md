@@ -1,4 +1,4 @@
-# Dev Environment
+# SSH Configuration
 When you set up SSH, you create a key pair that contains a private key (saved to your local computer) and a public key (uploaded to Bitbucket). Bitbucket uses the key pair to authenticate anything the associated account can access. This two-way mechanism prevents man-in-the-middle attacks.
 
 This first key pair is your default SSH identity. If you need more than a default identity, you can set up additional keys.
@@ -80,4 +80,27 @@ Edit ~/.gitconfigure
   remotes = remote -v
   # Pretty log output
   hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+```
+
+# Personal Access Token
+Background : remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+
+## Personal access tokens over https
+> ref: https://docs.github.com/en/enterprise-cloud@latest/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+#### Create a personal access token
+Developer settings > Developer settings > Personal access tokens > Generate new token 
+
+#### Set details
+Description : Organisation Developer Token
+Token : [created token]
+
+#### Configures SSO
+Configure SSO on the list items which have been invited from the repository admin
+
+## Clone Repository
+```
+git clone [https repository path]
+username : hyungkyulee
+password : [personal token]
 ```

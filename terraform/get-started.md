@@ -142,4 +142,7 @@ Creating directory for terraform binary at: /Users/kyu/.terraform.versions
 Downloading to: /Users/kyu/.terraform.versions
 35666505 bytes downloaded
 Switched terraform to version "0.13.2"
+
+ ~/work  terraform -v                                                                           ✔  1m 3s  Development az  23:47:55
+Terraform v0.13.2
 ```

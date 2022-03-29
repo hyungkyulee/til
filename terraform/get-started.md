@@ -117,3 +117,29 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
  ~/.../terraform  main ⇣1 !15 ?1   
 
 ```
+
+## terraform version management on each project
+different versions can be changable with 'tfswitch' 
+
+### install 'tfswitch'
+```
+brew install warrensbox/tap/tfswitch
+...
+tfswitch -l  // [ or tfswitch --list-all ]
+```
+> Error: Cannot install warrensbox/tap/tfswitch because conflicting formulae are installed.
+  terraform
+  Please `brew unlink terraform` before continuing.
+  ```
+  brew unlink terraform
+  Unlinking /usr/local/Cellar/terraform/1.1.4... 1 symlinks removed.
+  ```
+  
+```
+~/work  tfswitch -l                                                                                              ✔  16s  23:46:40
+Creating directory for terraform binary at: /Users/kyu/.terraform.versions
+✔ 0.13.2
+Downloading to: /Users/kyu/.terraform.versions
+35666505 bytes downloaded
+Switched terraform to version "0.13.2"
+```

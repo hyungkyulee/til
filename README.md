@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_76 TILs and counting..._
+_77 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Process issues on Macos](macos/process.md) - Thu Mar 31 16:34:00 2022 +0100
 - [Fluent Migrator](dotnet/fluent-migrator.md) - Tue Jan 25 01:32:17 2022 +0000
-- [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md) - Tue Dec 28 16:40:47 2021 +0000
 
 ### Categories
 
@@ -101,6 +101,7 @@ _76 TILs and counting..._
 - [Deep diving into closures](javascript/closures.md)
 
 ### [macos](#macos)
+- [Process issues on Macos](macos/process.md)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
 
 ### [react-native](#react-native)

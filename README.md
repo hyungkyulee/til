@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_78 TILs and counting..._
+_79 TILs and counting..._
 
 ---
 
@@ -40,6 +40,7 @@ _78 TILs and counting..._
 - [terraform](#terraform)
 - [typescript](#typescript)
 - [vpn](#vpn)
+- [windows](#windows)
 - [xamarin-forms](#xamarin-forms)
 
 ### [api-design](#api-design)
@@ -141,6 +142,9 @@ _78 TILs and counting..._
 
 ### [vpn](#vpn)
 - [Forticlient VPN](vpn/forticlient.md)
+
+### [windows](#windows)
+- [Windows basic setting like mac](windows/settings.md)
 
 ### [xamarin-forms](#xamarin-forms)
 - [Managing Bitmap Memory in Android (feat. Xamarin.Forms)](xamarin-forms/android-bitmap.md)

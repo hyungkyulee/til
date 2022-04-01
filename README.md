@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_79 TILs and counting..._
+_80 TILs and counting..._
 
 ---
 
@@ -77,6 +77,7 @@ _79 TILs and counting..._
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
 - [Fluent Migrator](dotnet/fluent-migrator.md)
+- [Windows](dotnet/multiple-projects-run.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
 - [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md)
 - [SQL Database on ASP.NET project](dotnet/sqldb-asp.net.md)

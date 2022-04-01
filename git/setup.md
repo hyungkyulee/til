@@ -87,7 +87,7 @@ Background : remote: Support for password authentication was removed on August 1
 
 ## Personal access tokens over https
 > ref: https://docs.github.com/en/enterprise-cloud@latest/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
-
+> ref: https://help.knapsack.cloud/article/83-github-personal-access-tokens-local-dev#:~:text=Under%20the%20System%20Properties%2C%20navigate%20to%20the%20Advanced,button%20For%20%22Variable%20name%22%20use%20%22GITHUB_TOKEN%22%20%28no%20quotes%29
 #### Create a personal access token
 Developer settings > Developer settings > Personal access tokens > Generate new token 
 

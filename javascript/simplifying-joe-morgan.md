@@ -30,8 +30,10 @@
   
 ### T2. Reduce Scope Conflicts with let and const
 - comparison
-  || var | let ||
-  | lexical | block |
+
+|| var | let ||
+|-|-|
+| lexical | block |
   
 ### T3. Isolate Information with Block Scoped Variables
 ### T4. Convert Variables to Readable Strings with Template Literals

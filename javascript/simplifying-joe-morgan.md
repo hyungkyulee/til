@@ -53,12 +53,18 @@
 - REPL ( read evaluate print loop ) : cli which immediately evaluates it and return result
 
 ```
-function addClick(items) {
-for (var i = 0; i < items.length; i++) {
-items[i].onClick = function () { return i; }; }
-return items; }
-const example = [{}, {}];
-const clickSet = addClick(example); clickSet[0].onClick();
+function addClick(items: any) { 
+    for (var i = 0; i < items.length; i++) { 
+        items[i].onClick = function () { 
+            return i; 
+        }; 
+    } 
+    return items; 
+} 
+
+const example = [{}, {}]
+const clickSet = addClick(example) 
+console.log(clickSet[0].onClick())
 ```
 
 ```

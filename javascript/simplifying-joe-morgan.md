@@ -30,7 +30,7 @@
   
 ### T2. Reduce Scope Conflicts with let and const
 - comparison
-  | var | let |
+  || var | let ||
   | lexical | block |
   
 ### T3. Isolate Information with Block Scoped Variables

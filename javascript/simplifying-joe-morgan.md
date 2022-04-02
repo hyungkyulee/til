@@ -30,12 +30,59 @@
   
 ### T2. Reduce Scope Conflicts with let and const
 - comparison
-
 || var | let ||
-|-|-|
 | lexical | block |
-  
+| global | local {} |
+| continue | end at block |
+
+> "functions are executed using the scope chain that was in effect when they were defined" - according to JavaScript Definition Guide.
+> e.g. 
+> ```
+  var scope = "I am global";
+  function whatismyscope(){
+     var scope = "I am just a local";
+     function func() {return scope;}
+     return func;
+  }
+  whatismyscope()()
+  ```
+
 ### T3. Isolate Information with Block Scoped Variables
+- lexical variable inside {} = accessable from others
+- hoisting : accessable before declaration due to compile process (?)
+- REPL ( read evaluate print loop ) : cli which immediately evaluates it and return result
+
+```
+function addClick(items) {
+for (var i = 0; i < items.length; i++) {
+items[i].onClick = function () { return i; }; }
+return items; }
+const example = [{}, {}];
+const clickSet = addClick(example); clickSet[0].onClick();
+```
+
+```
+function addClick(items) {
+for (var i = 0; i < items.length; i++) {
+items[i].onClick = (function (i) { return function () {
+return i; };
+ }(i));
+}
+ return items;
+}
+const example = [{}, {}];
+const clickSet = addClick(example);  clickSet[0].onClick();
+```
+
+```
+function addClick(items) {
+for (let i = 0; i < items.length; i++) {
+items[i].onClick = function () { return i; }; }
+return items; }
+const example = [{}, {}];
+const clickSet = addClick(example); clickSet[0].onClick();
+```
+
 ### T4. Convert Variables to Readable Strings with Template Literals
 
 

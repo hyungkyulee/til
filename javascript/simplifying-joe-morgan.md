@@ -37,7 +37,7 @@
 
 > "functions are executed using the scope chain that was in effect when they were defined" - according to JavaScript Definition Guide.
 > e.g. 
-> ```
+  ```
   var scope = "I am global";
   function whatismyscope(){
      var scope = "I am just a local";

@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_80 TILs and counting..._
+_81 TILs and counting..._
 
 ---
 
@@ -101,6 +101,7 @@ _80 TILs and counting..._
 
 ### [javascript](#javascript)
 - [Deep diving into closures](javascript/closures.md)
+- [Simplifying Javascript](javascript/simplifying-joe-morgan.md)
 
 ### [macos](#macos)
 - [Process issues on Macos](macos/process.md)

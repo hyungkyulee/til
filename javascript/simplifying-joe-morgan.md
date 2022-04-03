@@ -3,7 +3,7 @@
 ## 1. Signal Intention with Variable Assignment
 ### Tip 1. Signal Unchanging Values with const
 - var vs more options (var, let, const)
-- most cases with 'const', cannot reassign ( = A value assigned to const is not immutable)
+- most cases with 'const', cannot reassign ( = A value assigned to const is immutable, except collections)
 - 'const' benefits
   - readible of intention
   - error protection of unitended reassignment

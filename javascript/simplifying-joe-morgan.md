@@ -66,7 +66,7 @@ function addClick(items: any) {
 
 const example = [{}, {}]
 const clickSet = addClick(example)
-console.log(`result: ${clickSet[0].onClick()}, ${clickSet[1].onClick()})
+console.log(`result: ${clickSet[0].onClick()}, ${clickSet[1].onClick()}`)
 ```
 > result: 2, 2
 > 'i' always refers to the last value they’re assigned within a function. And it's return the last 'var i' value = 2 at a calling time of 'onClick'

@@ -72,6 +72,22 @@ git merge master
 ```
 > 'git pull master' won't work. git pull = git fetch + git merge, but only work in the same branch.
 
+[rebase]
+```
+git fetch // local sync with remote, or you can go to master and git pull first before doing a rebase
+git pull --rebase origin master
+
+// push forcely if no conflict
+git push -f
+
+// resolve them if there is conflicts
+// and git add / commit to apply for the resolution of the conflicts
+
+// continue a rebase until no-conflict
+$ git rebase --continue
+Successfully rebased and updated refs/heads/74719-exclude-hot-slice-pizza.
+
+```
 
 #### Delete Branch
 ```

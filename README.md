@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_81 TILs and counting..._
+_82 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [API Documentation](swagger/get-started.md) - Wed Apr 20 23:42:05 2022 +0100
 - [build issues on Node Packages](reactjs/npm-build-issues.md) - Thu Mar 31 23:14:44 2022 +0100
-- [Process issues on Macos](macos/process.md) - Thu Mar 31 16:34:00 2022 +0100
 
 ### Categories
 
@@ -36,6 +36,7 @@ _81 TILs and counting..._
 - [reactjs](#reactjs)
 - [serverless](#serverless)
 - [ssl](#ssl)
+- [swagger](#swagger)
 - [tdd](#tdd)
 - [terraform](#terraform)
 - [typescript](#typescript)
@@ -127,6 +128,9 @@ _81 TILs and counting..._
 
 ### [ssl](#ssl)
 - [Https Dev Certificate on Mac for .NET project](ssl/localhost-cert.md)
+
+### [swagger](#swagger)
+- [API Documentation](swagger/get-started.md)
 
 ### [tdd](#tdd)
 - [Priciples of TDD](tdd/priciples.md)

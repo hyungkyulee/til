@@ -27,4 +27,42 @@ https://github.com/RicoSuter/NSwag
 #### Setup
 https://github.com/RicoSuter/NSwag/wiki/AspNetCore-Middleware
 
+- Install Nuget Package on a API project
+  > NSwag.AspNetCore (by Rico Suter
+  
+- Config Services
+  ```
+  // Startup
+  public void ConfigureServices(IServiceCollection services)
+  {
+      services.AddControllersWithViews();
+      services.AddCors(options =>
+      {
+          options.AddPolicy(name: "Web",
+              builder =>
+              {
+                  builder.AllowAnyOrigin();
+              });
+      });
 
+      services.AddOpenApiDocument(document => document.DocumentName = "OpenApi");
+      services.AddSwaggerDocument(document => document.DocumentName = "Swagger");
+      
+      services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
+      ...
+      
+
+  // Configure
+  public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+  {
+      ...
+      app.UseRouting();
+      app.UseCors("Web");
+  
+      app.UseOpenApi();
+      app.UseSwaggerUi3();
+      ...
+      
+      app.UserEndpoints ...
+
+  ```

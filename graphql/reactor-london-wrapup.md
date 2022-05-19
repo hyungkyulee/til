@@ -53,8 +53,31 @@ type Query {
 ...
 WebSocket
 
-## 
+## Middleware
+```
+// [ ... ]  = middleware
+public class Query
+{
+    [UsePaging]         // <- 1st middleware of pipeline
+    [UseProjection]     // <- 2nd middleware of pipeline
+    [UseFiltering]      // ...
+    [UseSorting]
+    public IQueryable<Asset> GetAssets(AssetContext context)
+        => context.Assets;
+}
+```
 
 
+middleware is a sort of pipeline
 
 
+## Layer Service
+GraphQL - Business Layer - Data Layer
+e.g.
+            GraphQL
+   |           |                   |
+Internal     REST                REST
+   |           |                   |
+Asset Srv    Price Change Srv    Price History Srv
+   |           |                   |
+Data         Data                Data

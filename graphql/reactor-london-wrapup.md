@@ -11,6 +11,9 @@ REST API
 GraphQL
 - just empty json data on request with only key
 - gragment : componentisation (e.g. function)
+- field = dotnet's method
+- no controller system
+
 
 
 ## What is GraphQL
@@ -29,6 +32,29 @@ Events - Subscription - N/A
 
 ## examples
 https://github.com/michaelstaib/microsoft-reactor-examples/tree/main/exercises/Exercise1 
+- graphql 의 fields 는 일종의 dotnet 의 method 로 이해할 수 있다. 
+- annotation-based approach
+```
+public class Query
+{
+    // Resolver
+    public string Hello(string name = "World")
+        => $"Hello, {name}!";
+}
+
+type Query {
+    // Field / Argument / Default Value / Non-Null
+    Hello(string name = "World") => $"Hello, {name}!";
+}
+```
+> child가 nullable 이어도 부모가 null 이면 contract을 위반 했다고 본다. 
+
+## GraphQl Transport
+...
+WebSocket
+
+## 
+
 
 
 

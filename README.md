@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_82 TILs and counting..._
+_83 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md) - Thu May 19 18:51:05 2022 +0100
 - [API Documentation](swagger/get-started.md) - Wed Apr 20 23:42:05 2022 +0100
-- [build issues on Node Packages](reactjs/npm-build-issues.md) - Thu Mar 31 23:14:44 2022 +0100
 
 ### Categories
 
@@ -28,6 +28,7 @@ _82 TILs and counting..._
 - [docker](#docker)
 - [dotnet](#dotnet)
 - [git](#git)
+- [graphql](#graphql)
 - [html](#html)
 - [ide-tooling](#ide-tooling)
 - [javascript](#javascript)
@@ -89,6 +90,9 @@ _82 TILs and counting..._
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
 - [SSH Configuration](git/setup.md)
+
+### [graphql](#graphql)
+- [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md)
 
 ### [html](#html)
 - [Web Componts](html/web-components.md)

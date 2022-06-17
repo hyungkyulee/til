@@ -73,7 +73,14 @@ sudo gem install cocoapods
    brew cask install android-platform-tools
    adb devices
    ```
-
+3) JDK installation
+   ```
+   brew tap homebrew/cask-versions
+   brew install --cask zulu11
+   ```
+   > ./android/gradlew --version
+   > Android Gradle v.7.x requires above jdk 11 : https://reactnative.dev/docs/next/environment-setup 
+   
 [To install minimum SDK]
 1) Do the basic steps
    ```

@@ -80,6 +80,12 @@ sudo gem install cocoapods
    ```
    > ./android/gradlew --version
    > Android Gradle v.7.x requires above jdk 11 : https://reactnative.dev/docs/next/environment-setup 
+   > ```
+   > # export PATH="/usr/local/opt/openjdk@8/bin:$PATH" // disable jdk1.8, replace it to zulu11 
+   > 
+   > export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
+   > export PATH="$JAVA_HOME/bin:$PATH"
+   > ```
    
 [To install minimum SDK]
 1) Do the basic steps

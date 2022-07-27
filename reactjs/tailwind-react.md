@@ -115,32 +115,23 @@ webpack(webpackConfigProd, (err, stats) => {
 ```
 
 #### Tailwind and PostCSS
+```
 // if any dependency issue shows, npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 npm install -D tailwindcss postcss autoprefixer
-
 // (OR)
 yarn add -D tailwindcss postcss autoprefixer
-yarn add @tailwindcss/forms @tailwindcss/aspect-ratio
-```
 
-// I always install the tailwind forms packages because most applications will at some point require forms.
-npm install @tailwindcss/forms
+// install the tailwind forms packages because most applications will at some point require forms.
+yarn add @tailwindcss/forms @tailwindcss/aspect-ratio
 ```
 > Create React App doesn’t support PostCSS 8 yet so you need to install the Tailwind CSS v2.0 PostCSS 7 compatibility build for now as we’ve shown above.
 
-
-
-#### create tailwind config script at root by cli
+#### create tailwind config scripts
 ```
-npx tailwindcss-cli@latest init
-
-// Need to install the following packages:
-//  tailwindcss-cli@latest
-// Ok to proceed? (y) y
-// ...
+npx tailwindcss init -p
 ```
 
-#### Configure Tailwind to remove unused styles in production
+#### Configure Tailwind and postcss
 ```
 // tailwind.config.js
 module.exports = {
@@ -160,6 +151,17 @@ module.exports = {
 ```
 > purge is deprecated and use contents
 > example
+  [postcss.config.js]
+  ```
+  module.exports = {
+    plugins: [
+      require('tailwindcss')('./tailwind.config.js'),
+      require('autoprefixer'),
+    ]
+  }
+  ```
+  
+  [tailwindcss.config.js]
   ```
   module.exports = {
     content: [
@@ -201,7 +203,7 @@ module.exports = {
 
   ```
 
-#### Include Tailwind in your CSS
+#### Include Tailwind in your CSS and apply it into the code
 ```
 //index.css
 @tailwind base;
@@ -222,6 +224,16 @@ code {
     monospace;
 }
 ```
+
+[app.tsx]
+```
+...
+<h1 className="text-3xl font-bold underline">
+  Hello world!
+</h1>
+...
+```
+
 
 ### Add TypeScript to the Project
 #### install dependencies

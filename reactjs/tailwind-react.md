@@ -5,28 +5,59 @@ ref: https://tailwindcss.com/docs/guides/create-react-app
 #### create an initial react app
 ```
 // create a new project
+// for typescript template : ```npx create-react-app my-project --template typescript```
 npx create-react-app my-project
 cd my-project
 
-// install postcss and dependencies
-npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+// gitignore for reactjs + typescript + tailwindcss
+// please see appendix
 
-// install CRACO to be able to configure Tailwind
-npm install @craco/craco
-
-// I always install the tailwind forms packages because most applications will at some point require forms.
-npm install @tailwindcss/forms
+// If you are new to React, we recommend using Create React App. 
+// It is ready to use and ships with Jest! You will only need to add react-test-renderer for rendering snapshots.
+yarn add --dev react-test-renderer
 ```
-> Create React App doesn’t support PostCSS 8 yet so you need to install the Tailwind CSS v2.0 PostCSS 7 compatibility build for now as we’ve shown above.
 
-#### script change with Craco
+#### Update tsconfig with a separated path options
+[tsconfig.path.json]
+```
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"]
+    }
+  }
+}
+```
+
+[tsconfig.json]
+```
+{
+  "extends": "./tsconfig.path.json",
+  "compilerOptions": {
+  ...
+```
+
+#### install CRACO to be able to optimise a configure
+```
+yarn add @craco/craco
+yarn add -D ts-jest
+```
+
+1) add craco config file location at package.json
+2) change scripts from 'react-scripts' to 'craco'
+[package.json] 
 ```
   {
     // ...
+    "
     "scripts": {
-     "start": "react-scripts start",
-     "build": "react-scripts build",
-     "test": "react-scripts test",
+     // "start": "react-scripts start",
+     // "build": "react-scripts build",
+     // "test": "react-scripts test",
      "start": "craco start",
      "build": "craco build",
      "test": "craco test",
@@ -35,29 +66,78 @@ npm install @tailwindcss/forms
   }
 ```
 
-#### create craco config script at root
+[craco.config.js]
 ```
-// craco.config.js
+onst { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig.path.json');
+
 module.exports = {
-  style: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
+  webpack: {
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+    }
+  },
+  jest: {
+    configure: {
+      preset: 'ts-jest',
+      moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+        prefix: '<rootDir>/src/',
+      }),
     },
   },
-}
+};
 ```
+> ref: https://dev.to/brandonwie/absolute-paths-in-cra-setting-using-craco-feat-typescript-and-ts-jest-2301
+
+#### webpack configuration
+```
+yarn add -D webpack-bundle-analyzer
+```
+
+create report with node
+[analyzer.js]
+```
+const webpack = require("webpack")
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin
+const webpackConfigProd = require("react-scripts/config/webpack.config")(
+  "production"
+)
+
+webpackConfigProd.plugins.push(new BundleAnalyzerPlugin())
+
+webpack(webpackConfigProd, (err, stats) => {
+  if (err || stats.hasErrors()) {
+    console.error(err)
+  }
+})
+```
+
+#### Tailwind and PostCSS
+// if any dependency issue shows, npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+npm install -D tailwindcss postcss autoprefixer
+
+// (OR)
+yarn add -D tailwindcss postcss autoprefixer
+yarn add @tailwindcss/forms @tailwindcss/aspect-ratio
+```
+
+// I always install the tailwind forms packages because most applications will at some point require forms.
+npm install @tailwindcss/forms
+```
+> Create React App doesn’t support PostCSS 8 yet so you need to install the Tailwind CSS v2.0 PostCSS 7 compatibility build for now as we’ve shown above.
+
+
 
 #### create tailwind config script at root by cli
 ```
 npx tailwindcss-cli@latest init
 
-Need to install the following packages:
-  tailwindcss-cli@latest
-Ok to proceed? (y) y
-...
+// Need to install the following packages:
+//  tailwindcss-cli@latest
+// Ok to proceed? (y) y
+// ...
 ```
 
 #### Configure Tailwind to remove unused styles in production
@@ -78,6 +158,48 @@ module.exports = {
   ],
 }
 ```
+> purge is deprecated and use contents
+> example
+  ```
+  module.exports = {
+    content: [
+      './public/**/*.html',
+      './src/**/*.{js,jsx,ts,tsx}'
+    ],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+      extend:{},
+      colors: {
+        navien: {
+          blue: {
+            light: '#1f57cb', // navienapp mobile theme primary.500
+            DEFAULT: '#0E3173', // navienapp mobile theme primary.700
+            dark: '#051d46', // navienapp mobile theme primary.800
+          },
+          orange: {
+            light: '#',
+            DEFAULT: '#FF730F',
+            dark: '#',
+          },
+          gray: {
+            light: '#e5e7eb', // nativebase coolGray.200
+            DEFAULT: '#6b7280', // nativebase coolGray.500
+            dark: '#1f2937' // nativebase coolGray.800
+          }
+        }
+      },
+      fill: theme => theme('colors')
+    },
+    variants: {
+      extend: {},
+    },
+    plugins: [
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+
+  ```
 
 #### Include Tailwind in your CSS
 ```
@@ -105,6 +227,9 @@ code {
 #### install dependencies
 ```
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+// OR
+yarn add -D typescript @types/node @types/react @types/react-dom @types/jest
 ```
 
 #### typescript config by cli

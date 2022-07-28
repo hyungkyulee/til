@@ -16,7 +16,9 @@ https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotne
 
 > without adding DbSet with a new entity, migration will not create table for the entity
 
-Example
+> sometimes, after removing migration, if add migration is not applied a new fix, do update-database first.
+
+[ Example ]
 ```c#
 // ***
 // Proj.DataAccess/Entities/Blog.cs
@@ -44,7 +46,7 @@ public class BlogEntityTypeConfiguration : IEntityTypeConfiguration<Blog>
 }
 
 // ***
-ProjContext.cs
+// ProjContext.cs
 // ***
 public class ProjContext : DbContext
 {

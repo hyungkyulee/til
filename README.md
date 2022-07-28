@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_83 TILs and counting..._
+_84 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Entity Framework](dotnet/entity-framework.md) - Thu Jul 28 12:21:45 2022 +0100
 - [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md) - Thu May 19 18:51:05 2022 +0100
-- [API Documentation](swagger/get-started.md) - Wed Apr 20 23:42:05 2022 +0100
 
 ### Categories
 
@@ -78,6 +78,7 @@ _83 TILs and counting..._
 
 ### [dotnet](#dotnet)
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
+- [Entity Framework](dotnet/entity-framework.md)
 - [Fluent Migrator](dotnet/fluent-migrator.md)
 - [Windows](dotnet/multiple-projects-run.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)

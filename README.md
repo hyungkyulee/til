@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_84 TILs and counting..._
+_85 TILs and counting..._
 
 ---
 
@@ -21,6 +21,7 @@ _84 TILs and counting..._
 - [api-design](#api-design)
 - [cloud-aws](#cloud-aws)
 - [cloud-azure](#cloud-azure)
+- [cloud-email](#cloud-email)
 - [coding-topics](#coding-topics)
 - [cs](#cs)
 - [data-engineering](#data-engineering)
@@ -54,6 +55,9 @@ _84 TILs and counting..._
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
 - [Azure Function Projects](cloud-azure/functions.md)
+
+### [cloud-email](#cloud-email)
+- [Google G-suite](cloud-email/gsuite.md)
 
 ### [coding-topics](#coding-topics)
 - [C# Language (source : exercism)](coding-topics/csharp.md)

@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_85 TILs and counting..._
+_86 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](terraform/aws-serverless.md) - Sat Aug 13 15:10:51 2022 +0100
 - [Entity Framework](dotnet/entity-framework.md) - Thu Jul 28 12:21:45 2022 +0100
-- [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md) - Thu May 19 18:51:05 2022 +0100
 
 ### Categories
 
@@ -147,6 +147,7 @@ _85 TILs and counting..._
 - [React Native Testing](tdd/reactnative-testing.md)
 
 ### [terraform](#terraform)
+- [](terraform/aws-serverless.md)
 - [Terraform](terraform/get-started.md)
 - [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
 

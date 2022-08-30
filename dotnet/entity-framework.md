@@ -72,3 +72,9 @@ public class ProjContext : DbContext
   }
 }
 ```
+
+### other examples
+#### make it nullable with foreign-key
+https://stackoverflow.com/questions/13650257/adding-a-foreign-key-with-code-first-migration 
+
+

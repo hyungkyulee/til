@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_86 TILs and counting..._
+_87 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [Mobile App from Expo](react-native/expo-app-deploy.md) - Tue Sep 13 00:16:17 2022 +0100
 - [](terraform/aws-serverless.md) - Sat Aug 13 15:10:51 2022 +0100
-- [Entity Framework](dotnet/entity-framework.md) - Thu Jul 28 12:21:45 2022 +0100
 
 ### Categories
 
@@ -121,6 +121,7 @@ _86 TILs and counting..._
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)
 - [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
+- [Mobile App from Expo](react-native/expo-app-deploy.md)
 - [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md)
 
 ### [reactjs](#reactjs)

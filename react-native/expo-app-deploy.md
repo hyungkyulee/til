@@ -37,6 +37,32 @@
    ```
 
 
+## Expo build for Android
+Step 1: Run expo build:android and choose apk-bundle option:
+```
+Run the following:
+
+› npm install -g eas-cli
+› eas build -p android https://docs.expo.dev/build/setup/
+
+expo build:android will be discontinued on January 4, 2023 (113 days left).
+
+📝  Android package Learn more: https://expo.fyi/android-package
+
+? What would you like your Android package name to be? › 
+```
+
+install eas-cli
+```
+npm install -g eas-cli
+...
+main !2 ?2  eas --version                                                                     ✔  29s  01:11:06 
+eas-cli/2.1.0 darwin-x64 node-v14.18.0
+
+...
+main !2 ?2  eas build -p android
+
+```
 
 
 

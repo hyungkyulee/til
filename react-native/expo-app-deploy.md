@@ -38,7 +38,9 @@
 
 
 ## Expo build for Android
-Step 1: Run expo build:android and choose apk-bundle option:
+Run expo build:android and choose apk-bundle option:
+> ref: https://docs.expo.dev/build/eas-json/
+
 ```
 Run the following:
 
@@ -63,8 +65,7 @@ eas-cli/2.1.0 darwin-x64 node-v14.18.0
 main !2 ?2  eas build -p android
 
 ```
-
-
+> user account needs to be created at Expo : https://expo.dev/accounts
 
 
 

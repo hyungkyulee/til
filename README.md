@@ -94,7 +94,7 @@ _87 TILs and counting..._
 - [Github cli to use credential](git/github-cli.md)
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
-- [SSH Configuration](git/setup.md)
+- [Self-signed Certificate Issue](git/setup.md)
 
 ### [graphql](#graphql)
 - [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md)

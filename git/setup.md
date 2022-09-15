@@ -1,3 +1,16 @@
+# Self-signed Certificate Issue
+$ git pull
+fatal: unable to access 'https://github.com/sainsburys-tech/ProductionPlanning.git/': SSL certificate problem: self signed certificate in certificate chain
+
+> ref: https://confluence.atlassian.com/bitbucketserverkb/resolving-ssl-self-signed-certificate-errors-806029899.html
+Step 2: Configure git to use the certificate in the windows Trust store
+When using Windows, the problem resides that git by default uses the "Linux" crypto backend. Starting with Git for Windows 2.14, you can configure Git to use SChannel, the built-in Windows networking layer as the crypto backend. To do that, just run the following command in the GIT client:
+
+git config --global http.sslbackend schannel
+This means that it will use the Windows certificate storage mechanism and you don't need to explicitly configure the curl CA storage (http.sslCAInfo) mechanism. Once you have updated the git config, Git will use the Certificate in the Windows certificate store and should not require http.sslCAInfo setting.
+
+
+
 # SSH Configuration
 When you set up SSH, you create a key pair that contains a private key (saved to your local computer) and a public key (uploaded to Bitbucket). Bitbucket uses the key pair to authenticate anything the associated account can access. This two-way mechanism prevents man-in-the-middle attacks.
 

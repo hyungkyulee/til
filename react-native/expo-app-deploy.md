@@ -64,6 +64,15 @@ eas-cli/2.1.0 darwin-x64 node-v14.18.0
 ...
 main !2 ?2  eas build -p android
 
+eas-cli/2.2.1 darwin-arm64 node-v16.17.1
+ ~/dev/navien/navien-serviceagent-app │ main !2  eas build -p android                                                                                                                                                                                                                                       ✔ │
+An Expo user account is required to proceed.
+
+Log in to EAS
+✔ Email or username … deepeyes.devs@gmail.com
+✔ Password … ***********
+Found eas-cli in your project dependencies.
+It's recommended to use the "cli.version" field in eas.json to enforce the eas-cli version for your project.
 ```
 > user account needs to be created at Expo : https://expo.dev/accounts
 

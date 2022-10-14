@@ -109,6 +109,14 @@ sudo gem install cocoapods
 adb devices
 ```
 
+
+### IOS XCODE
+- xcode installation at apple store
+- launch xcode and install the dev components (e.g. ios, macos, watch, etc)
+- select dev tool path
+<img width="824" alt="image" src="https://user-images.githubusercontent.com/59367560/195796321-8773f333-39dc-4399-be6e-fbc48c75913f.png">
+
+
 ## React-Native Project Dev and Build
 
 - project cloning and build/run

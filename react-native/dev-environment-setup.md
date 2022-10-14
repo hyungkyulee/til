@@ -42,8 +42,32 @@ npm install -g react-native-cli
    
 - install cocoapods to MAC OS
   > CocoaPods manages library dependencies for your Xcode projects
+
+[by Brew]
 ```
+brew install cocoapods
+
+// move to the xcode project folder with 'Podfile'
+pod install
+```
+
+[manual]
+```
+// 1) install cocoapods 
 sudo gem install cocoapods
+
+// 2) to setup the CocoaPods master repository
+pod setup
+
+// 3) creat a xcode project
+// 4) create podfile 
+pod init
+
+// 5) add a project dependency on 'podfile' or initial setup
+//    uncomment 'platform : ...' and 'user_frameworks!'(on Swift)
+
+// 6) install the dependencies added
+pod install
 ```
 
 ### Android Studio Installation

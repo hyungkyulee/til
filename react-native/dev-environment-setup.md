@@ -185,6 +185,16 @@ react-native run-android
 
 - emulator to run
 
+## Debugging Tools
+### Flipper
+https://fbflipper.com/docs/getting-started/
+- download desktop app
+- install flipper by brew
+- Open Flipper. gear icon > Settings > enable the "Enable physical iOS devices" option.
+- On "IDB binary location", alert sign (⚠️) means you do not have an idb client
+- install the idb companion and idb client.
+  > https://fbidb.io/docs/installation/
+- Flipper > Gear Icon > Settings > update path with "/opt/homebrew/bin/idb"
 
 ## Native App Build/Dev
 ### Android

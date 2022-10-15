@@ -148,6 +148,10 @@ adb devices
 - Go to your Iphone Settings -> General -> Device Management and "trust" yourself as developer.
 - trust
 
+[rn project]
+- npm install -g ios-deploy
+- react-native run-ios --device "[device name]"
+> if "device name" is not described, it will pick the first device from the list
 
 [for test-flight/production release]
 - enroll at apple developer program : https://developer.apple.com/programs/enroll/

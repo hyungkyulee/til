@@ -43,6 +43,13 @@ npm install -g react-native-cli
 - install cocoapods to MAC OS
   > CocoaPods manages library dependencies for your Xcode projects
 
+### updated at 2022-10
+- xcode installation at apple store
+- launch xcode and install the dev components (e.g. ios, macos, watch, etc)
+- select dev tool path
+<img width="824" alt="image" src="https://user-images.githubusercontent.com/59367560/195796321-8773f333-39dc-4399-be6e-fbc48c75913f.png">
+
+
 [by Brew]
 ```
 brew install cocoapods
@@ -133,13 +140,25 @@ pod install
 adb devices
 ```
 
+### IOS iphone device connection
+- ios/[project name].xcodeproj on xcode
+- product > destination > select your iphone connected by cable
+- automatically manage signing
+- Signing Certificate : assign your personal apple id to the profile
+- Go to your Iphone Settings -> General -> Device Management and "trust" yourself as developer.
+- trust
 
-### IOS XCODE
-- xcode installation at apple store
-- launch xcode and install the dev components (e.g. ios, macos, watch, etc)
-- select dev tool path
-<img width="824" alt="image" src="https://user-images.githubusercontent.com/59367560/195796321-8773f333-39dc-4399-be6e-fbc48c75913f.png">
 
+[for test-flight/production release]
+- enroll at apple developer program : https://developer.apple.com/programs/enroll/
+- do two-factor auth with your apple 
+- trust this browser
+- [phone] download and enroll with the 'apple developer' app on iphone app store
+- click 'continue enrollment on the web' link
+- fill up the detail and confirm your personal info
+- select your entity type : indivisual/sole proprietor
+- review and accept
+- complete your purchase
 
 ## React-Native Project Dev and Build
 

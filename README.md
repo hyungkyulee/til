@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_87 TILs and counting..._
+_88 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# Write a configuration for typescript](reactjs/migration-js-ts.md) - Sun Nov 13 22:43:07 2022 +0000
 - [Mobile App from Expo](react-native/expo-app-deploy.md) - Tue Sep 13 00:16:17 2022 +0100
-- [](terraform/aws-serverless.md) - Sat Aug 13 15:10:51 2022 +0100
 
 ### Categories
 
@@ -128,6 +128,7 @@ _87 TILs and counting..._
 - [Auth Flow on ReactJS](reactjs/auth.md)
 - [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
+- [# Write a configuration for typescript](reactjs/migration-js-ts.md)
 - [build issues on Node Packages](reactjs/npm-build-issues.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
 - [Tailwind project on ReactJS webapp](reactjs/tailwind-react.md)

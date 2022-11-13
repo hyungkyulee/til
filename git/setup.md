@@ -1,8 +1,8 @@
 # Self-signed Certificate Issue
 $ git pull
-fatal: unable to access 'https://github.com/sainsburys-tech/ProductionPlanning.git/': SSL certificate problem: self signed certificate in certificate chain
+fatal: unable to access 'https://github.com/abcde/[project].git/': SSL certificate problem: self signed certificate in certificate chain
 
-> ref: https://confluence.atlassian.com/bitbucketserverkb/resolving-ssl-self-signed-certificate-errors-806029899.html
+> ref: https://confluence.atlassian.com/kkkkk/resolving-ssl-self-signed-certificate-errors-xxxxx.html
 Step 2: Configure git to use the certificate in the windows Trust store
 When using Windows, the problem resides that git by default uses the "Linux" crypto backend. Starting with Git for Windows 2.14, you can configure Git to use SChannel, the built-in Windows networking layer as the crypto backend. To do that, just run the following command in the GIT client:
 
@@ -16,7 +16,7 @@ When you set up SSH, you create a key pair that contains a private key (saved to
 
 This first key pair is your default SSH identity. If you need more than a default identity, you can set up additional keys.
 
- * reference: https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html 
+ * reference: https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-xxxxx.html 
 
 ***
 

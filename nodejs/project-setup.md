@@ -9,6 +9,15 @@ yarn init -y
 yarn set version stable
 ```
 
+- config a module link as a node_modules
+[.yarnrc.yml]
+```
+nodeLinker: node-modules
+
+yarnPath: .yarn/releases/yarn-3.3.0.cjs
+```
+> yarn will use pnp.cjs file to map the packages instead of node_modules. However, if you need to creaete node_modules, use nodeLinker
+
 ## typescript configuration
 ### basic configuration
 ```
@@ -45,13 +54,39 @@ tsc --init
 }
 ```
 
+### code hierarchy
+ |- .yarn
+ |- package.json
+ |- tsconfig.json
+ |- dist
+    |- [handler name]/index.js
+ |- src
+    |- [handler name]/index.ts
+    |- ...
+
+[test handler]
+```
+// src/test-handler/index.ts
+export const handler = () => {
+  console.log('Test a handler')
+  return 'Success.'
+}
+```
+
 ### integrate typescript with webpack
 > ref: https://webpack.js.org/guides/typescript/ 
-- install packages
+- install packages, and dependencies 
 ```
 yarn add -D typescript ts-loader
 yarn add -D webpack webpack-cli
+yarn
 ```
+
+- run with webpack cli
+```
+npx webpack
+```
+> npx webpack will install webpack and webpack-cli before compile and run the handler
 
 - config webpack
 ```

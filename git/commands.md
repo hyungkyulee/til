@@ -16,6 +16,14 @@
 
 * since 2020, master branch has been changed to main.
 
+***
+OR
+
+git brach -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
 ## Basic Commands
 
 ***

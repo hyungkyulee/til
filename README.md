@@ -7,18 +7,19 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_89 TILs and counting..._
+_90 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](ci-cd/github-action-azure.md) - Wed Nov 30 15:59:29 2022 +0000
 - [nodejs project setup with typescript](nodejs/project-setup.md) - Wed Nov 30 10:47:45 2022 +0000
-- [# Write a configuration for typescript](reactjs/migration-js-ts.md) - Sun Nov 13 22:43:07 2022 +0000
 
 ### Categories
 
 - [api-design](#api-design)
+- [ci-cd](#ci-cd)
 - [cloud-aws](#cloud-aws)
 - [cloud-azure](#cloud-azure)
 - [cloud-email](#cloud-email)
@@ -49,6 +50,9 @@ _89 TILs and counting..._
 
 ### [api-design](#api-design)
 - [RESTful API Design](api-design/RESTful.md)
+
+### [ci-cd](#ci-cd)
+- [](ci-cd/github-action-azure.md)
 
 ### [cloud-aws](#cloud-aws)
 - [Configure the AWS dev environment](cloud-aws/aws-setup.md)

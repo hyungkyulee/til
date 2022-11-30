@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_88 TILs and counting..._
+_89 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [nodejs project setup with typescript](nodejs/project-setup.md) - Wed Nov 30 10:47:45 2022 +0000
 - [# Write a configuration for typescript](reactjs/migration-js-ts.md) - Sun Nov 13 22:43:07 2022 +0000
-- [Mobile App from Expo](react-native/expo-app-deploy.md) - Tue Sep 13 00:16:17 2022 +0100
 
 ### Categories
 
@@ -34,6 +34,7 @@ _88 TILs and counting..._
 - [ide-tooling](#ide-tooling)
 - [javascript](#javascript)
 - [macos](#macos)
+- [nodejs](#nodejs)
 - [react-native](#react-native)
 - [reactjs](#reactjs)
 - [serverless](#serverless)
@@ -116,6 +117,9 @@ _88 TILs and counting..._
 ### [macos](#macos)
 - [Process issues on Macos](macos/process.md)
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
+
+### [nodejs](#nodejs)
+- [nodejs project setup with typescript](nodejs/project-setup.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

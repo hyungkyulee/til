@@ -122,12 +122,12 @@ module.exports = {
 };
 ```
 
-### Setup Jest
+### Setup Jests on typescript via ts-jest
 > ref: https://jestjs.io/docs/getting-started
 
 - Basic setup
 ```
-yarn add -D jest @types/jest
+yarn add -D jest ts-jest @types/jest ts-node
 
 // jest cli
 npm install jest -g
@@ -144,10 +144,21 @@ The following questions will help Jest to create a suitable configuration for yo
 ✔ Automatically clear mock calls, instances, contexts and results before every test? … yes
 
 📝  Configuration file created at /Users/kyu/dev/deepeyes/simplix-apis/jest.config.ts
-
+```
 // jest.config.ts
-
-
+{
+  ...
+  "preset": "ts-jest"
+  ...
+  transform: {
+    '^.+\\.(ts|tsx)?$': 'ts-jest',
+    "^.+\\.(js|jsx)$": "babel-jest",
+  },
+  ...
+}
+```
+> In order for Jest to transpile TypeScript with ts-jest, you may also need to create a configuration file.
+  
 // package.json
 {
   ...
@@ -159,5 +170,5 @@ The following questions will help Jest to create a suitable configuration for yo
   ...
 }
 ```
-
-- 
+>  @types/jest package provides types for Jest globals without a need to import them.
+> @types/jest is a third party library maintained at DefinitelyTyped, hence the latest Jest features or versions may not be covered yet. Try to match versions of Jest and @types/jest as closely as possible. For example, if you are using Jest 27.4.0 then installing 27.4.x of @types/jest is ideal.

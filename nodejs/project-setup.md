@@ -82,11 +82,12 @@ yarn add -D webpack webpack-cli
 yarn
 ```
 
-- run with webpack cli
+- run with webpack cli (this will replace to use a webpack configuration: see the below webpack.config.js
 ```
 npx webpack
 ```
 > npx webpack will install webpack and webpack-cli before compile and run the handler
+
 
 - config webpack
 ```
@@ -120,3 +121,43 @@ module.exports = {
   },
 };
 ```
+
+### Setup Jest
+> ref: https://jestjs.io/docs/getting-started
+
+- Basic setup
+```
+yarn add -D jest @types/jest
+
+// jest cli
+npm install jest -g
+jest --version
+
+// jest init
+main ?12 jest --init                                                                   
+The following questions will help Jest to create a suitable configuration for your project
+
+✔ Would you like to use Typescript for the configuration file? … yes
+✔ Choose the test environment that will be used for testing › node
+✔ Do you want Jest to add coverage reports? … yes
+✔ Which provider should be used to instrument code for coverage? › babel
+✔ Automatically clear mock calls, instances, contexts and results before every test? … yes
+
+📝  Configuration file created at /Users/kyu/dev/deepeyes/simplix-apis/jest.config.ts
+
+// jest.config.ts
+
+
+// package.json
+{
+  ...
+  "scripts": {
+    ...
+    "test": "jest"
+    ...
+  },
+  ...
+}
+```
+
+- 

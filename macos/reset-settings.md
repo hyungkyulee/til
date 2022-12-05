@@ -87,6 +87,20 @@ brew install git
 brew install node
 npm i -g yarn
 ```
+OR
+```
+brew install nvm
+
+// OR
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+// cli
+npm install [node version]
+npm ls
+npm use [node version]
+```
+> ref: https://github.com/nvm-sh/nvm
+
 
 ## Mobile Development
 #### XCode

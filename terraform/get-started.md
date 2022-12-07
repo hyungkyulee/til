@@ -1,9 +1,9 @@
 # Terraform
 
-## Terraform with Azure
+## Terraform Setup
 ### Create an Azure resource group using Terraform
 
-configuration
+#### configuration
 ```
 ~/.../terraform  main ⇣1 !15 ?1 brew install terraform 
 
@@ -16,12 +16,73 @@ Terraform v1.1.4
 on darwin_amd64
 ```
 
-initialize terraform
+#### initialize terraform
 ```
+mkdir [terraform folder] (e.g. terraform)
 cd [terraform folder]
 ...
- ~/.../terraform  main ⇣1 !15 ?1  terraform init
+~/.../terraform │ main  terraform init                                                                     ✔ │ 21:37:30 
+Terraform initialized in an empty directory!
 
+The directory has no Terraform configuration files. You may begin working
+with Terraform immediately by creating Terraform configuration files.
+```
+
+#### terraform version management on each project
+different versions can be changable with 'tfswitch' 
+
+install 'tfswitch'
+```
+brew install warrensbox/tap/tfswitch
+...
+tfswitch -l  // [ or tfswitch --list-all ]
+```
+> Error: Cannot install warrensbox/tap/tfswitch because conflicting formulae are installed.
+  terraform
+  Please `brew unlink terraform` before continuing.
+  ```
+  brew unlink terraform
+  Unlinking /usr/local/Cellar/terraform/1.1.4... 1 symlinks removed.
+  ```
+  
+```
+~/work  tfswitch -l                                                                                              ✔  16s  23:46:40
+Creating directory for terraform binary at: /Users/kyu/.terraform.versions
+✔ 0.13.2
+Downloading to: /Users/kyu/.terraform.versions
+35666505 bytes downloaded
+Switched terraform to version "0.13.2"
+
+ ~/work  terraform -v                                                                           ✔  1m 3s  Development az  23:47:55
+Terraform v0.13.2
+```
+
+## AWS
+> ref: https://developer.hashicorp.com/terraform/tutorials/aws/lambda-api-gateway
+
+deploy a NodeJS function to AWS Lambda, and then expose that function to the Internet using Amazon API Gateway.
+
+### Prerequisites
+#### AWS Cli
+```
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+which aws
+aws --version
+```
+
+### Hierarchy
+-- terraform
+ |- variables.tf
+ |- provider.tf
+ 
+ 
+- variables.tf  : component name, environments
+- provider.tf   : aws region
+- config.tf     ; resource bucket at s3 
+
+## Azure
+```
 Initializing the backend...
 
 Successfully configured the backend "azurerm"! Terraform will automatically
@@ -118,31 +179,4 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 
 ```
 
-## terraform version management on each project
-different versions can be changable with 'tfswitch' 
 
-### install 'tfswitch'
-```
-brew install warrensbox/tap/tfswitch
-...
-tfswitch -l  // [ or tfswitch --list-all ]
-```
-> Error: Cannot install warrensbox/tap/tfswitch because conflicting formulae are installed.
-  terraform
-  Please `brew unlink terraform` before continuing.
-  ```
-  brew unlink terraform
-  Unlinking /usr/local/Cellar/terraform/1.1.4... 1 symlinks removed.
-  ```
-  
-```
-~/work  tfswitch -l                                                                                              ✔  16s  23:46:40
-Creating directory for terraform binary at: /Users/kyu/.terraform.versions
-✔ 0.13.2
-Downloading to: /Users/kyu/.terraform.versions
-35666505 bytes downloaded
-Switched terraform to version "0.13.2"
-
- ~/work  terraform -v                                                                           ✔  1m 3s  Development az  23:47:55
-Terraform v0.13.2
-```

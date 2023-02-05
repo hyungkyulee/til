@@ -4,3 +4,60 @@
 ### What is Refactoring?
 - Martin Fowler
   > Refactoring is the process of changing a software syste in a way that does not alter the external behavior of the code yet improves it's internal structure.
+
+- goal
+  - simple, readable, maintanable, expendable
+  > bugfix, enhance performance, and etc are not a goal of refactoring.
+  
+- Why
+  - difficult to make a perfact code from the beginning
+  - requirements keep changing
+  - difficult to understand a dirty and complex code
+  - easy to see an unexpected error
+  - difficult to maintain a complex code
+  > tunnerling effect - cannot see the future -> don't try to make a perfect design and code
+  
+- how much of refactoring? => upto 'JUST enough'
+
+- benefits
+  - easy to find a bug
+  - easy to debug
+  - shared ownership of code
+    > don't make a different style of code
+  - speed of programming
+
+- code smell
+  - mysterious name
+  - duplicated code
+  - long function
+  - long parameter list
+  - global data
+  - mutable data
+  
+- code smell (advanced)
+  - divergent change (Single resonsibility)
+  - shotgun surgery (coupled)
+  - feature envy
+  - data clumps
+  - primitive obsession (관련된 코드는 묶어라, value object를 사용하라, primitive 는 나중에 biz logic이 들어갈텐데 다시한번 꼭 써야하는지 생각하라)
+  - repeated switches
+  - loops
+  - lazy element
+  - speculative generality
+  - temporary field
+  - message chains
+  - middle man
+  - insider trading 
+  - large class (high duplication, high coupling)
+  - alternative classes with different interfaces (low replacement, low reusiability)
+  - data class
+  - refused bequest (bad use of inheritance)
+  - comments
+  
+
+  
+
+  
+  
+  
+  

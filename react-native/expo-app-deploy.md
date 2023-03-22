@@ -76,6 +76,27 @@ It's recommended to use the "cli.version" field in eas.json to enforce the eas-c
 ```
 > user account needs to be created at Expo : https://expo.dev/accounts
 
+## Add a new Expo project
+- Add a new project on the menu
+- init eas on the local project and link it to expo server
+```
+Start developing your project
+You just created a new EAS project. Now, it's time to link this to your local project. There are two ways to accomplish this:
+
+Create a new Expo project
+
+Initialize an Expo codebase on your machine with Expo CLI:
+
+npm install --global eas-cli
+
+npx create-expo-app navienapp
+
+eas init --id 36705318-8bf4-4b18-9907-35717bd57315
+
+Link an existing Expo codebase
+
+npm install --global eas-cli
+```
 
 
 

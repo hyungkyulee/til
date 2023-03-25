@@ -270,6 +270,7 @@ The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS
 ```
 > you can download the keystore from expo website : expo.dev > [your project] > credentials > [your app identifier] > download keystore as a zip file
 > the .md file has the credential details of your keystore.
+> I did ignore the warning because previously I migrate the pem file to PKCS12 file and it's not recognised by key verfication.
 
 upload your .pem file onto the reset request step of Google Play Console.
 

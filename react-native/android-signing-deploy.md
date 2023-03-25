@@ -271,5 +271,9 @@ The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS
 > you can download the keystore from expo website : expo.dev > [your project] > credentials > [your app identifier] > download keystore as a zip file
 > the .md file has the credential details of your keystore.
 
-> upload your .pem file onto the reset request step of Google Play Console.
+upload your .pem file onto the reset request step of Google Play Console.
+
+![image](https://user-images.githubusercontent.com/59367560/227728249-6814180e-2684-4b0b-9a13-8274d3670d07.png)
+
+If you submit successfully the request, it takes a couple of days to review and you are available to upload the expo build bundle file accordingly. 
 

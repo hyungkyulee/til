@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_90 TILs and counting..._
+_91 TILs and counting..._
 
 ---
 
@@ -80,6 +80,7 @@ _90 TILs and counting..._
 - [Database Management Essentials Course Assignment](database/coursera-task-m3.md)
 - [Coursera DBMS - Module4](database/coursera-task-m4.md)
 - [DBMS Overview](database/dbms.md)
+- [](database/how-to-setup-sqldb-apple-m1.md)
 - [PostgreSQL general](database/postgresql.md)
 
 ### [docker](#docker)

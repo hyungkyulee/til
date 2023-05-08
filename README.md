@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_91 TILs and counting..._
+_92 TILs and counting..._
 
 ---
 
@@ -90,6 +90,7 @@ _91 TILs and counting..._
 - [.NET project with SQL Database on Docker](dotnet/docker-sqldb.md)
 - [Entity Framework](dotnet/entity-framework.md)
 - [Fluent Migrator](dotnet/fluent-migrator.md)
+- [# Entity Framework nuget package](dotnet/how-to-use-entityframework-rider.md)
 - [Windows](dotnet/multiple-projects-run.md)
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
 - [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md)

@@ -17,3 +17,15 @@
 - set a target migration : it will be a latest ef migration history
 - set a startup project : run the plugin UI menu on the start-up project which has the appsettings.json file
 - set a migrations project : select a project if the ef migration is configured in a different project under the solution
+
+## trobleshootings
+### 'Cannot authenticate using Kerberos' issue doing EF Core database
+This is because the integrated security is working on windows system, but not on a linux OS or VM or Docker, etc. 
+So, change the integrated security option to 'false' and use userId and Password instead to access the database
+e.g. Appsettings.json 
+```
+{
+  "ConnectionString": "Server=(local);Database=<database name>Trusted_Connection=False;TrustServerCertificate=True;User Id=sa;Password=<your sa password>",
+}
+```
+> ref: https://www.connectionstrings.com/sql-server/ 

@@ -9,6 +9,7 @@
 ## SQL image setup on docker
 - Login to docker
 - Install Azure SQL Edge image
+  > ref: https://learn.microsoft.com/en-us/azure/azure-sql-edge/disconnected-deployment
   - by Docker explorer
   - by CLI
     - Install the sql docker image

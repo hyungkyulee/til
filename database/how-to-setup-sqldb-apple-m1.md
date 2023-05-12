@@ -38,6 +38,8 @@
     - run the image
     ```
      ~ docker run -d --name AzureSQLServer -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=p***w*r*" -p 1433:1433 mcr.microsoft.com/azure-sql-edge
+
+
     c11ff9b031438de5b67426988870468bc01ed8f8fccad49874c49fe40791f657
     ```
     > sa password should be more than 10digits + including CAP letter + number

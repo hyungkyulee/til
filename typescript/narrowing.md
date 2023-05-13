@@ -138,3 +138,136 @@ function multiplyValue(container: Container, factor: number) {
   }
 }
 ```
+
+## 'in' operation narrowing
+an operator for determining if an object has a property with a name
+
+### remarks
+example
+```
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+type Human = { swim?: () => void; fly?: () => void };
+ 
+function move(animal: Fish | Bird | Human) {
+  if ("swim" in animal) {
+    animal;
+      
+(parameter) animal: Fish | Human
+  } else {
+    animal;
+      
+(parameter) animal: Bird | Human
+  }
+}
+```
+
+## instanceof narrowing
+an operator for checking whether or not a value is an “instance” of another valu
+
+### remarks
+instanceof vs typeof
+> both are similar, returning type information, but 
+> 1) as instanceof is comparing with actual types rather than strings, it might be less prone to human error
+> 2) as it's comparing pointers (address of memory), it might show better perfomance
+> use 
+> - instanceof at custom types or complex built-in types
+> - typeof at simple buil-in types
+> * typeof null is object
+
+## Assignments
+TypeScript looks at the right side of the assignment and narrows the left side appropriately.
+
+### remarks
+still able to assign a string to x. This is because assignability is always checked against the declared type.
+```
+let x = Math.random() < 0.5 ? 10 : "hello world!";
+   
+let x: string | number
+x = 1;
+ 
+console.log(x);
+           
+let x: number
+x = "goodbye!";
+ 
+console.log(x);
+           
+let x: string
+```
+
+## Control flow analysis
+This analysis of code based on reachability is called control flow analysis, and 
+TypeScript uses this flow analysis to narrow types as it encounters type guards and assignments
+
+```
+function padLeft(padding: number | string, input: string) {
+  if (typeof padding === "number") {
+    return " ".repeat(padding) + input;
+  }
+  return padding + input; // unreachable in case where padding is number
+}
+```
+
+## Using type predicates
+```
+const zoo: (Fish | Bird)[] = [getSmallPet(), getSmallPet(), getSmallPet()];
+const underWater1: Fish[] = zoo.filter(isFish);
+// or, equivalently
+const underWater2: Fish[] = zoo.filter(isFish) as Fish[];
+```
+
+## Discriminated unions
+a union of string literal types
+> By using "circle" | "square" instead of string, we can avoid misspelling issues.
+
+### remarks
+the union encoding of Shape will cause an error regardless of how strictNullChecks is configured.
+```
+interface Circle {
+  kind: "circle";
+  radius: number;
+}
+ 
+interface Square {
+  kind: "square";
+  sideLength: number;
+}
+ 
+type Shape = Circle | Square;
+
+function getArea(shape: Shape) {
+  return Math.PI * shape.radius ** 2;
+}
+```
+> Property 'radius' does not exist on type 'Shape'.
+> Property 'radius' does not exist on type 'Square'.
+
+## never type
+TypeScript will use a never type to represent a state which shouldn’t exist.
+
+### remarks 
+to reduce the options of a union to a point where you have removed all possibilities and have nothing left
+
+The never type is assignable to every type; however, no type is assignable to never (except never itself)
+```
+interface Triangle {
+  kind: "triangle";
+  sideLength: number;
+}
+ 
+type Shape = Circle | Square | Triangle;
+ 
+function getArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius ** 2;
+    case "square":
+      return shape.sideLength ** 2;
+    default:
+      const _exhaustiveCheck: never = shape;
+Type 'Triangle' is not assignable to type 'never'.
+      return _exhaustiveCheck;
+  }
+}
+```

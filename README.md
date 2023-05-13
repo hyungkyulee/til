@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_92 TILs and counting..._
+_93 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# What does narrowing mean?](typescript/narrowing.md) - Sat May 13 15:14:09 2023 +0100
 - [](ci-cd/github-action-azure.md) - Wed Nov 30 15:59:29 2022 +0000
-- [nodejs project setup with typescript](nodejs/project-setup.md) - Wed Nov 30 10:47:45 2022 +0000
 
 ### Categories
 
@@ -165,6 +165,7 @@ _92 TILs and counting..._
 
 ### [typescript](#typescript)
 - [Migrate Typescript template on .NET Core Web API project](typescript/.netcore-webapp.md)
+- [# What does narrowing mean?](typescript/narrowing.md)
 - [npm Project with Typescript](typescript/npm-proj-setup.md)
 - [Overview of Typescript](typescript/overview.md)
 

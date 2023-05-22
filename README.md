@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_93 TILs and counting..._
+_94 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](react-native/linting.md) - Mon May 22 16:07:26 2023 +0100
 - [# What does narrowing mean?](typescript/narrowing.md) - Sat May 13 15:14:09 2023 +0100
-- [](ci-cd/github-action-azure.md) - Wed Nov 30 15:59:29 2022 +0000
 
 ### Categories
 
@@ -132,6 +132,7 @@ _93 TILs and counting..._
 - [Signing and Deployment to Google Play Store](react-native/android-signing-deploy.md)
 - [Mobile App Development on RN](react-native/dev-environment-setup.md)
 - [Mobile App from Expo](react-native/expo-app-deploy.md)
+- [](react-native/linting.md)
 - [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md)
 
 ### [reactjs](#reactjs)

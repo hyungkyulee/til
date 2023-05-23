@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_94 TILs and counting..._
+_95 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# GTM Integration](google-tools/gtm.md) - Tue May 23 18:47:23 2023 +0100
 - [](react-native/linting.md) - Mon May 22 16:07:26 2023 +0100
-- [# What does narrowing mean?](typescript/narrowing.md) - Sat May 13 15:14:09 2023 +0100
 
 ### Categories
 
@@ -30,6 +30,7 @@ _94 TILs and counting..._
 - [docker](#docker)
 - [dotnet](#dotnet)
 - [git](#git)
+- [google-tools](#google-tools)
 - [graphql](#graphql)
 - [html](#html)
 - [ide-tooling](#ide-tooling)
@@ -102,6 +103,9 @@ _94 TILs and counting..._
 - [Git : Common error and Solution](git/issues.md)
 - [Overview](git/overview.md)
 - [Self-signed Certificate Issue](git/setup.md)
+
+### [google-tools](#google-tools)
+- [# GTM Integration](google-tools/gtm.md)
 
 ### [graphql](#graphql)
 - [Meet up at 2022-05-19](graphql/reactor-london-wrapup.md)

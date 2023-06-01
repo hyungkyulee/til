@@ -154,3 +154,10 @@ git commit -am "xxx"
 git push
 ```
 
+#### gitignore
+if a file is already commited to remote, it won't be affected by gitignore. 
+```
+// e.g. .env file to ignore
+git rm --cached .env
+```
+

@@ -24,6 +24,7 @@ Updates the database to the last migration or to a specified migration.
 - Options:
   > Option	Description
   > --connection <CONNECTION>	The connection string to the database. Defaults to the one specified in AddDbContext or OnConfiguring.
+- example : ```dotnet ef database update -s [startup project]```
 
 #### dotnet ef migrations add
 Adds a new migration.
@@ -35,6 +36,7 @@ Adds a new migration.
   > Option	Short	Description
   > --output-dir <PATH>	-o	The directory use to output the files. Paths are relative to the target project directory. Defaults to "Migrations".
   > --namespace <NAMESPACE>	-n	The namespace to use for the generated classes. Defaults to generated from the output directory.
+- example : ```dotnet ef migrations add [name]```
 
 #### dotnet ef migrations remove
 Removes the last migration, rolling back the code changes that were done for the latest migration.
@@ -42,6 +44,7 @@ Removes the last migration, rolling back the code changes that were done for the
 - Options:
   > Option	Short	Description
   > --force	-f	Revert the latest migration, rolling back both code and database changes that were done for the latest migration. Continues to roll back only the code changes if an error occurs while connecting to the database.
+- example : ```dotnet ef migrations remove```
 
 #### dotnet ef database drop
 - Deletes the database.

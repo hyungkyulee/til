@@ -1,25 +1,49 @@
 # nodejs project setup with typescript
 
 ## Initial Node environment
+- update yarn with a latest version
+```
+brew upgrade yarn
+yarn -v
+```
+
+- yarn init
 > e.g. project name : simplix-apis
 ```
 mkdir simplix-apis
 cd simplix-apis
 yarn init -y
-yarn set version stable
 ```
 
-- config a module link as a node_modules
+- create yarnrc and config a module link as a node_modules
+yarn will use pnp.cjs file to map the packages instead of node_modules. However, if you need to creaete node_modules, use nodeLinker
+
 [.yarnrc.yml]
 ```
 nodeLinker: node-modules
 
-yarnPath: .yarn/releases/yarn-3.3.0.cjs
+yarnPath: .yarn/releases/yarn-3.3.0.cjs // or set a specific yarn version for a teamwork
 ```
-> yarn will use pnp.cjs file to map the packages instead of node_modules. However, if you need to creaete node_modules, use nodeLinker
+> if you run 'yarn' after this, it will delete pnp and generate node_modules
+
+## initial code and run
+- create a file 'src/index.js'
+```
+console.log('hello')
+```
+
+- run the project
+```
+node src/index.js
+```
 
 ## typescript configuration
 ### basic configuration
+- install typescript
+```
+yarn add -D typescript
+```
+
 ```
 // install typescript cli globally
 npm install typescript -g
@@ -35,7 +59,8 @@ tsc --init
     "module": "commonjs",
     "moduleResolution": "node",
     "types": [
-      "jest"
+      "jest",
+      "node"
     ], 
     "allowJs": true,
     "sourceMap": true,
@@ -54,15 +79,72 @@ tsc --init
 }
 ```
 
-### code hierarchy
- |- .yarn
- |- package.json
- |- tsconfig.json
- |- dist
-    |- [handler name]/index.js
- |- src
-    |- [handler name]/index.ts
-    |- ...
+- extend a default configuration for node version.
+install the @tsconfig/xxx to tune to a particular runtime environment. see https://github.com/tsconfig/bases
+
+```
+yarn add --dev @tsconfig/recommended
+```
+
+OR
+```
+// tsconfig.json
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+// cli
+yarn add -D @tsconfig/node16
+```
+
+- include type definition for nodejs
+```
+yarn add -D @types/node
+```
+
+### complie and run typescript project
+- compile typescript and outcome will be in dist/
+```
+yarn tsc
+```
+
+- run the build outcome
+```
+node dist/indxt.js
+```
+
+OR
+- run typescript file directly with package
+```
+yarn add -D ts-node
+ts-node src/index.ts
+```
+
+### hot loading
+- by nodemon or ts-node-dev
+```
+yarn add -D nodemon
+yarn nodemon src/index.ts
+
+// OR
+yarn add -D ts-node-dev
+yarn ts-node-dev --respawn src/index.ts
+```
+
+### code hierarchy with a first handler
+-> .yarn
+-> package.json
+-> tsconfig.json
+-> dist
+   -> [handler name]/index.js
+-> src
+   -> [handler name]/index.ts
+   -> ...
 
 [test handler]
 ```

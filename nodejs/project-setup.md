@@ -137,14 +137,17 @@ yarn ts-node-dev --respawn src/index.ts
 ```
 
 ### code hierarchy with a first handler
--> .yarn
--> package.json
--> tsconfig.json
--> dist
-   -> [handler name]/index.js
--> src
-   -> [handler name]/index.ts
-   -> ...
+```md
+├── .yarn
+├── package.json
+├── tsconfig.json
+├── dist
+│   └── i[handler name]/index.js
+├── src
+    ├── [handler name]/index.ts
+│   └── ...
+│
+```
 
 [test handler]
 ```

@@ -207,6 +207,107 @@ module.exports = {
 };
 ```
 
+- build a script
+[pacakge.json]
+```
+{
+  "name": "My Project",
+  "version": "1.0.0",
+  "description": "My APIs",
+  "main": "index.js",
+  "scripts": {
+    "webpack:help": "webpack --help=verbose",
+    "test:script": "node -e \"console.log(require('./events/[handler]-evnet.js'))\"",
+    "build:dev": "webpack --mode=development --progress --profile --color",
+    "build": "webpack --mode=production",
+    ...
+  }
+...
+}
+```
+
+```
+yarn build:dev
+```
+
+### code hierarchy with a test event
+```md
+├── .yarn
+├── package.json
+├── tsconfig.json
+├── dist
+│   └── i[handler name]/index.js
+├── src
+    ├── [handler name]/index.ts
+│   └── ...
+├── events
+    ├── [handler name]-event.js
+    └── ...
+
+```
+
+example of [handler name]/index.ts
+```
+export const handler = async (ev: any) => {
+  const userId = ev.queryStringParameters.[param-1]
+
+  if (![param-1]) {
+    return errorResponse(statusCodes.BAD_REQUEST, 'Missing [param-1]')
+  }
+
+  console.info('getting [handler's objects]: ', [param-1])
+
+  const [data, errorMessage] = await get[handler name]By[param-1]([param-1])
+
+  return errorMessage
+    ? {
+        statusCodes.INTERNAL_SERVER_ERROR,
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          errorMessage
+        }),
+        isBase64Encoded: false
+      }
+    : {
+        statusCodes.OK,
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          data,
+          message: errorMessage || 'Success'
+        }),
+        isBase64Encoded: false
+      }
+}
+
+// event of handler
+module.exports = {
+  queryStringParameters: {
+    [param-1]: "xxx",
+  },
+}
+
+```
+
+- test runner
+[package.json]
+```
+{
+...
+  "scripts": {
+    "webpack:help": "webpack --help=verbose",
+    "test:script": "node -e \"console.log(require('./events/create-job-event.js'))\"",
+    "build:dev": "webpack --mode=development --progress --profile --color",
+    "build": "webpack --mode=production",
+    "run:[handler name]": "yarn build:dev && node -e \"require('./dist/[handler name]').handler(require('./events/[handler name]-event.js'), {}).then(x => console.log(x));\""
+  },
+...
+}
+```
+
 ### Setup Jests on typescript via ts-jest
 > ref: https://jestjs.io/docs/getting-started
 

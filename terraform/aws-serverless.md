@@ -1,4 +1,35 @@
 
+## Nodejs Project
+
+- create 'terraforms' folder
+- add config.tf variables.tf, provider.tf as a set of basic setup
+```
+// config.tf
+terraform {
+  backend "s3" {
+    bucket = "[bucket name]"
+    key    = "[key name]"
+    region = "eu-west-1"
+  }
+  required_version = "~>1.1"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+// provicer
+```
+> ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+- init
+```
+terrafrom init
+```
+
 > policy 를 부여받는 주체는 User or Principal
 
 

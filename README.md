@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_96 TILs and counting..._
+_97 TILs and counting..._
 
 ---
 
@@ -29,6 +29,7 @@ _96 TILs and counting..._
 - [database](#database)
 - [docker](#docker)
 - [dotnet](#dotnet)
+- [expo](#expo)
 - [git](#git)
 - [google-tools](#google-tools)
 - [graphql](#graphql)
@@ -96,6 +97,9 @@ _96 TILs and counting..._
 - [Project Configuration in Dotnet](dotnet/project-setup.md)
 - [AWS Lambda Configuration on Serverless](dotnet/sls-lambda-exe.md)
 - [SQL Database on ASP.NET project](dotnet/sqldb-asp.net.md)
+
+### [expo](#expo)
+- [- npx expo-doctor](expo/tips.md)
 
 ### [git](#git)
 - [Git commands](git/commands.md)

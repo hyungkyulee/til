@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_97 TILs and counting..._
+_98 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](typescript/ambient-declarations.md) - Sat Sep 16 12:11:49 2023 +0100
 - [# What is?](typescript/generics.md) - Tue Jun 13 01:09:02 2023 +0100
-- [# GTM Integration](google-tools/gtm.md) - Tue May 23 18:47:23 2023 +0100
 
 ### Categories
 
@@ -174,6 +174,7 @@ _97 TILs and counting..._
 
 ### [typescript](#typescript)
 - [Migrate Typescript template on .NET Core Web API project](typescript/.netcore-webapp.md)
+- [](typescript/ambient-declarations.md)
 - [# What is?](typescript/generics.md)
 - [# What does narrowing mean?](typescript/narrowing.md)
 - [npm Project with Typescript](typescript/npm-proj-setup.md)

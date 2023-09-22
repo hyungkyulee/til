@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_99 TILs and counting..._
+_100 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](reactjs/tailwindcss-webpack-react.md) - Fri Sep 22 09:01:19 2023 +0100
 - [Vanila React 18 + typescript + webpack + eslint](reactjs/template-vanila-react18.md) - Sat Sep 16 17:34:53 2023 +0100
-- [](typescript/ambient-declarations.md) - Sat Sep 16 12:11:49 2023 +0100
 
 ### Categories
 
@@ -151,6 +151,7 @@ _99 TILs and counting..._
 - [build issues on Node Packages](reactjs/npm-build-issues.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
 - [Tailwind project on ReactJS webapp](reactjs/tailwind-react.md)
+- [](reactjs/tailwindcss-webpack-react.md)
 - [Vanila React 18 + typescript + webpack + eslint](reactjs/template-vanila-react18.md)
 
 ### [serverless](#serverless)

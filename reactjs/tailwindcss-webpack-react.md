@@ -65,15 +65,25 @@ export default webpackConfig;
    ```
 7. postcss.config.js
    ```
-    const tailwindcss = require('tailwindcss');
-    module.exports = {
-      plugins: [
-        'postcss-preset-env',
-        tailwindcss
-      ],
-    };
-
+   const tailwindcss = require('tailwindcss');
+   const autoprefixer = require('autoprefixer');
+   module.exports = {
+     plugins: [
+       tailwindcss,
+       autoprefixer
+     ],
+   };
    ```
+   > you shouldn't do this because it will show error
+   ```
+   plugins: [
+      tailwindcss('./tailwind.config.cjs'),
+      autoprefixer
+   ],
+   ```
+   ![image](https://github.com/hyungkyulee/til/assets/59367560/aeab3b03-9006-47b5-8954-9c26c841da27)
+
+
 9. create and import './style.css'
    [src/style.css]
    ```

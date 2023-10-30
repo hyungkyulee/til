@@ -1,5 +1,6 @@
 
-Azure > App REgistrations
+Azure > App REgistrations ![Pipeline Status](https://github.com/sainsburys-tech/ProductionPlanning-Frontend/actions/workflows/build_and_deploy-frontend.yml/badge.svg)
+
 - create a new app registrations for automation
   > this app will be a service principal
 - add owners

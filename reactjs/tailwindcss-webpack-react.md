@@ -77,7 +77,44 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
    ```
    $ npx tailwindcss init -p
    ```
-7. postcss.config.js
+
+   [tailwind.config.js]
+   ```
+   const defaultTheme = require('tailwindcss/defaultTheme')
+   module.exports = {
+     content: [
+       './dist/*.html',
+       './src/**/*.{js,jsx,ts,tsx}'
+     ],
+     darkMode: true, // or 'media' or 'class'
+     theme: {
+       extend:{
+         fontFamily: {
+           sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+         },
+         colors: {
+           ainsight: {
+             blue: {
+               light: '#3E7EF5',
+               DEFAULT: '#0159E4', // ainsight default blue
+               dark: '#1F2937',
+             },
+           }
+         },
+       },
+       fill: theme => theme('colors')
+     },
+     variants: {
+       extend: {},
+     },
+     plugins: [
+       require('@tailwindcss/forms'),
+       require('@tailwindcss/aspect-ratio'),
+     ],
+   }
+   ```
+   
+8. postcss.config.js
    ```
    const tailwindcss = require('tailwindcss');
    const autoprefixer = require('autoprefixer');

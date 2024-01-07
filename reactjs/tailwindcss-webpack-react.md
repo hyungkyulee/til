@@ -1,5 +1,13 @@
+0. create-react-app
+```
+npx create-react-app my-app --template typescript
+```
 
-1. install packages
+```
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+2. install packages
    ```
    $ yarn add -D tailwindcss postcss autoprefixer
    $ yarn add -D css-loader postcss-loader postcss-preset-env

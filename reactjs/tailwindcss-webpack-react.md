@@ -14,7 +14,12 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
    $ yarn add -D @tailwindcss/aspect-ratio @tailwindcss/forms
    $ yarn add @headlessui/react @heroicons/react
    ```
-3. setting of webpack.config.js
+3. install webpack
+   ```
+   npm install webpack webpack-cli --save-dev
+   npm install --save-dev ts-loader
+   ```
+5. setting of webpack.config.js
     ```    
     import path from "path";
     import { Configuration, DefinePlugin } from "webpack";
@@ -68,7 +73,7 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
    export default webpackConfig;
    ```
 
-5. create and setting of tailwind.config.js
+6. create and setting of tailwind.config.js
    ```
    $ npx tailwindcss init -p
    ```

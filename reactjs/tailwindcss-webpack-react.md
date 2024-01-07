@@ -33,40 +33,41 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
             exclude: /node_modules/,
           },
           {
-        test: /\.css$/,
-        include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+            test: /\.css$/,
+            include: path.resolve(__dirname, 'src'),
+            use: ['style-loader', 'css-loader', 'postcss-loader'],
+          },
+        ],
       },
-    ],
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
-  },
-  // target: 'electron-renderer', // or 'web' for web
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      // HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles
-      template: path.join(__dirname, 'public', 'index.html'),
-    }),
-    // DefinePlugin allows you to create global constants which can be configured at compile time
-    new DefinePlugin({
-      "process.env": process.env.production || !process.env.development,
-    }),
-    // new ForkTsCheckerWebpackPlugin({
-    //   // Speeds up TypeScript type checking and ESLint linting (by moving each to a separate process)
-    //   eslint: {
-    //     files: "./src/**/*.{ts,tsx,js,jsx}",
-    //   },
-    // }),
-  ],
-});
+     resolve: {
+       extensions: [".tsx", ".ts", ".js"],
+     },
+     // target: 'electron-renderer', // or 'web' for web
+     output: {
+       filename: "bundle.js",
+       path: path.resolve(__dirname, "dist"),
+     },
+     plugins: [
+       new HtmlWebpackPlugin({
+         // HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles
+         template: path.join(__dirname, 'public', 'index.html'),
+       }),
+       // DefinePlugin allows you to create global constants which can be configured at compile time
+       new DefinePlugin({
+         "process.env": process.env.production || !process.env.development,
+       }),
+       // new ForkTsCheckerWebpackPlugin({
+       //   // Speeds up TypeScript type checking and ESLint linting (by moving each to a separate process)
+       //   eslint: {
+       //     files: "./src/**/*.{ts,tsx,js,jsx}",
+       //   },
+       // }),
+     ],
+   });
+   
+   export default webpackConfig;
+   ```
 
-export default webpackConfig;
-```
 5. create and setting of tailwind.config.js
    ```
    $ npx tailwindcss init -p

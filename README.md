@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_101 TILs and counting..._
+_102 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](ide-tooling/package-manager.md) - Sun Feb 11 18:37:59 2024 +0000
 - [0. create-react-app](reactjs/tailwindcss-webpack-react.md) - Fri Sep 22 09:01:19 2023 +0100
-- [Vanila React 18 + typescript + webpack + eslint](reactjs/template-vanila-react18.md) - Sat Sep 16 17:34:53 2023 +0100
 
 ### Categories
 
@@ -119,6 +119,7 @@ _101 TILs and counting..._
 
 ### [ide-tooling](#ide-tooling)
 - [iterm2 setup](ide-tooling/iterm2.md)
+- [](ide-tooling/package-manager.md)
 - [Rider Tips on projects](ide-tooling/rider-tips.md)
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)

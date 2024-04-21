@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_102 TILs and counting..._
+_103 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](reactjs/nextjs-cornerstone.md) - Mon Apr 22 00:55:21 2024 +0100
 - [](ide-tooling/package-manager.md) - Sun Feb 11 18:37:59 2024 +0000
-- [0. create-react-app](reactjs/tailwindcss-webpack-react.md) - Fri Sep 22 09:01:19 2023 +0100
 
 ### Categories
 
@@ -149,6 +149,7 @@ _102 TILs and counting..._
 - [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
 - [# Write a configuration for typescript](reactjs/migration-js-ts.md)
+- [](reactjs/nextjs-cornerstone.md)
 - [Next.js website](reactjs/nextjs.md)
 - [build issues on Node Packages](reactjs/npm-build-issues.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)

@@ -1,0 +1,9 @@
+
+npx npm-check-updates -u
+npm install
+
+if this shows error, 
+remove node_modules and package-lock.json
+
+fix the version lower on conflict packages one-by-one.
+

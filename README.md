@@ -134,7 +134,7 @@ _103 TILs and counting..._
 - [MacOS Reset and Dev Settings](macos/reset-settings.md)
 
 ### [nodejs](#nodejs)
-- [nodejs project setup with typescript](nodejs/project-setup.md)
+- [nodejs project setup with typescript and jest](nodejs/project-setup.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

@@ -44,7 +44,7 @@
 - install server packages
   ```
   npm i express dotenv
-  npm i --save-dev @types/express @types/supertest
+  npm i --save-dev @types/express supertest @types/supertest
   ```
 - unit testing
   ```

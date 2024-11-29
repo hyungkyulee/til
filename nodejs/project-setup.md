@@ -1,4 +1,4 @@
-# nodejs project setup with typescript
+# nodejs project setup with typescript and jest
 
 ## Quick blank project
 - node install or update
@@ -47,8 +47,9 @@
   ```
 - unit testing
   ```
-  npm install --save-dev jest @types/jest
+  npm install --save-dev jest @types/jest ts-jest
   ```
+  * ts-jest is a TypeScript preprocessor with source map support for Jest that lets you use Jest to test projects written in TypeScript.
 
 ## Initial Node environment
 - update yarn with a latest version

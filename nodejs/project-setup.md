@@ -43,7 +43,8 @@
     ```
 - install server packages
   ```
-  npm i express @types/express dotenv
+  npm i express dotenv
+  npm i --save-dev @types/express @types/supertest
   ```
 - unit testing
   ```

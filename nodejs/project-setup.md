@@ -7,6 +7,16 @@ brew upgrade yarn
 yarn -v
 ```
 
+- migrate berry version of yarn
+  - Make sure you're using Node 18+
+  - Run corepack enable to activate Corepack
+  - Go into your project directory
+  - Run yarn set version berry
+  - Convert your .npmrc and .yarnrc files into .yarnrc.yml (details here)
+  - Run yarn install to migrate the lockfile
+  - Commit all changes
+
+
 - yarn init
 > e.g. project name : simplix-apis
 ```

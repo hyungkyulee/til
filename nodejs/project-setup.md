@@ -1,5 +1,42 @@
 # nodejs project setup with typescript
 
+## Quick blank project
+- node install or update
+  ```
+  node -v
+  nvm ls
+  nvm use v[x.x]
+  ```
+- npm init -y
+- (test) javascript code : src/index.js
+  ```
+  console.log('hello world')
+  node src/index.js
+  ```
+- typescript install
+  ```
+  npm i -D typescript @types/node
+  tsc -v
+  tsc --init
+  ```
+  * npm i -g typescript (if necessary)
+- update tsconfig.json
+  - "outDir": "./dist" -> this will store the build outcomes into /dist folder
+- (test) typescript code : src/index.ts
+  ```
+  mv index.js index.ts
+  
+  npx tsc             // (compile all accoridng to tsconfig spec)
+  node dist/index.js  // execute buidl outcome 
+  ```
+  * tsc src/index.ts (direct compile a single file)
+  * use ts-node if you want to use typescript REPL
+- install server packages
+  ```
+  npm i express @types/express dotenv
+  ```
+- 
+
 ## Initial Node environment
 - update yarn with a latest version
 ```
@@ -88,6 +125,9 @@ tsc --init
   "exclude": ["node_modules", "**/*.test.ts", "dist"]
 }
 ```
+- details
+  - sourceMap : A source map is a file that maps your compiled JavaScript code back to your original TypeScript code. This is particularly useful for debugging purposes because it allows you to see the original TypeScript code in your browser's developer tools instead of the compiled JavaScript code.
+  - outDir : location to store build outcomes
 
 - extend a default configuration for node version.
 install the @tsconfig/xxx to tune to a particular runtime environment. see https://github.com/tsconfig/bases

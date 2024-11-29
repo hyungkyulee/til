@@ -45,7 +45,10 @@
   ```
   npm i express @types/express dotenv
   ```
-- 
+- unit testing
+  ```
+  npm install --save-dev jest @types/jest
+  ```
 
 ## Initial Node environment
 - update yarn with a latest version

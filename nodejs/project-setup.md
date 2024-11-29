@@ -31,6 +31,16 @@
   ```
   * tsc src/index.ts (direct compile a single file)
   * use ts-node if you want to use typescript REPL
+  * use nodemon if you want to use hot-reload
+    ```
+    npm i -D nodemon ts-node
+
+    // package.json
+    "scripts": {
+      "start": "ts-node src",
+      "dev": "nodemon src/index.ts"
+    },
+    ```
 - install server packages
   ```
   npm i express @types/express dotenv

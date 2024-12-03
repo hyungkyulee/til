@@ -52,6 +52,26 @@
   ```
   * ts-jest is a TypeScript preprocessor with source map support for Jest that lets you use Jest to test projects written in TypeScript.
 
+  - create a jest config file
+    ```
+    npm i -g jest
+    jest --init
+    ```
+  - update the jest.config.ts file
+    ```
+    :
+    preset: "ts-jest",
+    testEnvironment: "node",
+    testPathIgnorePatterns: [
+      "/node_modules/"
+    ],
+    transform: {
+      '^.+\.(ts|tsx)?$': 'ts-jest',
+    },
+    :
+    ```
+  
+
 ## Initial Node environment
 - update yarn with a latest version
 ```

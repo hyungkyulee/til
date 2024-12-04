@@ -1,3 +1,11 @@
+## 1. 
+
+app.use((req, res, next) => {}
+res.status().send()
+
+
+
+
 ## 1. Core Node.js Concepts
 ### What is Node.js, and why is it used?
 ### What is the event loop in Node.js, and how does it work?

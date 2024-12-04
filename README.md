@@ -135,7 +135,7 @@ _104 TILs and counting..._
 
 ### [nodejs](#nodejs)
 - [nodejs project setup with typescript and jest](nodejs/project-setup.md)
-- [# 1. Core Node.js Concepts](nodejs/questions.md)
+- [# 1.](nodejs/questions.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

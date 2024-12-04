@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_103 TILs and counting..._
+_104 TILs and counting..._
 
 ---
 
@@ -135,6 +135,7 @@ _103 TILs and counting..._
 
 ### [nodejs](#nodejs)
 - [nodejs project setup with typescript and jest](nodejs/project-setup.md)
+- [# 1. Core Node.js Concepts](nodejs/questions.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

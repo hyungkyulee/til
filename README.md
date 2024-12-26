@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_104 TILs and counting..._
+_105 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# Background](nodejs/typescript_modules.md) - Thu Dec 26 19:12:33 2024 +0000
 - [](reactjs/nextjs-cornerstone.md) - Mon Apr 22 00:55:21 2024 +0100
-- [](ide-tooling/package-manager.md) - Sun Feb 11 18:37:59 2024 +0000
 
 ### Categories
 
@@ -136,6 +136,7 @@ _104 TILs and counting..._
 ### [nodejs](#nodejs)
 - [nodejs project setup with typescript and jest](nodejs/project-setup.md)
 - [# 1.](nodejs/questions.md)
+- [# Background](nodejs/typescript_modules.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

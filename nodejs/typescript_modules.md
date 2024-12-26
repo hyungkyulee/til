@@ -83,6 +83,7 @@ setting to "esnext" or "es6" in your tsconfig.json.
    {
   "compilerOptions": {
     "module": "esnext",
+    "moduleResolution": "node",
     "target": "es2020",
     "outDir": "./dist",
     "rootDir": "./src",

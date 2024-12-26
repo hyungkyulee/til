@@ -22,6 +22,28 @@
   * npm i -g typescript (if necessary)
 - update tsconfig.json
   - "outDir": "./dist" -> this will store the build outcomes into /dist folder
+  [e.g.]
+  ```
+  {
+    "complierOptions": {
+      "target": "es2016,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "allowJs": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "preserveConstEnums": true,
+      "isolatedModules": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "preserveSymlinks": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "skipLibCheck": true
+    }
+  }
+  ```
 - (test) typescript code : src/index.ts
   ```
   mv index.js index.ts
@@ -36,9 +58,11 @@
     npm i -D nodemon ts-node
 
     // package.json
+    // build will run tsc based on srcDir and outDir of tsconfig.json
     "scripts": {
       "start": "ts-node src",
-      "dev": "nodemon src/index.ts"
+      "dev": "nodemon src/index.ts",
+      "build": "tsc"
     },
     ```
 - install server packages

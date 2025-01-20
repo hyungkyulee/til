@@ -34,7 +34,8 @@ Ensure Java and Maven Are Properly Installed
     ```
 
     - if this is not successful, please use intelliJ and set the Project SDK
-    <img width="888" alt="image" src="https://github.com/user-attachments/assets/2c0495dc-8716-4c62-8c46-4d6d7460404b" />
+    <img width="888" alt="image" src="https://github.com/user-attachments/assets/100333b5-9288-43e6-a9e2-9081a404ba38" />
+
 
 
 

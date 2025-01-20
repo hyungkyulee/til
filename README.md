@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_105 TILs and counting..._
+_106 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# Development Env Setup](java/dev-env-setup.md) - Mon Jan 20 10:51:12 2025 +0000
 - [# Background](nodejs/typescript_modules.md) - Thu Dec 26 19:12:33 2024 +0000
-- [](reactjs/nextjs-cornerstone.md) - Mon Apr 22 00:55:21 2024 +0100
 
 ### Categories
 
@@ -35,6 +35,7 @@ _105 TILs and counting..._
 - [graphql](#graphql)
 - [html](#html)
 - [ide-tooling](#ide-tooling)
+- [java](#java)
 - [javascript](#javascript)
 - [macos](#macos)
 - [nodejs](#nodejs)
@@ -124,6 +125,9 @@ _105 TILs and counting..._
 - [Rider and Visual Studio](ide-tooling/rider-vs.md)
 - [Keybining on window like mac](ide-tooling/win-mac-keymap.md)
 - [zsh customisation](ide-tooling/zsh.md)
+
+### [java](#java)
+- [# Development Env Setup](java/dev-env-setup.md)
 
 ### [javascript](#javascript)
 - [Deep diving into closures](javascript/closures.md)

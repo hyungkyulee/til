@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_107 TILs and counting..._
+_108 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](expo/android-app-transfer.md) - Wed Jan 29 18:18:02 2025 +0000
 - [# ##](cloud-azure/sc900-fundamentals.md) - Wed Jan 29 10:07:29 2025 +0000
-- [# Development Env Setup](java/dev-env-setup.md) - Mon Jan 20 10:51:12 2025 +0000
 
 ### Categories
 
@@ -101,6 +101,7 @@ _107 TILs and counting..._
 - [SQL Database on ASP.NET project](dotnet/sqldb-asp.net.md)
 
 ### [expo](#expo)
+- [](expo/android-app-transfer.md)
 - [- npx expo-doctor](expo/tips.md)
 
 ### [git](#git)

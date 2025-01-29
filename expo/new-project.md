@@ -15,3 +15,16 @@ success message will show the below steps
   ```
   npm install --global eas-cli && eas init --id [project id]
   ```
+
+link github repo
+
+
+## Trouble-shooting ##
+if you can see the below error, relogin
+```
+You don't have the required permissions to perform this operation.
+
+This can sometimes happen if you are logged in as incorrect user.
+Run eas whoami to check the username you are logged in as.
+Run eas login to change the account.
+```

@@ -77,17 +77,35 @@ Multi-tenant - A multi-tenant organization is an organization that has more than
 
 ## types of identities ##
 - Human : internal/external users
-- workload identities : an identity you assign to a software workload to authenticate and access other services and resources
-  - service principal
-  - managed identities
-- devices : 
+  [eg. external user workflow]
+  - create an external user with email 
+  - send an invitation from my tenant with redirection url (auto-generated) 
+  - accept a consent via source tenant (or external idp)
+  - MFA at source tenant (1st authentication)
+  - MFA at my tenant (2nd authentication)
 
-[eg. external user workflow]
-- create an external user with email 
-- send an invitation from my tenant with redirection url (auto-generated) 
-- accept a consent via source tenant (or external idp)
-- MFA at source tenant (1st authentication)
-- MFA at my tenant (2nd authentication)
+- workload identities : an identity you assign to a software workload to authenticate and access other services and resources
+  > nature of workload identities
+  > - deal with multiple credentials to access different resources and need to be stored securely
+  > - deal with multiple credentials to access different resources and need to be stored securelyhard to track when a workload identity is created or when it should be revoked
+  > - risk their applications or services being exploited or breached because of difficulties in securing workload identities
+  > -> Entra Workload Id will resolve these issues when securing workload identities
+
+  - service principal
+    - an identity for an application,
+    - the application must first be registered with Microsoft Entra ID
+    - a service principal is created in each Microsoft Entra tenant where the application is used
+    - The service principal enables core features such as authentication and authorization of the application
+  - managed identities : a type of service principal that are automatically managed in Microsoft Entra ID and eliminate the need for developers to manage credentials.
+    - System-assigned
+    - User-assigned
+    ![image](https://github.com/user-attachments/assets/1fbfce35-2e58-4456-893c-ce9d25a0043d)
+
+- devices :
+  - Microsoft Entra registered devices - The goal of Microsoft Entra registered devices is to provide users with support for bring your own device (BYOD) or mobile device scenarios. In these scenarios, a user can access your organization’s resources using a personal device. Microsoft Entra registered devices register to Microsoft Entra ID without requiring an organizational account to sign in to the device.
+  - Microsoft Entra joined - A Microsoft Entra joined device is a device joined to Microsoft Entra ID through an organizational account, which is then used to sign in to the device. Microsoft Entra joined devices are generally owned by the organization.
+  - Microsoft Entra hybrid joined devices - Organizations with existing on-premises Active Directory implementations can benefit from the functionality provided by Microsoft Entra ID by implementing Microsoft Entra hybrid joined devices. These devices are joined to your on-premises Active Directory and Microsoft Entra ID requiring organizational account to sign in to the device.
+
 
 
 ## ##

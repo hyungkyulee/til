@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_106 TILs and counting..._
+_107 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# ##](cloud-azure/sc900-fundamentals.md) - Wed Jan 29 10:07:29 2025 +0000
 - [# Development Env Setup](java/dev-env-setup.md) - Mon Jan 20 10:51:12 2025 +0000
-- [# Background](nodejs/typescript_modules.md) - Thu Dec 26 19:12:33 2024 +0000
 
 ### Categories
 
@@ -63,6 +63,7 @@ _106 TILs and counting..._
 ### [cloud-azure](#cloud-azure)
 - [Azure Fundamentals](cloud-azure/cert-fundamentals.md)
 - [Azure Function Projects](cloud-azure/functions.md)
+- [# ##](cloud-azure/sc900-fundamentals.md)
 
 ### [cloud-email](#cloud-email)
 - [Google G-suite](cloud-email/gsuite.md)

@@ -25,7 +25,10 @@ Step 1: Transfer Android App to Another Google Play Developer Account
   ```
   > expo fetch:android:keystore is deprecated
 
-- App Transfer
-  - 
+2. App Transfer
+  - source account > settings > app transfer
+  - add info including transaction Ids for both of source and target, and account Ids for target.
+  - you will receeive an email to show progress on source account email, and can review the request at target account
+  - accept transfer at target account
   
 

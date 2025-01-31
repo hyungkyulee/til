@@ -18,6 +18,15 @@ success message will show the below steps
 
 link github repo
 
+Login to your expo eaccount
+```
+eas login
+```
+
+configure the project
+```
+```
+
 
 ## Trouble-shooting ##
 if you can see the below error, relogin

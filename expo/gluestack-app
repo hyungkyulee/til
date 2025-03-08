@@ -1,0 +1,24 @@
+## Project setup
+
+### Init Expo Project
+```jsx
+npx create-expo-app@latest thirtywears
+```
+
+### Init gluestack-ui
+> ref : https://gluestack.io/ui/docs/home/getting-started/installation
+```
+npx gluestack-ui init
+```
+
+### pin node version
+```
+// Install volta
+curl https://get.volta.sh | bash
+
+// Install node 22.14 LTS
+volta install node@22.14
+
+// Pin the node version
+volta pin node@22.14
+```

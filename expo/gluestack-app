@@ -9,6 +9,88 @@ npx create-expo-app@latest thirtywears
 > ref : https://gluestack.io/ui/docs/home/getting-started/installation
 ```
 npx gluestack-ui init
+
+//////////////////////////////
+Welcome to gluestack-ui!
+
+│
+◇  Detected an Expo project, continue?
+│  Yes
+
+  ┌──────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                          │
+  │  NOTE: Files to get modified                                                             │
+  │                                                                                          │
+  │  The command you've run is attempting to modify certain files in your project,           │
+  │  if already exist. Here's what's happening:                                              │
+  │                                                                                          │
+  │  - babel.config.js                                                                       │
+  │  - metro.config.js                                                                       │
+  │  - tailwind.config.*                                                                     │
+  │  - global.css                                                                            │
+  │  - tsconfig.json                                                                         │
+  │                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────┘
+  
+│
+◇  Proceed with caution. Make sure to commit your changes before proceeding. Continue?
+
+│  Yes
+
+Initializing gluestack-ui v2...
+
+│
+◇  Repository already cloned.
+│
+◇  Git pull successful.
+│
+○  ⏳ Installing dependencies. This might take a couple of minutes
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 105 packages, removed 73 packages, changed 1 package, and audited 1200 packages in 14s
+
+122 packages are looking for funding
+  run `npm fund` for details
+
+5 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+added 5 packages, changed 3 packages, and audited 1205 packages in 1s
+
+122 packages are looking for funding
+  run `npm fund` for details
+
+5 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+│
+◇  Dependencies have been installed successfully.
+│
+○  ⏳ Generating project configuration. This might take a couple of minutes
+› Installing 1 other package using npm
+> npm install --save babel-plugin-module-resolver
+
+added 13 packages, and audited 1218 packages in 1s
+
+124 packages are looking for funding
+  run `npm fund` for details
+
+5 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+│
+◇  Project configuration generated.
+│
+◇  Please refer the above link for more details --> https://gluestack.io/ui/docs/home/overview/introduction 
+│
+◆  Done! Initialized gluestack-ui v2 in the project
 ```
 
 ### pin node version

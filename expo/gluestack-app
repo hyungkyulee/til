@@ -5,6 +5,18 @@
 npx create-expo-app@latest thirtywears
 ```
 
+### pin node version (if you're collaborating with others)
+```
+// Install volta
+curl https://get.volta.sh | bash
+
+// Install node 22.14 LTS
+volta install node@22.14
+
+// Pin the node version
+volta pin node@22.14
+```
+
 ### Init gluestack-ui
 > ref : https://gluestack.io/ui/docs/home/getting-started/installation
 ```
@@ -93,14 +105,7 @@ To address all issues (including breaking changes), run:
 ◆  Done! Initialized gluestack-ui v2 in the project
 ```
 
-### pin node version
-```
-// Install volta
-curl https://get.volta.sh | bash
+### Build app (like stater-kits)
+> ref: https://github.com/gluestack/gluestack-ui-starter-kits
 
-// Install node 22.14 LTS
-volta install node@22.14
 
-// Pin the node version
-volta pin node@22.14
-```

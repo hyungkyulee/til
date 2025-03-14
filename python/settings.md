@@ -23,3 +23,7 @@ pyenv global (or local or shell) [version]
 ```
 > PIP will be binded together with pyenv automatically
 
+upgrade pip if necessary
+```
+pip install --upgrade pip
+```

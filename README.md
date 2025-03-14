@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_110 TILs and counting..._
+_111 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](python/azure-ml-env.md) - Fri Mar 14 18:04:55 2025 +0000
 - [](python/settings.md) - Fri Mar 14 14:59:37 2025 +0000
-- [# Init Account ##](expo/new-project.md) - Wed Jan 29 18:26:16 2025 +0000
 
 ### Categories
 
@@ -147,6 +147,7 @@ _110 TILs and counting..._
 - [# Background](nodejs/typescript_modules.md)
 
 ### [python](#python)
+- [](python/azure-ml-env.md)
 - [](python/settings.md)
 
 ### [react-native](#react-native)

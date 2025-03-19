@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_111 TILs and counting..._
+_112 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# Azure ML Architecture and Concepts](machine-learning/azure-ml.md) - Wed Mar 19 00:34:53 2025 +0000
 - [](python/azure-ml-env.md) - Fri Mar 14 18:04:55 2025 +0000
-- [](python/settings.md) - Fri Mar 14 14:59:37 2025 +0000
 
 ### Categories
 
@@ -37,6 +37,7 @@ _111 TILs and counting..._
 - [ide-tooling](#ide-tooling)
 - [java](#java)
 - [javascript](#javascript)
+- [machine-learning](#machine-learning)
 - [macos](#macos)
 - [nodejs](#nodejs)
 - [python](#python)
@@ -136,6 +137,9 @@ _111 TILs and counting..._
 ### [javascript](#javascript)
 - [Deep diving into closures](javascript/closures.md)
 - [Simplifying Javascript](javascript/simplifying-joe-morgan.md)
+
+### [machine-learning](#machine-learning)
+- [# Azure ML Architecture and Concepts](machine-learning/azure-ml.md)
 
 ### [macos](#macos)
 - [Process issues on Macos](macos/process.md)

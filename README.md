@@ -105,7 +105,7 @@ _112 TILs and counting..._
 ### [expo](#expo)
 - [](expo/android-app-transfer.md)
 - [# Init Account ##](expo/new-project.md)
-- [- npx expo-doctor](expo/tips.md)
+- [## Expo App Audit](expo/tips.md)
 
 ### [git](#git)
 - [Git commands](git/commands.md)

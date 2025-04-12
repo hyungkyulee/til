@@ -11,7 +11,7 @@ Ensure you are logged into your Expo account in your terminal:
 ```
 eas login
 ```
-> To change the EAS CLI login user, you can log out of the current session and log in with a different user. You can log out of the EAS CLI by running the command eas login --logout. After logging out, you can then log in with the desired user account by running eas login and following the prompts. 
+> To change the EAS CLI login user, you can log out of the current session and log in with a different user. You can log out of the EAS CLI by running the command "eas logout". After logging out, you can then log in with the desired user account by running eas login and following the prompts. 
 
 #### Fetch the Existing Keystore
 Run the following command to fetch the existing keystore associated with your app:

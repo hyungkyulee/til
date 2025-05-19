@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_112 TILs and counting..._
+_113 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [#](database/azure-sql-monitoring.md) - Mon May 19 17:41:20 2025 +0100
 - [# Azure ML Architecture and Concepts](machine-learning/azure-ml.md) - Wed Mar 19 00:34:53 2025 +0000
-- [](python/azure-ml-env.md) - Fri Mar 14 18:04:55 2025 +0000
 
 ### Categories
 
@@ -83,6 +83,7 @@ _112 TILs and counting..._
 - [AWS Glue Overview](data-engineering/aws-glue.md)
 
 ### [database](#database)
+- [#](database/azure-sql-monitoring.md)
 - [Database Management Essentials Course Assignment](database/coursera-task-m3.md)
 - [Coursera DBMS - Module4](database/coursera-task-m4.md)
 - [DBMS Overview](database/dbms.md)

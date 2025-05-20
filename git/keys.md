@@ -38,14 +38,26 @@ git config --global user.email
 ## Re-generate GPG keys from the scratch
 delete all
 ```
-mv ~/.gnupg ~/.gnupg_backup_$(date +%s)
+mv ~/.gnupg ~/.bak_gnupg_$(date +%s)
 ```
-
 
 Start GPG (and check version)
 ```
 gpg --version
 ```
+
+create GPG directory
+```
+mkdir -p ~/.gnupg
+chmod 700 ~/.gnupg
+```
+
+restart agent
+```
+gpgconf --kill gpg-agent
+gpgconf --launch gpg-agent
+```
+
 
 ```
 gpg --full-generate-key                                  х INT 13s 18:53:27
@@ -95,12 +107,25 @@ Key generation failed: No such file or directory
 ```
 
 
-
 check the private / public key
 ```
 gpg --list-secret-keys --keyid-format=long
 
 gpg --list-keys --keyid-format=long
 ```
+
+export key value to copy it to github GPG section
+```
+gpg --armor --export XXXXX                              20:27:23
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDME
+:
+:
+:
+HW
+-----END PGP PUBLIC KEY BLOCK-----
+```
+> https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account
 
 

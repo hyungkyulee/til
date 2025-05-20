@@ -106,7 +106,7 @@ gpg: agent_genkey failed: No such file or directory
 Key generation failed: No such file or directory
 ```
 
-
+## Add the GPG key to github
 check the private / public key
 ```
 gpg --list-secret-keys --keyid-format=long
@@ -127,5 +127,40 @@ HW
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 > https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account
+
+## Telling Git about your signing key
+To sign commits locally, you need to inform Git that there's a GPG, SSH, or X.509 key you'd like to use.
+
+
+> If you have previously configured Git to use a different key format when signing with --gpg-sign, unset this configuration so the default format of openpgp will be used.
+```
+git config --global --unset gpg.format
+```
+
+From the list of GPG keys, copy the long form of the GPG key ID you'd like to use
+```
+git config --global user.signingkey [long form key id]
+```
+> If you use multiple keys and subkeys, then you should append an exclamation mark ! to the key to tell git that this is your preferred key. Sometimes you may need to escape the exclamation mark with a back slash: \!.
+
+Optionally, to configure Git to sign all commits and tags by default, enter the following command:
+```
+git config --global commit.gpgsign true
+git config --global tag.gpgSign true
+```
+
+check the registered signing key
+```
+git config --global user.signingkey
+```
+
+
+## commit with signing key
+```
+❯ git commit -S -m "xxx - signed commit"               20:45:46
+[pplan-permission 183b6b7]   signed commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+> enter the passphrase on commit
 
 

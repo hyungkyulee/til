@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_113 TILs and counting..._
+_114 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [](git/keys.md) - Tue May 20 19:19:52 2025 +0100
 - [#](database/azure-sql-monitoring.md) - Mon May 19 17:41:20 2025 +0100
-- [# Azure ML Architecture and Concepts](machine-learning/azure-ml.md) - Wed Mar 19 00:34:53 2025 +0000
 
 ### Categories
 
@@ -112,6 +112,7 @@ _113 TILs and counting..._
 - [Git commands](git/commands.md)
 - [Github cli to use credential](git/github-cli.md)
 - [Git : Common error and Solution](git/issues.md)
+- [](git/keys.md)
 - [Overview](git/overview.md)
 - [Self-signed Certificate Issue](git/setup.md)
 

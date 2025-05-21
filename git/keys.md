@@ -164,3 +164,15 @@ git config --global user.signingkey
 > enter the passphrase on commit
 
 
+## Disable Commit Signing Temporarily If you want to bypass signing for now:
+
+- Temporal disable
+```
+git commit --no-gpg-sign
+```
+
+Or disable it globally:
+```
+onfig --global commit.gpgsign false
+```
+

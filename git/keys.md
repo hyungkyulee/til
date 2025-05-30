@@ -173,6 +173,6 @@ git commit --no-gpg-sign
 
 Or disable it globally:
 ```
-onfig --global commit.gpgsign false
+git config --global commit.gpgsign false
 ```
 

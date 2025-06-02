@@ -1,4 +1,7 @@
-
+## GPG Installation
+```
+brew install gnupg
+```
 
 ## Role of both Keys : GPG Key vs SSH Key
 	•	You need a GPG key if you want to sign your commits so GitHub shows the “Verified” badge.
@@ -116,7 +119,7 @@ gpg --list-keys --keyid-format=long
 
 export key value to copy it to github GPG section
 ```
-gpg --armor --export XXXXX                              20:27:23
+gpg --armor --export [KEY ID or Email]                               20:27:23
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mDME
@@ -127,6 +130,20 @@ HW
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 > https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account
+
+## Test encryption/decryption
+create a test file
+```
+echo 'this is test' > testfile.txt
+```
+encrypting with a specific public key
+```
+gpg --encrypt --recipient 'team_phoenix@sainsburys.co.uk' [filename].txt
+```
+decrypting with your private key
+```
+gpg --decrypt --try-secret-key [KEYID] [filename].gpg
+```
 
 ## Telling Git about your signing key
 To sign commits locally, you need to inform Git that there's a GPG, SSH, or X.509 key you'd like to use.

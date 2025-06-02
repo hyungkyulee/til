@@ -13,7 +13,7 @@ _114 TILs and counting..._
 
 ### 2 most recent TILs
 
-- [](git/keys.md) - Tue May 20 19:19:52 2025 +0100
+- [# GPG Installation](git/keys.md) - Tue May 20 19:19:52 2025 +0100
 - [#](database/azure-sql-monitoring.md) - Mon May 19 17:41:20 2025 +0100
 
 ### Categories
@@ -112,7 +112,7 @@ _114 TILs and counting..._
 - [Git commands](git/commands.md)
 - [Github cli to use credential](git/github-cli.md)
 - [Git : Common error and Solution](git/issues.md)
-- [](git/keys.md)
+- [# GPG Installation](git/keys.md)
 - [Overview](git/overview.md)
 - [Self-signed Certificate Issue](git/setup.md)
 

@@ -11,6 +11,18 @@ _114 TILs and counting..._
 
 ---
 
+"The best offer depends on what you're looking for! Here are some highlights:
+
+- Fresh Produce: 20% off, e.g., Strawberries 400g for £2.00 (was £2.50)
+- Meat & Fish: 25% off, e.g., Beef Mince 500g for £3.00 (was £4.00)
+- Bakery: Save £1, e.g., Sourdough Loaf for £2.00 (was £3.00)
+- Frozen Foods: 2 for £4, e.g., Frozen Sweetcorn 750g at 2 for £4
+- Drinks: Save £1 on multipacks, e.g., Coca-Cola 6pk for £3.50 (was £4.50)
+
+If you're after the biggest percentage discount, Meat & Fish at 25% off is great. For value deals, Bakery saving £1 on certain items is also strong.
+
+Let me know if you want details on a specific category or product!"
+
 ### 2 most recent TILs
 
 - [# GPG Installation](git/keys.md) - Tue May 20 19:19:52 2025 +0100

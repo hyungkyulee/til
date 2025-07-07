@@ -138,10 +138,12 @@ Better User Experience: Users get responses from healthy pods instead of databas
 >   - 60s: Pod gets restarted (liveness fails)
 >   - New pod starts: Fresh readiness/liveness probe cycle begins
 >   - Traffic switches during restart
+>     
 > Best Practice Timeline:
 > - Optimize readiness probe to fail fast (15s intervals, 2 failures = 30s total)
 > - Keep liveness probe more tolerant (30s intervals, 3 failures = 90s total)
 > - Result: Traffic switches in 30s, pod restarts only if truly unhealthy
+>   
 > Key Benefits:
 > - Fast traffic switching: Unhealthy pods removed from service quickly
 > - Intelligent restarts: Only restart pods that are truly broken

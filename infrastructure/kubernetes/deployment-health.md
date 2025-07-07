@@ -92,19 +92,19 @@ Fast Recovery: When database issues resolve, pods automatically become ready
 Better User Experience: Users get responses from healthy pods instead of database errors
 
 - Service Endpoint Management : (e.g. 3 replicas)
-  Pod 1: livenessProbe=OK, readinessProbe=FAIL → Removed from Service endpoints
-  Pod 2: livenessProbe=OK, readinessProbe=OK   → Added to Service endpoints  
-  Pod 3: livenessProbe=OK, readinessProbe=OK   → Added to Service endpoints
+  - Pod 1: livenessProbe=OK, readinessProbe=FAIL → Removed from Service endpoints
+  - Pod 2: livenessProbe=OK, readinessProbe=OK   → Added to Service endpoints  
+  - Pod 3: livenessProbe=OK, readinessProbe=OK   → Added to Service endpoints
 
 - Traffic Routing:
-  Load balancer only sends traffic to pods in Service endpoints
-  Kubernetes Service automatically updates endpoints based on readiness probe results
-  No manual intervention required
+  - Load balancer only sends traffic to pods in Service endpoints
+  - Kubernetes Service automatically updates endpoints based on readiness probe results
+  - No manual intervention required
 
 - Error behaviour scenarios (e.g. db error) :
-  Pod 1: db exception → readinessProbe=FAIL (checks DB) → Removed from service → No traffic
-  Pod 2: Healthy → readinessProbe=PASS → Receives traffic → Users get responses
-  Pod 3: Healthy → readinessProbe=PASS → Receives traffic → Users get responses
+  - Pod 1: db exception → readinessProbe=FAIL (checks DB) → Removed from service → No traffic
+  - Pod 2: Healthy → readinessProbe=PASS → Receives traffic → Users get responses
+  - Pod 3: Healthy → readinessProbe=PASS → Receives traffic → Users get responses
 
 > Load Balancer Traffic Switching: the load balancer (Kubernetes Service) can switch traffic to other replicas, but the behavior depends on which probe fails:
 > - Scenario 1: Readiness Probe Fails First

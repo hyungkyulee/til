@@ -7,14 +7,14 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_114 TILs and counting..._
+_115 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
+- [# Grouping / Ordering properties of Component.](reactjs/react-concepts.md) - Tue Jul 22 15:42:34 2025 +0100
 - [# GPG Installation](git/keys.md) - Tue May 20 19:19:52 2025 +0100
-- [#](database/azure-sql-monitoring.md) - Mon May 19 17:41:20 2025 +0100
 
 ### Categories
 
@@ -173,6 +173,7 @@ _114 TILs and counting..._
 - [Next.js website](reactjs/nextjs.md)
 - [build issues on Node Packages](reactjs/npm-build-issues.md)
 - [Major Packages Setup and How-to for Webapp project](reactjs/packages.md)
+- [# Grouping / Ordering properties of Component.](reactjs/react-concepts.md)
 - [Tailwind project on ReactJS webapp](reactjs/tailwind-react.md)
 - [0. create-react-app](reactjs/tailwindcss-webpack-react.md)
 - [Vanila React 18 + typescript + webpack + eslint](reactjs/template-vanila-react18.md)

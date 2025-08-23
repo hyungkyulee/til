@@ -1,4 +1,4 @@
-
+# Setup
 ## version management
 ### pyenv
 install version manager
@@ -32,3 +32,5 @@ upgrade pip if necessary
 ```
 pip install --upgrade pip
 ```
+
+# Syntaxes

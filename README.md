@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_105 TILs and counting..._
+_104 TILs and counting..._
 
 ---
 
@@ -154,7 +154,6 @@ _105 TILs and counting..._
 - [React-Native with Typescript and Tailwind](react-native/typescript-tailwind.md)
 
 ### [reactjs](#reactjs)
-- [Auth Flow on ReactJS](reactjs/auth.md)
 - [Gatsby website project with Typescript and Tailwind CSS](reactjs/gatsby-ts-tailwind.md)
 - [Frontend Web Dev with ReactJS](reactjs/get-started.md)
 - [# Write a configuration for typescript](reactjs/migration-js-ts.md)

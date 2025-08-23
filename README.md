@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_114 TILs and counting..._
+_113 TILs and counting..._
 
 ---
 
@@ -203,7 +203,6 @@ _114 TILs and counting..._
 - [# What is?](typescript/generics.md)
 - [# What does narrowing mean?](typescript/narrowing.md)
 - [npm Project with Typescript](typescript/npm-proj-setup.md)
-- [Overview of Typescript](typescript/overview.md)
 
 ### [vpn](#vpn)
 - [Forticlient VPN](vpn/forticlient.md)

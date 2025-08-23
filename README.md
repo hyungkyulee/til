@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_115 TILs and counting..._
+_114 TILs and counting..._
 
 ---
 
@@ -154,7 +154,6 @@ _115 TILs and counting..._
 
 ### [python](#python)
 - [](python/azure-ml-env.md)
-- [](python/settings.md)
 
 ### [react-native](#react-native)
 - [Build and Sign android app with Github Actions](react-native/android-deploy-gitaction.md)

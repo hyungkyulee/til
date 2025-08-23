@@ -1,5 +1,4 @@
-# Overview of Typescript
-
+# Overview
 ## Limitation of Javascript
 - lacks some of the features of more mature languages
 - relying on IDEs to manage lage code bases
@@ -81,9 +80,11 @@ node sample.js
 >  * An alternative to create and populate a 'tsconfig.json' file manually by ``` tsc --init ```
 > ![image](https://user-images.githubusercontent.com/59367560/135723205-ced26e2a-d994-42f7-874a-b7d9bee88f1f.png)
 
-## Basic Grammar
-### Variables
-### Interface
+# Setup
+
+# Syntaxes
+## Variables
+## Interface
 - naming convension : The TypeScript coding guidelines suggest interfaces should not start with the letter I
 - type of properties(or members)
   - Required - e.g. firstName: string;
@@ -174,7 +175,7 @@ node sample.js
   }
   ```
   
-### Destructuring in Parameter
+## Destructuring in Parameter
 Destructuring in Function Parameter was introduced at ECMAScript2015, thought. Typescript cannot transfile the destrucrued paramter.
 This is because a type annonation is not a type, but a name of variable under the specification of a superset of javascript. 
 so, the below will not work

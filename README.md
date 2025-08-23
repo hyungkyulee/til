@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_112 TILs and counting..._
+_111 TILs and counting..._
 
 ---
 
@@ -36,7 +36,6 @@ _112 TILs and counting..._
 - [html](#html)
 - [ide-tooling](#ide-tooling)
 - [java](#java)
-- [javascript](#javascript)
 - [machine-learning](#machine-learning)
 - [macos](#macos)
 - [nodejs](#nodejs)
@@ -135,9 +134,6 @@ _112 TILs and counting..._
 
 ### [java](#java)
 - [# Development Env Setup](java/dev-env-setup.md)
-
-### [javascript](#javascript)
-- [Deep diving into closures](javascript/closures.md)
 
 ### [machine-learning](#machine-learning)
 - [# Azure ML Architecture and Concepts](machine-learning/azure-ml.md)

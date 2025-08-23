@@ -7,7 +7,7 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_110 TILs and counting..._
+_109 TILs and counting..._
 
 ---
 
@@ -193,7 +193,6 @@ _110 TILs and counting..._
 - [Terrafom deployment via Github Action to Azure](terraform/github-action-azure.md)
 
 ### [typescript](#typescript)
-- [](typescript/ambient-declarations.md)
 - [# What is?](typescript/generics.md)
 - [# What does narrowing mean?](typescript/narrowing.md)
 - [npm Project with Typescript](typescript/npm-proj-setup.md)

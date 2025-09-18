@@ -109,6 +109,22 @@ gpg: agent_genkey failed: No such file or directory
 Key generation failed: No such file or directory
 ```
 
+> if there is an issue (failed) like above to generate key
+> The error may be due to a missing or misconfigured pinentry program, which is required for passphrase entry.
+> 1) Install pinentry-mac:
+>    ```brew install pinentry-mac```
+> 3) Configure GPG to use it. Create or edit ~/.gnupg/gpg-agent.conf and add:
+>    ```
+>    pinentry-program /opt/homebrew/bin/pinentry-mac
+>    ```
+> 4) Restart the GPG agent:
+>    ```
+>    gpgconf --kill gpg-agent
+>    gpgconf --launch gpg-agent
+>    ```
+> 5) Try generating the key again:
+>    ```gpg --full-generate-key```
+
 ## Add the GPG key to github
 check the private / public key
 ```

@@ -1,6 +1,7 @@
 # Auto-gen Documentation
 
-## TSDoc / TypeDoc (Most Popular for TypeScript)
+## Approaches to generate documentation
+### TSDoc / TypeDoc (Most Popular for TypeScript)
 TypeDoc uses JSDoc-style comments and is the de-facto standard for TypeScript projects.
 
 Installation
@@ -128,7 +129,7 @@ Create typedoc.json
 }
 ```
 
-## JSDoc (Classic, Works Everywhere)
+### JSDoc (Classic, Works Everywhere)
 installation
 ```
 npm install --save-dev jsdoc
@@ -154,14 +155,55 @@ jsdoc.json
 }
 ```
 
-## Docusaurus (Popular for Full Documentation Sites)
+### Docusaurus (Popular for Full Documentation Sites)
 Best for comprehensive documentation with tutorials, API refs, and guides.
 ```
 npm install --save-dev @docusaurus/core @docusaurus/preset-classic
 ```
 
-## API Extractor + API Documenter (Microsoft's Tool)
+### API Extractor + API Documenter (Microsoft's Tool)
 For enterprise-grade API documentation:
 ```
 npm install --save-dev @microsoft/api-extractor @microsoft/api-documenter
+```
+
+## Example of docs on nodejs project
+```
+npm run docs:watch
+```
+
+docs url
+```
+<project folder>/docs/index.html
+```
+
+Example
+<img width="1095" height="1174" alt="image" src="https://github.com/user-attachments/assets/084e5865-1ed4-4476-8c2a-370266ad153f" />
+
+## Integration to GitHub Actions
+```
+# .github/workflows/docs.yml
+name: Generate Documentation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+      
+      - run: npm ci
+      - run: npm run docs
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
 ```

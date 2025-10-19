@@ -7,13 +7,13 @@ repository after reading Simon Wilson's [hacker new post][1], and he was
 apparently inspired by Josh Branchaud's [TIL collection][2].
 
 
-_22 TILs and counting..._
+_23 TILs and counting..._
 
 ---
 
 ### 2 most recent TILs
 
-- [iterm2 setup](ide-and-tools/iterm2.md) - Sun Aug 24 00:47:23 2025 +0100
+- [Auto-gen Documentation](documentation/docs-node-project.md) - Sun Oct 19 17:22:44 2025 +0100
 - [C# Challenges on a day](programming-languages/challenges-csharp.md) - Sun Aug 24 00:47:23 2025 +0100
 
 ### Categories
@@ -21,6 +21,7 @@ _22 TILs and counting..._
 - [api-design](#api-design)
 - [data-engineering](#data-engineering)
 - [database](#database)
+- [documentation](#documentation)
 - [ide-and-tools](#ide-and-tools)
 - [machine-learning](#machine-learning)
 - [programming-languages](#programming-languages)
@@ -42,6 +43,9 @@ _22 TILs and counting..._
 - [DBMS Overview](database/dbms.md)
 - [](database/how-to-setup-sqldb-apple-m1.md)
 - [PostgreSQL general](database/postgresql.md)
+
+### [documentation](#documentation)
+- [Auto-gen Documentation](documentation/docs-node-project.md)
 
 ### [ide-and-tools](#ide-and-tools)
 - [iterm2 setup](ide-and-tools/iterm2.md)

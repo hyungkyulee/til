@@ -12,3 +12,8 @@ kubectl config get-contexts
 ```
 kubectl config use-context aks-v4-nonprod
 ```
+
+- ingress ngnx system details
+```
+kubectl get svc -n ingress-nginx-system
+```

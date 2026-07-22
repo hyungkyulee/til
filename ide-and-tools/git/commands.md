@@ -161,3 +161,16 @@ if a file is already commited to remote, it won't be affected by gitignore.
 git rm --cached .env
 ```
 
+#### New Branch copying the commits
+run it on the invalid-name branch
+```
+git checkout -b <new-branch-name>
+git push origin <new-branch-name>
+```
+
+e.g.)
+```
+git checkout <invalid branch>
+git checkout -b feature/valid-name
+git push origin feature/valid-name
+```

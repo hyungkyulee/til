@@ -117,4 +117,47 @@ Automatic merge failed; fix conflicts and then commit the result.
 2) re-run the git add and commit
 3) git push
 
+## clean status, but abort to pull or checkout
+git status에서 안 보이는데 pull만 막히는 경우 또는 pull 도 정상인데 다른 브렌치로 checkout이 막히는 경우는 
+보통 해당 파일에 skip-worktree/assume-unchanged 플래그가 걸린 케이스가 많다.
+
+check diff
+```
+git diff
+git diff --cached
+```
+
+만약 깨끗하다면, 
+```
+git ls-files -v | grep <문제의 파일명>
+```
+> H명 정상, h 면 assume-unchanged가 설정된 파일임
+
+이경우에 
+```
+git update-index --no-assume-unchanged <파일명>
+git fetch origin
+git diff
+```
+
+만약 git diff가 깨끗하지 않다고 나오면, origin으로 해당 파일 덮어쓰기
+```
+git fetch origin
+git restore --source=origin/main -- <파일명>
+
+또는
+git checkout origin/main -- <파일명>
+```
+
+그래도 ls-files가 h상태라면, skip-worktree 상태인지 확인, 이때는 
+```
+git update-index --no-assume-unchanged <파일명>
+git update-index --no-skip-worktree <파일명>
+```
+
+
+
+
+
+
 
